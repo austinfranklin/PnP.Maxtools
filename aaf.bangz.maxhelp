@@ -40,44 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 357.679611504077911, 248.0, 83.0, 22.0 ],
-					"text" : "loadmess 100"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 221.179611504077911, 248.0, 77.0, 22.0 ],
-					"text" : "loadmess 25"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 48.543688654899597, 186.213591873645782, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -125,7 +87,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 638.398047924041748, 218.262129187583923, 74.0, 22.0 ],
+					"patching_rect" : [ 638.398047924041748, 218.262129187583923, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -133,7 +95,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p example 2"
+					"text" : "p example2"
 				}
 
 			}
@@ -186,7 +148,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 615.398047924041748, 184.262129187583923, 74.0, 22.0 ],
+					"patching_rect" : [ 615.398047924041748, 184.262129187583923, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -194,7 +156,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p example 1"
+					"text" : "p example1"
 				}
 
 			}
@@ -247,7 +209,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 592.300960958003998, 150.262129187583923, 69.0, 22.0 ],
+					"patching_rect" : [ 592.300960958003998, 150.262129187583923, 49.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -255,7 +217,45 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p more info"
+					"text" : "p about"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 357.679611504077911, 248.0, 83.0, 22.0 ],
+					"text" : "loadmess 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 221.179611504077911, 248.0, 77.0, 22.0 ],
+					"text" : "loadmess 25"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 48.543688654899597, 186.213591873645782, 24.0, 24.0 ]
 				}
 
 			}
@@ -574,7 +574,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "aaf.bangz.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

@@ -225,11 +225,10 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 182.0, 343.0, 52.0, 22.0 ],
-					"text" : "aaf.rev~",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 182.0, 343.0, 62.0, 22.0 ],
+					"text" : "aaf.edge~",
 					"varname" : "aaf.amp~"
 				}
 
@@ -292,7 +291,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 88.213591873645782, 516.126209080219269, 20.0 ],
-					"text" : "Apply reverberation to an incoming audio signal"
+					"text" : "onset detector"
 				}
 
 			}
@@ -305,7 +304,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-					"text" : "aaf.rev~"
+					"text" : "aaf.edge~"
 				}
 
 			}
@@ -319,16 +318,9 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "aaf.rev~.maxpat",
+				"name" : "aaf.edge~.maxpat",
 				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "yafr2.maxpat",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
-				"patcherrelativepath" : "../../../../../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}

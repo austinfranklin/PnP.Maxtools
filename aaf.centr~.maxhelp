@@ -320,7 +320,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "aaf.centr~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

@@ -44,7 +44,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 182.0, 343.0, 52.0, 22.0 ],
 					"text" : "aaf.del~",
 					"varname" : "aaf.amp~"
@@ -114,7 +114,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 638.398047924041748, 218.262129187583923, 74.0, 22.0 ],
+					"patching_rect" : [ 638.398047924041748, 218.262129187583923, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -122,7 +122,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p example 2"
+					"text" : "p example2"
 				}
 
 			}
@@ -175,7 +175,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 615.398047924041748, 184.262129187583923, 74.0, 22.0 ],
+					"patching_rect" : [ 615.398047924041748, 184.262129187583923, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -183,7 +183,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p example 1"
+					"text" : "p example1"
 				}
 
 			}
@@ -236,7 +236,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 592.300960958003998, 150.262129187583923, 69.0, 22.0 ],
+					"patching_rect" : [ 592.300960958003998, 150.262129187583923, 49.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -244,7 +244,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p more info"
+					"text" : "p about"
 				}
 
 			}
@@ -318,55 +318,10 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-1::obj-62::obj-10" : [ "range[4]", "range", 0 ],
-			"obj-1::obj-62::obj-12" : [ "pictctrl[3]", "pictctrl", 0 ],
-			"obj-1::obj-62::obj-15" : [ "pictctrl[2]", "pictctrl[2]", 0 ],
-			"obj-1::obj-62::obj-37" : [ "smoothing[1]", "smoothing", 0 ],
-			"obj-1::obj-62::obj-5" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-1::obj-62::obj-51" : [ "pictctrl[1]", "pictctrl[2]", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "aaf.del~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vz.smoothr.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "data-handler-L.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/Vizzie/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
