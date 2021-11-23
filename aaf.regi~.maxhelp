@@ -358,7 +358,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 383.077669024467468, 382.85436749458313, 143.0, 47.0 ],
-					"text" : "1. Low Frequency (Hz)\n2. High Frequency (Hz)\n3. Smoothness"
+					"text" : "1. Low Frequency (Hz)\n2. High Frequency (Hz)\n3. Smoothness (optional)"
 				}
 
 			}
@@ -502,7 +502,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
+					"outlettype" : [ "float", "" ],
 					"patching_rect" : [ 63.679611504077911, 382.85436749458313, 310.000000000000057, 22.0 ],
 					"text" : "aaf.regi~ 220 440 0.75",
 					"varname" : "aaf.regi~"
