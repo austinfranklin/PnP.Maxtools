@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 997.0, 787.0 ],
+		"rect" : [ 100.0, 79.0, 921.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,20 +40,34 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"format" : 6,
-					"id" : "obj-6",
-					"maxclass" : "flonum",
+					"id" : "obj-1",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 182.0, 343.0, 62.0, 22.0 ],
+					"text" : "aaf.centr~",
+					"varname" : "aaf.amp~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 63.679611504077911, 475.466458797454834, 64.0, 22.0 ]
+					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 48.543688654899597, 186.213591873645782, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-4",
+					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
@@ -100,7 +114,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 638.398047924041748, 218.262129187583923, 71.0, 22.0 ],
+					"patching_rect" : [ 638.398047924041748, 218.262129187583923, 74.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -108,13 +122,13 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p example2"
+					"text" : "p example 2"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-5",
+					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
@@ -161,7 +175,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 615.398047924041748, 184.262129187583923, 71.0, 22.0 ],
+					"patching_rect" : [ 615.398047924041748, 184.262129187583923, 74.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -169,7 +183,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p example1"
+					"text" : "p example 1"
 				}
 
 			}
@@ -222,7 +236,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 592.300960958003998, 150.262129187583923, 49.0, 22.0 ],
+					"patching_rect" : [ 592.300960958003998, 150.262129187583923, 69.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -230,21 +244,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p about"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 48.543688654899597, 186.213591873645782, 24.0, 24.0 ]
+					"text" : "p more info"
 				}
 
 			}
@@ -276,110 +276,11 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 115.679611504077911, 208.0, 31.0, 20.0 ],
-					"text" : "Hz"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 419.077669024467468, 477.466458797454834, 205.863635420799255, 33.0 ],
-					"text" : "Normalized value detecting register between low and high frequency"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-20",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 354.679611504077968, 477.466458797454834, 64.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 63.679611504077911, 207.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 334.378640264272747, 298.378639578819275, 90.601942479610443, 20.0 ],
-					"text" : "Smoothness",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-9",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 354.679611504077968, 320.378639578819275, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 383.077669024467468, 382.85436749458313, 143.0, 47.0 ],
-					"text" : "1. Low Frequency (Hz)\n2. High Frequency (Hz)\n3. Smoothness (optional)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"id" : "obj-32",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 383.077669024467468, 360.85436749458313, 142.252427756786346, 20.0 ],
-					"text" : "Arguments:"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-26",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.543688654899597, 110.213591873645782, 516.0, 47.0 ],
-					"text" : "aaf.regi~ returns a normalized floating point number that indicates where the detected pitch is located bewteen the low and high frequency arguments. The smoothness argument can be used to output a more gradual change in output."
+					"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 20.0 ]
 				}
 
 			}
@@ -391,7 +292,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 88.213591873645782, 516.126209080219269, 20.0 ],
-					"text" : "Pitch detector that detects the position of a frequency between a low and high frequency"
+					"text" : "Track the spectral centroid of an incoming audio signal"
 				}
 
 			}
@@ -404,175 +305,21 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-					"text" : "aaf.regi~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 108.679611504077911, 243.970872402191162, 74.271845698356628, 20.0 ],
-					"text" : "Input signal",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 234.37864026427269, 298.378639578819275, 96.601942479610443, 20.0 ],
-					"text" : "High Frequency",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 139.80582469701767, 298.378639578819275, 91.747573614120483, 20.0 ],
-					"text" : "Low Frequency",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 126.679611504077911, 475.466458797454834, 184.0, 20.0 ],
-					"text" : "Detected Pitch (Hz)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-14",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 257.679611504077911, 320.378639578819275, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-12",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 160.679611504077911, 320.378639578819275, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 63.679611504077911, 242.970872402191162, 43.0, 22.0 ],
-					"text" : "cycle~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
-					"patching_rect" : [ 63.679611504077911, 382.85436749458313, 310.000000000000057, 22.0 ],
-					"text" : "aaf.regi~ 220 440 0.75",
-					"varname" : "aaf.regi~"
+					"text" : "aaf.centr~"
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 2 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 3 ],
-					"source" : [ "obj-9", 0 ]
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "aaf.regi~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "aaf.smoothr.maxpat",
+				"name" : "aaf.centr~.maxpat",
 				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
