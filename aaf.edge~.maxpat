@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 98.0, 114.0, 288.0, 74.0 ],
+					"text" : "they work pretty much the same, except I can change the averaging time in ms... not sure what else is different? more accurate maybe, because it's operating at vector rate? Would a gen~ version be even more accurate, and does it matter?"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "number",
 					"numinlets" : 1,
