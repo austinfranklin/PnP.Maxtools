@@ -57,7 +57,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 87.0, 139.0, 247.0, 33.0 ],
+					"patching_rect" : [ 87.0, 139.0, 250.0, 33.0 ],
 					"text" : "works with FFT size of 2048 and overlap of 4 - Doesn't work unless multiplied by 2"
 				}
 
@@ -69,8 +69,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 73.0, 174.0, 139.0, 22.0 ],
-					"text" : "pfft~ aaf.centrfft~ 2048 4"
+					"patching_rect" : [ 73.0, 174.0, 155.0, 22.0 ],
+					"text" : "pfft~ aaf.centroidfft~ 2048 4"
 				}
 
 			}
@@ -94,7 +94,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 73.0, 45.0, 30.0, 30.0 ]
 				}
 
