@@ -344,7 +344,7 @@
 									"patching_rect" : [ 114.679611504077911, 463.06427264213562, 174.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 102.679611504077911, 456.330095410346985, 174.0, 22.0 ],
-									"text" : "1184.326172 1722.65625"
+									"text" : "430.664062 882.861328"
 								}
 
 							}
@@ -860,7 +860,7 @@
 					"patching_rect" : [ 114.679611504077911, 464.330095410346985, 174.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 102.679611504077911, 456.330095410346985, 174.0, 22.0 ],
-					"text" : "430.664062 882.861328"
+					"text" : "420. 882."
 				}
 
 			}
@@ -927,7 +927,7 @@
 					"patching_rect" : [ 75.679611504077911, 395.85436749458313, 213.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 63.679611504077911, 387.85436749458313, 213.0, 22.0 ],
-					"text" : "aaf.range~ 2048. 440 880"
+					"text" : "aaf.range~ 2048 440 880"
 				}
 
 			}
@@ -1013,20 +1013,20 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-13::obj-21::obj-6" : [ "live.tab[1]", "live.tab[1]", 0 ],
-			"obj-13::obj-35" : [ "[1]", "Level", 0 ],
-			"obj-2::obj-13::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
-			"obj-2::obj-13::obj-35" : [ "[5]", "Level", 0 ],
+			"obj-13::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-13::obj-35" : [ "[5]", "Level", 0 ],
+			"obj-2::obj-13::obj-21::obj-6" : [ "live.tab[1]", "live.tab[1]", 0 ],
+			"obj-2::obj-13::obj-35" : [ "[1]", "Level", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-13::obj-21::obj-6" : 				{
+				"obj-2::obj-13::obj-21::obj-6" : 				{
 					"parameter_longname" : "live.tab[1]"
 				}
 ,
-				"obj-13::obj-35" : 				{
+				"obj-2::obj-13::obj-35" : 				{
 					"parameter_longname" : "[1]"
 				}
 
@@ -1037,14 +1037,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "aaf.range~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/filters",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aaf.rangefft~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/filters",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1086,7 +1086,6 @@
 				"implicit" : 1
 			}
  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
