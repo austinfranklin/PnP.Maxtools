@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 137.0, 612.0, 537.0 ],
+		"rect" : [ 35.0, 137.0, 802.0, 537.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 408.0, 119.73077780008316, 90.0, 22.0 ],
+					"patching_rect" : [ 300.0, 119.73077780008316, 90.0, 22.0 ],
 					"text" : "loadmess 3000"
 				}
 
@@ -56,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 579.143424987792059, 211.234523236751556, 78.0, 20.0 ],
+					"patching_rect" : [ 471.143424987792059, 211.234523236751556, 78.0, 20.0 ],
 					"text" : "Window Size"
 				}
 
@@ -68,14 +68,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 532.143424987792059, 210.234523236751556, 45.0, 22.0 ],
+					"patching_rect" : [ 424.143424987792059, 210.234523236751556, 45.0, 22.0 ],
 					"text" : "/ 2048."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Ratio (0-1)",
 					"id" : "obj-3",
 					"index" : 2,
 					"maxclass" : "outlet",
@@ -91,7 +91,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 468.0, 335.0, 56.0, 20.0 ],
+					"patching_rect" : [ 360.0, 335.0, 56.0, 20.0 ],
 					"text" : "bin #"
 				}
 
@@ -102,7 +102,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 460.0, 153.0, 64.0, 20.0 ],
+					"patching_rect" : [ 352.0, 153.0, 64.0, 20.0 ],
 					"text" : "frequency"
 				}
 
@@ -115,7 +115,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 408.0, 152.0, 50.0, 22.0 ]
+					"patching_rect" : [ 300.0, 152.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -128,7 +128,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 408.0, 334.0, 58.0, 22.0 ]
+					"patching_rect" : [ 300.0, 334.0, 58.0, 22.0 ]
 				}
 
 			}
@@ -139,7 +139,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 408.0, 299.0, 29.5, 22.0 ],
+					"patching_rect" : [ 300.0, 299.0, 29.5, 22.0 ],
 					"text" : "/ 0."
 				}
 
@@ -150,7 +150,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 545.143426179884955, 86.527035355567932, 87.0, 20.0 ],
+					"patching_rect" : [ 437.143426179884955, 86.527035355567932, 87.0, 20.0 ],
 					"text" : "Sampling Rate"
 				}
 
@@ -161,7 +161,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 630.143426179884955, 252.872418582439423, 68.0, 20.0 ],
+					"patching_rect" : [ 522.143426179884955, 252.872418582439423, 68.0, 20.0 ],
 					"text" : "Hz per Bin"
 				}
 
@@ -175,7 +175,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 532.143424987792059, 252.872418582439423, 96.000001192092896, 22.0 ]
+					"patching_rect" : [ 424.143424987792059, 252.872418582439423, 96.000001192092896, 22.0 ]
 				}
 
 			}
@@ -188,7 +188,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 531.985530853270575, 61.651081681251526, 85.948098540307001, 22.0 ]
+					"patching_rect" : [ 423.985530853270575, 61.651081681251526, 85.948098540307001, 22.0 ]
 				}
 
 			}
@@ -199,7 +199,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 482.985530853270575, 21.4998683540191, 68.0, 22.0 ],
+					"patching_rect" : [ 374.985530853270575, 21.4998683540191, 68.0, 22.0 ],
 					"text" : "adstatus sr"
 				}
 
@@ -218,7 +218,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Higher Spectral Centroid (Hz)",
 					"id" : "obj-2",
 					"index" : 1,
 					"maxclass" : "outlet",
@@ -230,7 +230,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Input Signal",
 					"id" : "obj-1",
 					"index" : 1,
 					"maxclass" : "inlet",

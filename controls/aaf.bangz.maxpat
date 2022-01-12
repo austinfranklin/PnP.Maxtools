@@ -110,7 +110,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 67.946601688861847, 228.825242638587952, 30.0, 30.0 ]
 				}
 
@@ -195,7 +195,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 295.446601688861847, 372.233007073402405, 29.5, 22.0 ],
-					"text" : "66"
+					"text" : "1"
 				}
 
 			}
@@ -207,7 +207,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 574.302737772464752, 372.233007073402405, 29.5, 22.0 ],
-					"text" : "50"
+					"text" : "0"
 				}
 
 			}

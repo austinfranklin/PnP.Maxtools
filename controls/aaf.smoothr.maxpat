@@ -47,8 +47,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 455.706464171409607, 148.0, 183.0, 23.0 ],
-					"text" : "if $i1 == 0 then 1 else out2 $i1"
+					"patching_rect" : [ 455.706464171409607, 148.0, 184.0, 23.0 ],
+					"text" : "if $f1 == 0 then 1 else out2 $f1"
 				}
 
 			}
@@ -443,6 +443,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-3", 1 ]
 				}
 
 			}

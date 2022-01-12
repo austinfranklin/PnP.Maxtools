@@ -685,11 +685,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.077669024467468, 395.85436749458313, 143.0, 47.0 ],
+					"patching_rect" : [ 298.077669024467468, 395.85436749458313, 150.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 286.077669024467468, 387.85436749458313, 143.0, 47.0 ],
-					"text" : "1. window size (samples)\n2. low frequency (Hz)\n3. high frequency (Hz)"
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 286.077669024467468, 387.85436749458313, 143.0, 60.0 ],
+					"text" : "1. Window size (samples)\n2. Low frequency (Hz)\n3. High frequency (Hz)"
 				}
 
 			}
@@ -1086,6 +1086,7 @@
 				"implicit" : 1
 			}
  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

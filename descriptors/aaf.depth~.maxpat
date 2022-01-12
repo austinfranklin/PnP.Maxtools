@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 65.0, 127.0, 592.0, 497.0 ],
+		"rect" : [ 249.0, 159.0, 1048.0, 497.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -265,7 +265,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Ratio (0-1)",
 					"id" : "obj-3",
 					"index" : 2,
 					"maxclass" : "outlet",
@@ -289,7 +289,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Lower Spectral Centroid (Hz)",
 					"id" : "obj-2",
 					"index" : 1,
 					"maxclass" : "outlet",
@@ -301,7 +301,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Input Signal",
 					"id" : "obj-1",
 					"index" : 1,
 					"maxclass" : "inlet",
