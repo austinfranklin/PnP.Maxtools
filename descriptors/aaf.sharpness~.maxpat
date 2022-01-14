@@ -168,7 +168,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 65.5, 285.0, 101.0, 22.0 ],
-					"text" : "0.024972"
+					"text" : "0."
 				}
 
 			}
@@ -227,8 +227,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 77.5, 196.0, 99.0, 22.0 ],
-					"text" : "aaf.smoothr 0. 2."
+					"patching_rect" : [ 77.5, 196.0, 105.0, 22.0 ],
+					"text" : "aaf.smoother 0. 2."
 				}
 
 			}
@@ -286,10 +286,10 @@
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 77.5, 167.0, 59.0, 22.0 ],
-					"text" : "aaf.amp~"
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "signal" ],
+					"patching_rect" : [ 77.5, 167.0, 88.0, 22.0 ],
+					"text" : "aaf.amplitude~"
 				}
 
 			}
@@ -384,8 +384,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "float" ],
-					"patching_rect" : [ 254.0, 96.0, 62.0, 22.0 ],
-					"text" : "aaf.edge~"
+					"patching_rect" : [ 254.0, 96.0, 59.0, 22.0 ],
+					"text" : "aaf.beat~"
 				}
 
 			}
