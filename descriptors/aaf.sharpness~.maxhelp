@@ -44,9 +44,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 182.0, 343.0, 62.0, 22.0 ],
-					"text" : "aaf.centr~",
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 182.0, 343.0, 91.0, 22.0 ],
+					"text" : "aaf.sharpness~",
 					"varname" : "aaf.amp~"
 				}
 
@@ -59,9 +59,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 48.543688654899597, 186.213591873645782, 24.0, 24.0 ]
+					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -268,8 +266,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 621.291252672672272, 50.0, 280.019416570663452, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 76.533980369567871, 188.213591873645782, 280.019416570663452, 20.0 ],
 					"text" : "Click here to visit http://austinfranklinmusic.com"
 				}
 
@@ -305,7 +301,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-					"text" : "aaf.centr~"
+					"text" : "aaf.sharpness~"
 				}
 
 			}
@@ -319,8 +315,15 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "aaf.centr~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools",
+				"name" : "aaf.sharpness~.maxpat",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "aaf.sharpnessfft~.maxpat",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

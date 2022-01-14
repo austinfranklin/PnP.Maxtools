@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 81.679611504077911, 493.0, 68.0, 22.0 ],
-					"text" : "print bangz"
+					"text" : "print bangs"
 				}
 
 			}
@@ -250,7 +250,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
-									"outlettype" : [ "bang", "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 414.137454450130463, 687.132533192634583, 292.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 99.679611504077911, 387.85436749458313, 292.0, 22.0 ],
@@ -348,7 +348,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
-									"outlettype" : [ "bang", "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 75.619371831417084, 698.710848093032837, 133.25, 22.0 ],
 									"text" : "aaf.bangz"
 								}
@@ -564,7 +564,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
-									"outlettype" : [ "bang", "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 863.000003695487976, 270.048193216323853, 139.0, 22.0 ],
 									"text" : "aaf.bangz"
 								}
@@ -672,7 +672,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
-									"outlettype" : [ "bang", "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 488.349398970603943, 307.807230830192566, 84.0, 22.0 ],
 									"text" : "aaf.bangz"
 								}
@@ -820,7 +820,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
-									"outlettype" : [ "bang", "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 79.23382979631424, 307.807230830192566, 292.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 84.679611504077911, 372.85436749458313, 292.0, 22.0 ],
@@ -892,7 +892,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-46", 1 ],
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-28", 0 ]
 								}
 
@@ -900,7 +900,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-47", 1 ],
-									"order" : 1,
+									"order" : 0,
 									"source" : [ "obj-28", 0 ]
 								}
 
@@ -1397,9 +1397,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 48.543688654899597, 186.213591873645782, 24.0, 24.0 ]
+					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1423,8 +1421,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 621.291252672672272, 50.0, 280.019416570663452, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 76.533980369567871, 188.213591873645782, 280.019416570663452, 20.0 ],
 					"text" : "Click here to visit http://austinfranklinmusic.com"
 				}
 
@@ -1437,10 +1433,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 425.077669024467468, 380.85436749458313, 167.0, 33.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 384.077669024467468, 380.85436749458313, 167.0, 33.0 ],
-					"text" : "1. Number of bangz (Hz)\n2. Delay between bangz (Hz)"
+					"text" : "1. Number of bangs (Hz)\n2. Delay between bangs (Hz)"
 				}
 
 			}
@@ -1452,8 +1445,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 425.077669024467468, 358.85436749458313, 167.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 384.077669024467468, 358.85436749458313, 167.0, 20.0 ],
 					"text" : "Arguments:"
 				}
 
@@ -1465,8 +1456,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 151.679611504077911, 453.0, 52.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 110.679611504077911, 453.0, 52.0, 20.0 ],
 					"text" : "Output"
 				}
 
@@ -1478,8 +1467,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 452.0, 453.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 411.0, 453.0, 150.0, 20.0 ],
 					"text" : "Current Count"
 				}
 
@@ -1492,10 +1479,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 361.179611504077911, 277.0, 125.0, 33.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 320.179611504077911, 277.0, 125.0, 33.0 ],
-					"text" : "Delay between Bangz\n(default is 0)",
+					"text" : "Delay between Bangs\n(default is 0)",
 					"textjustification" : 1
 				}
 
@@ -1508,10 +1492,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 236.179611504077911, 277.0, 102.0, 33.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 195.179611504077911, 277.0, 102.0, 33.0 ],
-					"text" : "Number of Bangz\n(default is 1)",
+					"text" : "Number of Bangs\n(default is 1)",
 					"textjustification" : 1
 				}
 
@@ -1523,9 +1504,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 153.179611504077911, 235.0, 88.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 112.179611504077911, 235.0, 88.0, 20.0 ],
-					"text" : "Trigger Bangz"
+					"text" : "Trigger Bangs"
 				}
 
 			}
@@ -1537,9 +1516,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 398.679611504077911, 453.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 357.679611504077911, 453.0, 50.0, 22.0 ]
+					"patching_rect" : [ 398.679611504077911, 453.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1551,9 +1528,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 125.679611504077911, 453.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 84.679611504077911, 453.0, 24.0, 24.0 ]
+					"patching_rect" : [ 125.679611504077911, 453.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1565,9 +1540,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 398.679611504077911, 315.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 357.679611504077911, 315.0, 50.0, 22.0 ]
+					"patching_rect" : [ 398.679611504077911, 315.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1579,9 +1552,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 262.179611504077911, 315.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 221.179611504077911, 315.0, 50.0, 22.0 ]
+					"patching_rect" : [ 262.179611504077911, 315.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1593,9 +1564,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 125.679611504077911, 233.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 84.679611504077911, 233.0, 24.0, 24.0 ]
+					"patching_rect" : [ 125.679611504077911, 233.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1607,10 +1576,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 60.0 ],
-					"text" : "Bangzz outputs an integer number of bangs separated by a specified delay time in miliseconds.\nThe delay time can be fixed or it can change during a series of bangz. This object can be used as a substitute for a metro or counter object to trigger events. By setting the delay time to 0 ms it can also function as a uzi object."
+					"text" : "Bangs outputs an integer number of bangs separated by a specified delay time in miliseconds.\nThe delay time can be fixed or it can change during a series of bangz. This object can be used as a substitute for a metro or counter object to trigger events. By setting the delay time to 0 ms it can also function as a uzi object."
 				}
 
 			}
@@ -1622,8 +1588,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 88.213591873645782, 516.126209080219269, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 48.543688654899597, 88.213591873645782, 516.126209080219269, 20.0 ],
 					"text" : "Output many bangs separated by a variable delay time"
 				}
 
@@ -1637,9 +1601,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-					"text" : "aaf.bangz"
+					"text" : "aaf.bangs"
 				}
 
 			}
@@ -1651,9 +1613,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 125.679611504077911, 372.85436749458313, 292.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 84.679611504077911, 372.85436749458313, 292.0, 22.0 ],
-					"text" : "aaf.bangz 25 100",
+					"text" : "aaf.bangs 25 100",
 					"varname" : "aaf.regi~"
 				}
 
@@ -1712,7 +1672,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "aaf.bangz.maxpat",
+				"name" : "aaf.bangs.maxpat",
 				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/controls",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

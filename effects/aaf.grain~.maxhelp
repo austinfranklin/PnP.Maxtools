@@ -40,33 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 182.0, 343.0, 52.0, 22.0 ],
-					"text" : "aaf.del~",
-					"varname" : "aaf.amp~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 48.543688654899597, 186.213591873645782, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -250,6 +223,31 @@
 			}
 , 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 182.0, 343.0, 62.0, 22.0 ],
+					"text" : "aaf.grain~",
+					"varname" : "aaf.amp~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-27",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -268,8 +266,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 621.291252672672272, 50.0, 280.019416570663452, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 76.533980369567871, 188.213591873645782, 280.019416570663452, 20.0 ],
 					"text" : "Click here to visit http://austinfranklinmusic.com"
 				}
 
@@ -280,7 +276,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 20.0 ]
+					"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 20.0 ],
+					"text" : "aaf.amp~ "
 				}
 
 			}
@@ -292,7 +289,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 88.213591873645782, 516.126209080219269, 20.0 ],
-					"text" : "Variable delay line"
+					"text" : "Track the amplitude of an incoming audio signal"
 				}
 
 			}
@@ -305,7 +302,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-					"text" : "aaf.del~"
+					"text" : "aaf.grain~"
 				}
 
 			}
@@ -319,8 +316,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "aaf.del~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools",
+				"name" : "aaf.grain~.maxpat",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/effects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

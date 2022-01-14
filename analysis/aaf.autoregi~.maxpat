@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 887.0, 80.0, 427.0, 709.0 ],
+		"rect" : [ 655.0, 80.0, 659.0, 709.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -239,8 +239,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 57.0, 531.0, 109.0, 22.0 ],
-					"text" : "aaf.smoothr 0.75 2"
+					"patching_rect" : [ 57.0, 531.0, 115.0, 22.0 ],
+					"text" : "aaf.smoother 0.75 2"
 				}
 
 			}
@@ -313,7 +313,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 57.0, 42.0, 30.0, 30.0 ]
 				}
 
