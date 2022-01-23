@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 79.0, 928.0, 787.0 ],
+		"rect" : [ 592.0, 79.0, 714.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -631,7 +631,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 75.679611504077911, 200.378639578819275, 225.0, 95.0 ],
+					"patching_rect" : [ 95.679611504077911, 227.378639578819275, 225.0, 95.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -679,7 +679,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.077669024467468, 395.85436749458313, 150.0, 47.0 ],
+					"patching_rect" : [ 318.077669024467468, 422.85436749458313, 150.0, 47.0 ],
 					"text" : "1. Window size (samples)\n2. Low frequency (Hz)\n3. High frequency (Hz)"
 				}
 
@@ -691,7 +691,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.077669024467468, 373.85436749458313, 142.252427756786346, 20.0 ],
+					"patching_rect" : [ 318.077669024467468, 400.85436749458313, 142.252427756786346, 20.0 ],
 					"text" : "Arguments:"
 				}
 
@@ -702,7 +702,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 382.563105225563049, 659.155338048934937, 46.116506278514862, 20.0 ],
+					"patching_rect" : [ 402.563105225563049, 686.155338048934937, 46.116506278514862, 20.0 ],
 					"text" : "20 kHz"
 				}
 
@@ -713,7 +713,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.679611504077911, 659.155338048934937, 33.495147228240967, 20.0 ],
+					"patching_rect" : [ 148.679611504077911, 686.155338048934937, 33.495147228240967, 20.0 ],
 					"text" : "0 Hz"
 				}
 
@@ -725,7 +725,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.543688654899597, 110.213591873645782, 517.0, 74.0 ],
+					"patching_rect" : [ 48.543688654899597, 123.213591873645782, 513.126209080219269, 74.0 ],
 					"text" : "aaf.binpass~ is a filter that utilizes an fft to remove frequencies from an input signal outside of a designated low and high frequency range. Since it can only remove entire bins in the frequency domain, it calculates which bins contain the entire low and high frequency range. This means that the output signal will sometimes contain additional frequencies outside of this range, but only the frequencies that lie in the same bin as either the low or high frequency arguments."
 				}
 
@@ -734,11 +734,12 @@
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-25",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.543688654899597, 88.213591873645782, 513.126209080219269, 20.0 ],
-					"text" : "Filter a signal using a frequency range"
+					"patching_rect" : [ 48.543688654899597, 88.213591873645782, 513.126209080219269, 33.0 ],
+					"text" : "An FFT filter modeled after a ‘bandpass’ filter that passes frequencies within a select frequency bin range"
 				}
 
 			}
@@ -761,7 +762,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 246.37864026427269, 311.378639578819275, 96.601942479610443, 20.0 ],
+					"patching_rect" : [ 266.37864026427269, 338.378639578819275, 96.601942479610443, 20.0 ],
 					"text" : "High Frequency",
 					"textjustification" : 1
 				}
@@ -773,7 +774,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 151.80582469701767, 311.378639578819275, 91.747573614120483, 20.0 ],
+					"patching_rect" : [ 171.80582469701767, 338.378639578819275, 91.747573614120483, 20.0 ],
 					"text" : "Low Frequency",
 					"textjustification" : 1
 				}
@@ -786,7 +787,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 292.077664911746979, 464.330095410346985, 184.0, 33.0 ],
+					"patching_rect" : [ 312.077664911746979, 491.330095410346985, 184.0, 33.0 ],
 					"text" : "Real frequency range calculated from Low and High frequency"
 				}
 
@@ -800,7 +801,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 269.679611504077911, 333.378639578819275, 50.0, 22.0 ]
+					"patching_rect" : [ 289.679611504077911, 360.378639578819275, 50.0, 22.0 ]
 				}
 
 			}
@@ -813,7 +814,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 172.679611504077911, 333.378639578819275, 50.0, 22.0 ]
+					"patching_rect" : [ 192.679611504077911, 360.378639578819275, 50.0, 22.0 ]
 				}
 
 			}
@@ -824,7 +825,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 114.679611504077911, 464.330095410346985, 174.0, 22.0 ],
+					"patching_rect" : [ 134.679611504077911, 491.330095410346985, 174.0, 22.0 ],
 					"text" : "1995. 2520."
 				}
 
@@ -835,7 +836,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.679611504077911, 702.009706914424896, 45.0, 45.0 ]
+					"patching_rect" : [ 95.679611504077911, 729.009706914424896, 45.0, 45.0 ]
 				}
 
 			}
@@ -846,7 +847,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.679611504077911, 528.155338048934937, 300.0, 129.0 ]
+					"patching_rect" : [ 148.679611504077911, 555.155338048934937, 300.0, 129.0 ]
 				}
 
 			}
@@ -857,7 +858,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 101.679611504077911, 528.155338048934937, 25.0, 129.0 ]
+					"patching_rect" : [ 121.679611504077911, 555.155338048934937, 25.0, 129.0 ]
 				}
 
 			}
@@ -870,7 +871,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 75.679611504077911, 528.155338048934937, 25.0, 129.0 ]
+					"patching_rect" : [ 95.679611504077911, 555.155338048934937, 25.0, 129.0 ]
 				}
 
 			}
@@ -881,7 +882,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 75.679611504077911, 395.85436749458313, 213.0, 22.0 ],
+					"patching_rect" : [ 95.679611504077911, 422.85436749458313, 213.0, 22.0 ],
 					"text" : "aaf.binpass~ 2048 2000 2500"
 				}
 
@@ -890,7 +891,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 85.179611504077911, 419.009708285331726, 85.179611504077911, 419.009708285331726 ],
+					"midpoints" : [ 105.179611504077911, 446.009708285331726, 105.179611504077911, 446.009708285331726 ],
 					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -899,7 +900,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"midpoints" : [ 85.179611504077911, 515.009708285331726, 111.179611504077911, 515.009708285331726 ],
+					"midpoints" : [ 105.179611504077911, 542.009708285331726, 131.179611504077911, 542.009708285331726 ],
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -908,7 +909,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 85.179611504077911, 515.009708285331726, 138.179611504077911, 515.009708285331726 ],
+					"midpoints" : [ 105.179611504077911, 542.009708285331726, 158.179611504077911, 542.009708285331726 ],
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -952,7 +953,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 1 ],
-					"midpoints" : [ 85.179611504077911, 687.310678839683533, 111.179611504077911, 687.310678839683533 ],
+					"midpoints" : [ 105.179611504077911, 714.310678839683533, 131.179611504077911, 714.310678839683533 ],
 					"order" : 0,
 					"source" : [ "obj-3", 0 ]
 				}

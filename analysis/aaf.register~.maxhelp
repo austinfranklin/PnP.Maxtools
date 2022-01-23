@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 997.0, 787.0 ],
+		"rect" : [ -1760.0, -32.0, 997.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -375,7 +375,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 110.213591873645782, 516.0, 47.0 ],
-					"text" : "aaf.regi~ returns a normalized floating point number that indicates where the detected pitch is located bewteen the low and high frequency arguments. The smoothness argument can be used to output a more gradual change in output."
+					"text" : "aaf.regi~ returns a normalized floating point number that indicates where the detected pitch is located bewteen low and high frequency arguments. The smoothness argument can be used to output a more gradual change in output."
 				}
 
 			}
