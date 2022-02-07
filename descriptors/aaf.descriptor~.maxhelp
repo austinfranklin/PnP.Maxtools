@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1506.0, -78.0, 921.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 921.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 302.0, 599.0, 50.0, 22.0 ]
+					"patching_rect" : [ 146.0, 616.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -59,7 +59,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 232.0, 692.0, 50.0, 22.0 ]
+					"patching_rect" : [ 76.0, 709.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -71,7 +71,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 302.0, 692.0, 24.0, 24.0 ]
+					"patching_rect" : [ 146.0, 709.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -81,8 +81,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 232.0, 643.0, 89.0, 22.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 76.0, 660.0, 89.0, 22.0 ],
 					"text" : "aaf.nozero 50"
 				}
 
@@ -129,27 +129,11 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-8",
-					"maxclass" : "number~",
-					"mode" : 2,
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 76.0, 572.0, 56.0, 22.0 ],
-					"sig" : 0.0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
+					"outlettype" : [ "float", "signal" ],
 					"patching_rect" : [ 76.0, 530.0, 138.0, 22.0 ],
 					"text" : "aaf.descriptor~",
 					"varname" : "aaf.amp~[2]"
@@ -181,7 +165,7 @@
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 443.25, 352.0, 360.0, 155.0 ],
-					"setfilter" : [ 0, 3, 1, 0, 0, 250.0, 1.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 3, 1, 0, 0, 500.0, 1.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -713,15 +697,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-17", 1 ]
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-17", 0 ]
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-17", 1 ]
 				}
 
 			}
@@ -775,13 +759,6 @@
 					"destination" : [ "obj-7", 0 ],
 					"midpoints" : [ 452.75, 517.5, 435.0, 517.5, 435.0, 398.0, 85.5, 398.0 ],
 					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"source" : [ "obj-6", 1 ]
 				}
 
 			}
@@ -846,7 +823,6 @@
 				"implicit" : 1
 			}
  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
