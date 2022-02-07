@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 592.0, 79.0, 714.0, 787.0 ],
+		"rect" : [ 100.0, 79.0, 714.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -680,7 +680,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 318.077669024467468, 422.85436749458313, 150.0, 47.0 ],
-					"text" : "1. Window size (samples)\n2. Low frequency (Hz)\n3. High frequency (Hz)"
+					"text" : "1. Low frequency (Hz)\n2. High frequency (Hz)\n3. Window size (optional)"
 				}
 
 			}
@@ -725,7 +725,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.543688654899597, 123.213591873645782, 513.126209080219269, 74.0 ],
+					"patching_rect" : [ 48.543688654899597, 123.213591873645782, 517.0, 74.0 ],
 					"text" : "aaf.binpass~ is a filter that utilizes an fft to remove frequencies from an input signal outside of a designated low and high frequency range. Since it can only remove entire bins in the frequency domain, it calculates which bins contain the entire low and high frequency range. This means that the output signal will sometimes contain additional frequencies outside of this range, but only the frequencies that lie in the same bin as either the low or high frequency arguments."
 				}
 
@@ -821,12 +821,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 134.679611504077911, 491.330095410346985, 174.0, 22.0 ],
-					"text" : "1995. 2520."
+					"patching_rect" : [ 134.679611504077911, 491.330095410346985, 174.0, 35.0 ],
+					"text" : "Low frequency cannot exceed high frequency"
 				}
 
 			}
@@ -1042,7 +1043,6 @@
 				"implicit" : 1
 			}
  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

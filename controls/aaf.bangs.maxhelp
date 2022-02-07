@@ -1546,7 +1546,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 60.0 ],
-					"text" : "Bangs outputs an integer number of bangs separated by a specified delay time in miliseconds.\nThe delay time can be fixed or it can change during a series of bangs. This object can be used as a substitute for a metro or counter object to trigger events. By setting the delay time to 0 ms it can also function as a uzi object."
+					"text" : "Bangs outputs an integer number of bangs separated by a specified delay time in milliseconds.\nThe delay time can be fixed or it can change during a series of bangs. This object can be used as a substitute for a metro or counter object to trigger events. By setting the delay time to 0 ms it can also function as a uzi object."
 				}
 
 			}

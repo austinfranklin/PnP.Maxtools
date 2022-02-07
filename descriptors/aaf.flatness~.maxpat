@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 643.0, 129.0, 763.0, 477.0 ],
+		"rect" : [ 34.0, 79.0, 763.0, 477.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,25 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-8",
-					"linecount" : 24,
-					"maxclass" : "comment",
+					"comment" : "",
+					"id" : "obj-3",
+					"index" : 2,
+					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 350.0, 21.0, 375.0, 328.0 ],
-					"text" : "History previousCentroid(0.);\nHistory sumEnergy(0.);\nHistory sumEnergyIndex(0.);\nreal = in1;\nimag = in2;\nindex = in3;\ncentroid = previousCentroid;\nif (index < (VECTORSIZE-1))\n{\n\t// accumulate energy values\n\tenergy = real * real + imag * imag;\n\tsumEnergy += energy;\n\tsumEnergyIndex += ( index * SAMPLERATE / FFTSIZE ) * energy;\n}\nelse\n{\n\t// calculate centroid value\n\tcentroid = sumEnergyIndex / sumEnergy;\n\t// reset energy sums\n\tsumEnergy = 0.;\n\tsumEnergyIndex = 0.;\n\tpreviousCentroid = centroid;\n}\nout1 = centroid;"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 87.0, 139.0, 250.0, 33.0 ],
-					"text" : "works with FFT size of 2048 and overlap of 4 - Doesn't work unless multiplied by 2"
+					"patching_rect" : [ 208.0, 404.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -67,8 +55,8 @@
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 73.0, 174.0, 154.0, 22.0 ],
 					"text" : "pfft~ aaf.flatnessfft~ 2048 4"
 				}
@@ -111,6 +99,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-4", 1 ]
 				}
 
 			}
