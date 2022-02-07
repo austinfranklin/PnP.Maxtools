@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 270.0, 350.540541172027588, 64.0, 22.0 ],
+					"text" : "delay~ 1 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -303,6 +315,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 279.5, 438.0, 291.986527442932129, 438.0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 1 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -490,8 +510,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 180.986527442932129, 150.0, 279.0, 150.0, 279.0, 438.0, 291.986527442932129, 438.0 ],
+					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 180.986527442932129, 150.0, 279.5, 150.0 ],
 					"order" : 0,
 					"source" : [ "obj-64", 2 ]
 				}
