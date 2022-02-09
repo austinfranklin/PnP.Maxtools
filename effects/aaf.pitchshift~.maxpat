@@ -40,25 +40,14 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-8",
-					"linecount" : 24,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 350.0, 21.0, 375.0, 328.0 ],
-					"text" : "History previousCentroid(0.);\nHistory sumEnergy(0.);\nHistory sumEnergyIndex(0.);\nreal = in1;\nimag = in2;\nindex = in3;\ncentroid = previousCentroid;\nif (index < (VECTORSIZE-1))\n{\n\t// accumulate energy values\n\tenergy = real * real + imag * imag;\n\tsumEnergy += energy;\n\tsumEnergyIndex += ( index * SAMPLERATE / FFTSIZE ) * energy;\n}\nelse\n{\n\t// calculate centroid value\n\tcentroid = sumEnergyIndex / sumEnergy;\n\t// reset energy sums\n\tsumEnergy = 0.;\n\tsumEnergyIndex = 0.;\n\tpreviousCentroid = centroid;\n}\nout1 = centroid;"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 87.0, 139.0, 250.0, 33.0 ],
-					"text" : "works with FFT size of 2048 and overlap of 4 - Doesn't work unless multiplied by 2"
+					"comment" : "",
+					"id" : "obj-9",
+					"index" : 2,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 214.0, 45.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -66,11 +55,11 @@
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 73.0, 174.0, 155.0, 22.0 ],
-					"text" : "pfft~ aaf.centroidfft~ 2048 4"
+					"patching_rect" : [ 73.0, 174.0, 160.0, 22.0 ],
+					"text" : "pfft~ aaf.pitchshiftfft~ 2048 4"
 				}
 
 			}
@@ -111,6 +100,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 1 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}

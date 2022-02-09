@@ -59,7 +59,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 73.0, 174.0, 162.0, 22.0 ],
-					"text" : "pfft~ aaf.reducefft~ 2048 2"
+					"text" : "pfft~ aaf.reducefft~ 2048 4"
 				}
 
 			}
@@ -83,7 +83,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 73.0, 45.0, 30.0, 30.0 ]
 				}
 
