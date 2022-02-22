@@ -91,7 +91,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 178.398047924041748, 194.262129187583923, 82.0, 22.0 ],
+					"patching_rect" : [ 236.314729928970337, 204.720463037490845, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -154,7 +154,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 156.398047924041748, 158.262129187583923, 82.0, 22.0 ],
+					"patching_rect" : [ 213.314729928970337, 170.720463037490845, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -215,155 +215,6 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"args" : [ "@module", 3 ],
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-13",
-									"lockeddragscroll" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "demosound.maxpat",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 132.679611504077911, 225.378639578819275, 225.0, 95.0 ],
-									"viewvisibility" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-33",
-									"linecount" : 3,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 292.077669024467468, 404.85436749458313, 150.0, 47.0 ],
-									"text" : "1. Low frequency (Hz)\n2. High frequency (Hz)\n3. Window size (optional)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 1,
-									"id" : "obj-32",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 292.077669024467468, 382.85436749458313, 142.252427756786346, 20.0 ],
-									"text" : "Arguments:"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-29",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 439.563105225563049, 641.155338048934937, 46.116506278514862, 20.0 ],
-									"text" : "20 kHz"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-28",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 185.679611504077911, 641.155338048934937, 33.495147228240967, 20.0 ],
-									"text" : "0 Hz"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-18",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 208.80582469701767, 332.378639578819275, 91.747573614120483, 20.0 ],
-									"text" : "Amplitude (0-1)",
-									"textjustification" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"format" : 6,
-									"id" : "obj-12",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 229.679611504077911, 354.378639578819275, 50.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-6",
-									"maxclass" : "ezdac~",
-									"numinlets" : 2,
-									"numoutlets" : 0,
-									"patching_rect" : [ 132.679611504077911, 665.009706914424896, 45.0, 45.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "spectroscope~",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 185.679611504077911, 510.155338048934937, 300.0, 129.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "meter~",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 158.679611504077911, 510.155338048934937, 25.0, 129.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "gain~",
-									"multichannelvariant" : 0,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 132.679611504077911, 510.155338048934937, 25.0, 129.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 132.679611504077911, 404.85436749458313, 116.0, 22.0 ],
-									"text" : "aaf.reduce~"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "button",
 									"numinlets" : 1,
@@ -416,7 +267,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 88.213591873645782, 516.126209080219269, 20.0 ],
-									"text" : "An FFT filter that reduces the noise content of an incoming audio signal."
+									"text" : "smooth values"
 								}
 
 							}
@@ -429,74 +280,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-									"text" : "aaf.reduce~"
+									"text" : "aaf.smoother"
 								}
 
 							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
-									"midpoints" : [ 142.179611504077911, 428.0, 142.179611504077911, 428.0 ],
-									"order" : 2,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"midpoints" : [ 142.179611504077911, 497.0, 168.179611504077911, 497.0 ],
-									"order" : 1,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"midpoints" : [ 142.179611504077911, 497.0, 195.179611504077911, 497.0 ],
-									"order" : 0,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 1 ],
-									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-13", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-27", 0 ],
 									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 1 ],
-									"midpoints" : [ 142.179611504077911, 652.0, 168.179611504077911, 652.0 ],
-									"order" : 0,
-									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
-									"midpoints" : [ 142.179611504077911, 640.0, 142.179611504077911, 640.0 ],
-									"order" : 1,
-									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -522,7 +314,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 133.300960958003998, 124.262129187583923, 49.0, 22.0 ],
+					"patching_rect" : [ 190.217642962932587, 136.720463037490845, 49.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -543,73 +335,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-					"text" : "aaf.reduce~"
+					"text" : "aaf.smoother"
 				}
 
 			}
  ],
 		"lines" : [  ],
-		"parameters" : 		{
-			"obj-41::obj-13::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
-			"obj-41::obj-13::obj-35" : [ "[5]", "Level", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "aaf.reduce~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/filters",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "aaf.reducefft~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/filters",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "demosound.maxpat",
-				"bootpath" : "C74:/help/msp",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sine.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "saw.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "square.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "random.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "interfacecolor.js",
-				"bootpath" : "C74:/interfaces",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",

@@ -37,33 +37,10 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"showrootpatcherontab" : 0,
+		"showontab" : 0,
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 182.0, 343.0, 91.0, 22.0 ],
-					"text" : "aaf.sharpness~",
-					"varname" : "aaf.amp~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
@@ -107,12 +84,14 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"showontab" : 1,
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [  ],
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 638.398047924041748, 218.262129187583923, 74.0, 22.0 ],
+					"patching_rect" : [ 218.398047924041748, 181.262129187583923, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -120,7 +99,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p example 2"
+					"text" : "p \"example 2\""
 				}
 
 			}
@@ -168,12 +147,14 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"showontab" : 1,
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [  ],
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 615.398047924041748, 184.262129187583923, 74.0, 22.0 ],
+					"patching_rect" : [ 195.398047924041748, 147.262129187583923, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -181,7 +162,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p example 1"
+					"text" : "p \"example 1\""
 				}
 
 			}
@@ -229,12 +210,124 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"showontab" : 1,
 						"assistshowspatchername" : 0,
-						"boxes" : [  ],
-						"lines" : [  ]
+						"visible" : 1,
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontsize" : 48.0,
+									"id" : "obj-23",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
+									"text" : "aaf.sharpness~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "float" ],
+									"patching_rect" : [ 182.0, 343.0, 91.0, 22.0 ],
+									"text" : "aaf.sharpness~",
+									"varname" : "aaf.amp~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-27",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 592.300960958003998, 100.213591873645782, 274.0, 35.0 ],
+									"text" : ";\rmax launchbrowser http://austinfranklinmusic.com"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-36",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 621.291252672672272, 50.0, 280.019416570663452, 20.0 ],
+									"text" : "Click here to visit http://austinfranklinmusic.com"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 516.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"id" : "obj-25",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 48.543688654899597, 88.213591873645782, 516.126209080219269, 20.0 ],
+									"text" : "Track the spectral centroid of an incoming audio signal"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
+										"angle" : 270,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ]
 					}
 ,
-					"patching_rect" : [ 592.300960958003998, 150.262129187583923, 69.0, 22.0 ],
+					"patching_rect" : [ 172.300960958003998, 113.262129187583923, 49.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -242,53 +335,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p more info"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 592.300960958003998, 100.213591873645782, 274.0, 35.0 ],
-					"text" : ";\rmax launchbrowser http://austinfranklinmusic.com"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 621.291252672672272, 50.0, 280.019416570663452, 20.0 ],
-					"text" : "Click here to visit http://austinfranklinmusic.com"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"id" : "obj-25",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 48.543688654899597, 88.213591873645782, 516.126209080219269, 20.0 ],
-					"text" : "Track the spectral centroid of an incoming audio signal"
+					"text" : "p about"
 				}
 
 			}
@@ -306,14 +353,7 @@
 
 			}
  ],
-		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
- ],
+		"lines" : [  ],
 		"dependency_cache" : [ 			{
 				"name" : "aaf.sharpness~.maxpat",
 				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
@@ -325,6 +365,34 @@
 				"name" : "aaf.sharpnessfft~.maxpat",
 				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "aaf.beat~.maxpat",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/analysis",
+				"patcherrelativepath" : "../analysis",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "aaf.amplitude~.maxpat",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/analysis",
+				"patcherrelativepath" : "../analysis",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "aaf.smoother.maxpat",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/controls",
+				"patcherrelativepath" : "../controls",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "aaf.amplitudefft~.maxpat",
+				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/analysis",
+				"patcherrelativepath" : "../analysis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
