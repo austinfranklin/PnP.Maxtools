@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 921.0, 787.0 ],
+		"rect" : [ 34.0, 87.0, 921.0, 694.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -114,13 +114,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 319.0, 79.0, 472.0, 681.0 ],
+						"rect" : [ 319.0, 87.0, 472.0, 681.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -171,7 +171,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 397.308103322982788, 441.445643305778503, 107.142856597900391, 35.0 ],
-									"text" : "2045.654297 3014.648438"
+									"text" : "2039.0625 3023.4375"
 								}
 
 							}
@@ -333,8 +333,8 @@
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "float", "signal", "signal" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "signal" ],
 									"patching_rect" : [ 80.450959920883179, 397.640448451042175, 91.0, 22.0 ],
 									"text" : "aaf.brightness~",
 									"varname" : "aaf.amp~[1]"
@@ -557,7 +557,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -595,50 +595,48 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-21",
-									"maxclass" : "number",
+									"id" : "obj-18",
+									"linecount" : 2,
+									"maxclass" : "comment",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 146.0, 567.0, 50.0, 22.0 ]
+									"numoutlets" : 0,
+									"patching_rect" : [ 401.461535453796387, 447.252769112586975, 218.538464546203613, 33.0 ],
+									"text" : "Try moving the cutoff below and above 3000 Hz and see what happens!"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"format" : 6,
-									"id" : "obj-19",
+									"id" : "obj-15",
 									"maxclass" : "flonum",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 76.0, 660.0, 50.0, 22.0 ]
+									"patching_rect" : [ 76.0, 536.769232273101807, 50.0, 22.0 ]
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-17",
-									"maxclass" : "button",
+									"id" : "obj-8",
+									"maxclass" : "comment",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 146.0, 660.0, 24.0, 24.0 ]
+									"numoutlets" : 0,
+									"patching_rect" : [ 76.0, 560.769232273101807, 89.560436606407166, 20.0 ],
+									"text" : "Brightness"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-6",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 76.0, 611.0, 89.0, 22.0 ],
-									"text" : "aaf.nozero 50"
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 267.83516800403595, 560.769232273101807, 164.285714983940125, 20.0 ],
+									"text" : "Upper Spectral Centroid (Hz)"
 								}
 
 							}
@@ -647,13 +645,13 @@
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
-									"id" : "obj-5",
+									"id" : "obj-1",
 									"maxclass" : "number~",
 									"mode" : 2,
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
-									"patching_rect" : [ 166.0, 527.0, 56.0, 22.0 ],
+									"patching_rect" : [ 267.83516800403595, 536.769232273101807, 56.0, 22.0 ],
 									"sig" : 0.0
 								}
 
@@ -682,8 +680,8 @@
 									"numoutlets" : 7,
 									"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 348.25, 350.0, 360.0, 155.0 ],
-									"setfilter" : [ 0, 3, 1, 0, 0, 2500.0, 1.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+									"patching_rect" : [ 348.25, 288.461535453796387, 360.0, 155.0 ],
+									"setfilter" : [ 0, 3, 1, 0, 0, 250.0, 1.0, 8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 								}
 
 							}
@@ -697,7 +695,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 645.0, 286.5, 48.0, 23.0 ],
+									"patching_rect" : [ 645.0, 224.961535453796387, 48.0, 23.0 ],
 									"text" : "set $1"
 								}
 
@@ -712,7 +710,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 565.0, 286.5, 48.0, 23.0 ],
+									"patching_rect" : [ 565.0, 224.961535453796387, 48.0, 23.0 ],
 									"text" : "set $1"
 								}
 
@@ -727,7 +725,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 470.0, 280.5, 48.0, 23.0 ],
+									"patching_rect" : [ 470.0, 218.961535453796387, 48.0, 23.0 ],
 									"text" : "set $1"
 								}
 
@@ -742,7 +740,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 632.5, 276.0, 73.0, 40.0 ],
+									"patching_rect" : [ 632.5, 214.461535453796387, 73.0, 40.0 ],
 									"text" : "set Q or S"
 								}
 
@@ -758,7 +756,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 645.0, 316.0, 55.0, 23.0 ]
+									"patching_rect" : [ 645.0, 254.461535453796387, 55.0, 23.0 ]
 								}
 
 							}
@@ -773,7 +771,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 565.0, 316.0, 55.0, 23.0 ]
+									"patching_rect" : [ 565.0, 254.461535453796387, 55.0, 23.0 ]
 								}
 
 							}
@@ -788,7 +786,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 475.0, 316.0, 57.0, 23.0 ]
+									"patching_rect" : [ 475.0, 254.461535453796387, 57.0, 23.0 ]
 								}
 
 							}
@@ -803,7 +801,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 459.375, 261.0, 88.25, 55.0 ],
+									"patching_rect" : [ 459.375, 199.461535453796387, 88.25, 55.0 ],
 									"text" : "set cutoff or center freq"
 								}
 
@@ -818,7 +816,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 565.0, 276.0, 59.0, 40.0 ],
+									"patching_rect" : [ 565.0, 214.461535453796387, 59.0, 40.0 ],
 									"text" : "set gain"
 								}
 
@@ -833,7 +831,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 313.25, 261.0, 118.0, 40.0 ],
+									"patching_rect" : [ 313.25, 199.461535453796387, 118.0, 40.0 ],
 									"text" : "set filter response"
 								}
 
@@ -894,7 +892,7 @@
 									"numoutlets" : 1,
 									"orientation" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 348.25, 293.0, 83.0, 46.0 ],
+									"patching_rect" : [ 348.25, 231.461535453796387, 83.0, 46.0 ],
 									"text_width" : 83.0
 								}
 
@@ -904,9 +902,9 @@
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "float", "signal", "signal" ],
-									"patching_rect" : [ 76.0, 461.0, 109.0, 22.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "signal" ],
+									"patching_rect" : [ 76.0, 490.670331120491028, 210.83516800403595, 22.0 ],
 									"text" : "aaf.brightness~",
 									"varname" : "aaf.amp~[1]"
 								}
@@ -951,10 +949,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-26",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 20.0 ]
+									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 33.0 ],
+									"text" : "Calculates the apparent brightness of an incomg audio signal by calculating the upper spectral centroid between 3000-20,050 Hz and the ratio of energy between this range and 0-20,050 Hz."
 								}
 
 							}
@@ -1031,21 +1031,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 1 ],
-									"source" : [ "obj-21", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-3", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
+									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -1077,22 +1070,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"midpoints" : [ 357.75, 517.5, 237.0, 517.5, 237.0, 398.0, 85.5, 398.0 ],
+									"midpoints" : [ 357.75, 448.269227385520935, 237.0, 448.269227385520935, 237.0, 398.0, 85.5, 398.0 ],
 									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-17", 0 ],
-									"source" : [ "obj-6", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-19", 0 ],
-									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -1195,28 +1174,28 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "aaf.brightness~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
+				"bootpath" : "~/Desktop/aaf.maxtools/descriptors",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aaf.brightnessfft~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
+				"bootpath" : "~/Desktop/aaf.maxtools/descriptors",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aaf.nozero.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/controls",
+				"bootpath" : "~/Desktop/aaf.maxtools/controls",
 				"patcherrelativepath" : "../controls",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aaf.reverb~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/effects",
+				"bootpath" : "~/Desktop/aaf.maxtools/effects",
 				"patcherrelativepath" : "../effects",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1259,14 +1238,14 @@
 			}
 , 			{
 				"name" : "aaf.binpass~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/filters",
+				"bootpath" : "~/Desktop/aaf.maxtools/filters",
 				"patcherrelativepath" : "../filters",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aaf.binpassfft~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/filters",
+				"bootpath" : "~/Desktop/aaf.maxtools/filters",
 				"patcherrelativepath" : "../filters",
 				"type" : "JSON",
 				"implicit" : 1

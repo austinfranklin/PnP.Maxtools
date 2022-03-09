@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 921.0, 787.0 ],
+		"rect" : [ 34.0, 87.0, 921.0, 694.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -114,7 +114,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -177,7 +177,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -216,12 +216,55 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
-									"maxclass" : "number",
+									"maxclass" : "comment",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 146.0, 616.0, 50.0, 22.0 ]
+									"numoutlets" : 0,
+									"patching_rect" : [ 489.937289237976074, 439.252769112586975, 290.538464546203613, 20.0 ],
+									"text" : "Try moving the cutoff around and see what happens!"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 289.195650577545166, 430.956522941589355, 121.34782600402832, 20.0 ],
+									"text" : "High Frequency (Hz)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 172.304346561431885, 430.956522941589355, 117.0, 20.0 ],
+									"text" : "Low Frequency (Hz)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 89.043478012084961, 579.347815036773682, 62.0, 20.0 ],
+									"text" : "Ratio"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 321.869563579559326, 579.347815036773682, 170.652173519134521, 20.0 ],
+									"text" : "Limited Spectral Centroid (Hz)"
 								}
 
 							}
@@ -234,31 +277,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 76.0, 709.0, 50.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 146.0, 709.0, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-15",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 76.0, 660.0, 89.0, 22.0 ],
-									"text" : "aaf.nozero 50"
+									"patching_rect" : [ 89.043478012084961, 553.521739482879639, 50.0, 22.0 ]
 								}
 
 							}
@@ -270,7 +289,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 195.0, 474.0, 50.0, 22.0 ]
+									"patching_rect" : [ 321.869563579559326, 454.434782981872559, 50.0, 22.0 ]
 								}
 
 							}
@@ -282,7 +301,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 135.5, 474.0, 50.0, 22.0 ]
+									"patching_rect" : [ 205.456520795822144, 454.434782981872559, 50.0, 22.0 ]
 								}
 
 							}
@@ -297,7 +316,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
-									"patching_rect" : [ 195.0, 572.0, 56.0, 22.0 ],
+									"patching_rect" : [ 321.869563579559326, 553.521739482879639, 56.0, 22.0 ],
 									"sig" : 0.0
 								}
 
@@ -307,9 +326,9 @@
 									"id" : "obj-17",
 									"maxclass" : "newobj",
 									"numinlets" : 3,
-									"numoutlets" : 3,
-									"outlettype" : [ "float", "signal", "signal" ],
-									"patching_rect" : [ 76.0, 530.0, 138.0, 22.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "signal" ],
+									"patching_rect" : [ 89.043478012084961, 506.086956977844238, 251.826085567474365, 22.0 ],
 									"text" : "aaf.descriptor~",
 									"varname" : "aaf.amp~[2]"
 								}
@@ -322,7 +341,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 76.0, 280.5, 44.0, 22.0 ],
+									"patching_rect" : [ 89.043478012084961, 217.456522941589355, 44.0, 22.0 ],
 									"text" : "noise~"
 								}
 
@@ -339,7 +358,7 @@
 									"numoutlets" : 7,
 									"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 443.25, 352.0, 360.0, 155.0 ],
+									"patching_rect" : [ 455.206521511077881, 273.956522941589355, 360.0, 155.0 ],
 									"setfilter" : [ 0, 3, 1, 0, 0, 500.0, 1.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -354,7 +373,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 740.0, 288.5, 48.0, 23.0 ],
+									"patching_rect" : [ 751.956521511077881, 210.456522941589355, 48.0, 23.0 ],
 									"text" : "set $1"
 								}
 
@@ -369,7 +388,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 660.0, 288.5, 48.0, 23.0 ],
+									"patching_rect" : [ 671.956521511077881, 210.456522941589355, 48.0, 23.0 ],
 									"text" : "set $1"
 								}
 
@@ -384,7 +403,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 565.0, 282.5, 48.0, 23.0 ],
+									"patching_rect" : [ 576.956521511077881, 204.456522941589355, 48.0, 23.0 ],
 									"text" : "set $1"
 								}
 
@@ -399,7 +418,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 727.5, 278.0, 73.0, 40.0 ],
+									"patching_rect" : [ 739.456521511077881, 199.956522941589355, 73.0, 40.0 ],
 									"text" : "set Q or S"
 								}
 
@@ -415,7 +434,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 740.0, 318.0, 55.0, 23.0 ]
+									"patching_rect" : [ 751.956521511077881, 239.956522941589355, 55.0, 23.0 ]
 								}
 
 							}
@@ -430,7 +449,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 660.0, 318.0, 55.0, 23.0 ]
+									"patching_rect" : [ 671.956521511077881, 239.956522941589355, 55.0, 23.0 ]
 								}
 
 							}
@@ -445,7 +464,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 570.0, 318.0, 57.0, 23.0 ]
+									"patching_rect" : [ 581.956521511077881, 239.956522941589355, 57.0, 23.0 ]
 								}
 
 							}
@@ -460,7 +479,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 554.375, 263.0, 88.25, 55.0 ],
+									"patching_rect" : [ 566.331521511077881, 184.956522941589355, 88.25, 55.0 ],
 									"text" : "set cutoff or center freq"
 								}
 
@@ -475,7 +494,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 660.0, 278.0, 59.0, 40.0 ],
+									"patching_rect" : [ 671.956521511077881, 199.956522941589355, 59.0, 40.0 ],
 									"text" : "set gain"
 								}
 
@@ -490,7 +509,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 408.25, 263.0, 118.0, 40.0 ],
+									"patching_rect" : [ 420.206521511077881, 184.956522941589355, 118.0, 40.0 ],
 									"text" : "set filter response"
 								}
 
@@ -505,7 +524,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 138.0, 357.0, 120.0, 40.0 ],
+									"patching_rect" : [ 151.043478012084961, 293.956522941589355, 120.0, 40.0 ],
 									"text" : "clear biquad~ if filter blows up"
 								}
 
@@ -519,7 +538,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 95.0, 367.5, 43.0, 23.0 ],
+									"patching_rect" : [ 108.043478012084961, 304.456522941589355, 43.0, 23.0 ],
 									"text" : "clear"
 								}
 
@@ -533,7 +552,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 76.0, 403.0, 92.0, 23.0 ],
+									"patching_rect" : [ 89.043478012084961, 339.956522941589355, 92.0, 23.0 ],
 									"text" : "biquad~"
 								}
 
@@ -551,7 +570,7 @@
 									"numoutlets" : 1,
 									"orientation" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 443.25, 295.0, 83.0, 46.0 ],
+									"patching_rect" : [ 455.206521511077881, 216.956522941589355, 83.0, 46.0 ],
 									"text_width" : 83.0
 								}
 
@@ -595,10 +614,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-26",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 20.0 ]
+									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 33.0 ],
+									"text" : "A variable descriptor that calculates a frequency limited spectral centroid between low and high frequency arguments and the ratio of energy between this range and 0-20,050 Hz."
 								}
 
 							}
@@ -629,13 +650,6 @@
 							}
  ],
 						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-15", 1 ],
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-72", 0 ],
 									"hidden" : 1,
@@ -668,20 +682,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
-									"source" : [ "obj-15", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-15", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-16", 0 ]
 								}
@@ -689,7 +689,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -749,7 +749,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"midpoints" : [ 452.75, 517.5, 435.0, 517.5, 435.0, 398.0, 85.5, 398.0 ],
+									"midpoints" : [ 464.706521511077881, 434.891305923461914, 448.043478012084961, 434.891305923461914, 448.043478012084961, 334.956522941589355, 98.543478012084961, 334.956522941589355 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -843,22 +843,15 @@
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
 				"name" : "aaf.descriptor~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
+				"bootpath" : "~/Desktop/aaf.maxtools/descriptors",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aaf.descriptorfft~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
+				"bootpath" : "~/Desktop/aaf.maxtools/descriptors",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "aaf.nozero.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/controls",
-				"patcherrelativepath" : "../controls",
 				"type" : "JSON",
 				"implicit" : 1
 			}

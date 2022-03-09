@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 921.0, 787.0 ],
+		"rect" : [ 34.0, 87.0, 921.0, 694.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -114,7 +114,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -177,7 +177,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -294,7 +294,7 @@
 									"numoutlets" : 7,
 									"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 348.25, 350.0, 360.0, 155.0 ],
+									"patching_rect" : [ 349.25, 271.0, 360.0, 155.0 ],
 									"setfilter" : [ 0, 3, 1, 0, 0, 500.0, 1.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -309,7 +309,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 645.0, 286.5, 48.0, 23.0 ],
+									"patching_rect" : [ 646.0, 207.5, 48.0, 23.0 ],
 									"text" : "set $1"
 								}
 
@@ -324,7 +324,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 565.0, 286.5, 48.0, 23.0 ],
+									"patching_rect" : [ 566.0, 207.5, 48.0, 23.0 ],
 									"text" : "set $1"
 								}
 
@@ -339,7 +339,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 470.0, 280.5, 48.0, 23.0 ],
+									"patching_rect" : [ 471.0, 201.5, 48.0, 23.0 ],
 									"text" : "set $1"
 								}
 
@@ -354,7 +354,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 632.5, 276.0, 73.0, 40.0 ],
+									"patching_rect" : [ 633.5, 197.0, 73.0, 40.0 ],
 									"text" : "set Q or S"
 								}
 
@@ -370,7 +370,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 645.0, 316.0, 55.0, 23.0 ]
+									"patching_rect" : [ 646.0, 237.0, 55.0, 23.0 ]
 								}
 
 							}
@@ -385,7 +385,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 565.0, 316.0, 55.0, 23.0 ]
+									"patching_rect" : [ 566.0, 237.0, 55.0, 23.0 ]
 								}
 
 							}
@@ -400,7 +400,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 475.0, 316.0, 57.0, 23.0 ]
+									"patching_rect" : [ 476.0, 237.0, 57.0, 23.0 ]
 								}
 
 							}
@@ -415,7 +415,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 459.375, 261.0, 88.25, 55.0 ],
+									"patching_rect" : [ 460.375, 182.0, 88.25, 55.0 ],
 									"text" : "set cutoff or center freq"
 								}
 
@@ -430,7 +430,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 565.0, 276.0, 59.0, 40.0 ],
+									"patching_rect" : [ 566.0, 197.0, 59.0, 40.0 ],
 									"text" : "set gain"
 								}
 
@@ -445,7 +445,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 313.25, 261.0, 118.0, 40.0 ],
+									"patching_rect" : [ 314.25, 182.0, 118.0, 40.0 ],
 									"text" : "set filter response"
 								}
 
@@ -506,7 +506,7 @@
 									"numoutlets" : 1,
 									"orientation" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 348.25, 293.0, 83.0, 46.0 ],
+									"patching_rect" : [ 349.25, 214.0, 83.0, 46.0 ],
 									"text_width" : 83.0
 								}
 
@@ -566,7 +566,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 20.0 ]
+									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 20.0 ],
+									"text" : "Caulculates the spread, or the spectral centroid variance of an incoming audio signal."
 								}
 
 							}
@@ -675,7 +676,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"midpoints" : [ 357.75, 517.5, 237.0, 517.5, 237.0, 398.0, 85.5, 398.0 ],
+									"midpoints" : [ 358.75, 436.5, 237.0, 436.5, 237.0, 398.0, 85.5, 398.0 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -785,28 +786,28 @@
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
 				"name" : "aaf.centroid~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
+				"bootpath" : "~/Desktop/aaf.maxtools/descriptors",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aaf.centroidfft~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
+				"bootpath" : "~/Desktop/aaf.maxtools/descriptors",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aaf.spread~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
+				"bootpath" : "~/Desktop/aaf.maxtools/descriptors",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aaf.spreadfft~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/descriptors",
+				"bootpath" : "~/Desktop/aaf.maxtools/descriptors",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

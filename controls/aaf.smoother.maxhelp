@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 921.0, 787.0 ],
+		"rect" : [ 34.0, 87.0, 921.0, 694.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -215,6 +215,28 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 525.563829779624939, 305.638298153877258, 131.0, 20.0 ],
+									"text" : "Exponential Base (0-2)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 415.563829779624939, 305.638298153877258, 106.0, 20.0 ],
+									"text" : "Smoothness (0-1)"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"format" : 6,
 									"id" : "obj-17",
 									"maxclass" : "flonum",
@@ -222,7 +244,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 423.0, 444.0, 50.0, 22.0 ]
+									"patching_rect" : [ 566.063829779624939, 333.638298153877258, 50.0, 22.0 ]
 								}
 
 							}
@@ -235,7 +257,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 364.5, 444.0, 50.0, 22.0 ]
+									"patching_rect" : [ 443.563829779624939, 333.638298153877258, 50.0, 22.0 ]
 								}
 
 							}
@@ -247,7 +269,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 149.0, 604.0, 20.0, 140.0 ]
+									"patching_rect" : [ 164.063829779624939, 493.638298153877258, 20.0, 140.0 ]
 								}
 
 							}
@@ -258,7 +280,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 149.0, 558.0, 97.0, 22.0 ],
+									"patching_rect" : [ 164.063829779624939, 447.638298153877258, 97.0, 22.0 ],
 									"text" : "scale 0. 1. 0 127"
 								}
 
@@ -270,7 +292,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 149.0, 510.0, 136.0, 22.0 ],
+									"patching_rect" : [ 164.063829779624939, 399.638298153877258, 136.0, 22.0 ],
 									"text" : "aaf.smoother",
 									"varname" : "aaf.amp~[1]"
 								}
@@ -283,7 +305,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 306.0, 379.0, 97.0, 22.0 ],
+									"patching_rect" : [ 164.063829779624939, 333.638298153877258, 97.0, 22.0 ],
 									"text" : "scale 0 127 0. 1."
 								}
 
@@ -296,7 +318,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 306.0, 222.0, 20.0, 140.0 ]
+									"patching_rect" : [ 164.063829779624939, 176.638298153877258, 20.0, 140.0 ]
 								}
 
 							}
@@ -308,7 +330,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 306.0, 604.0, 20.0, 140.0 ]
+									"patching_rect" : [ 321.063829779624939, 493.638298153877258, 20.0, 140.0 ]
 								}
 
 							}
@@ -319,7 +341,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 306.0, 558.0, 97.0, 22.0 ],
+									"patching_rect" : [ 321.063829779624939, 447.638298153877258, 97.0, 22.0 ],
 									"text" : "scale 0. 1. 0 127"
 								}
 
@@ -331,7 +353,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 306.0, 510.0, 136.0, 22.0 ],
+									"patching_rect" : [ 321.063829779624939, 399.638298153877258, 264.0, 22.0 ],
 									"text" : "aaf.smoother",
 									"varname" : "aaf.amp~"
 								}
@@ -391,7 +413,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 88.213591873645782, 516.126209080219269, 20.0 ],
-									"text" : "smooth values"
+									"text" : "Smoothes and applies exponential curves to incoming data"
 								}
 
 							}
