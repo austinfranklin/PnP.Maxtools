@@ -69,8 +69,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
-					"patching_rect" : [ 73.0, 174.0, 157.0, 22.0 ],
-					"text" : "pfft~ pnp.flatnessfft~ 2048 4"
+					"patching_rect" : [ 73.0, 174.0, 150.0, 22.0 ],
+					"text" : "pfft~ pnp.flatnessfft~ 512 4"
 				}
 
 			}
@@ -94,7 +94,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 73.0, 45.0, 30.0, 30.0 ]
 				}
 

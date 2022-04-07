@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 988.0, 694.0 ],
+		"rect" : [ 34.0, 79.0, 997.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -70,7 +70,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 988.0, 668.0 ],
+						"rect" : [ 0.0, 26.0, 997.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -132,7 +132,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 988.0, 668.0 ],
+						"rect" : [ 0.0, 26.0, 997.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -213,7 +213,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 113.0, 988.0, 668.0 ],
+						"rect" : [ 34.0, 105.0, 997.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -249,6 +249,37 @@
 									"clickthrough" : 0,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
+									"id" : "obj-35",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "helpbuttons.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 730.927794098854065, 101.030922174453735, 205.319583296775818, 59.95876669883728 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 586.522982656955719, 101.213591873645782, 102.0, 20.0 ],
+									"text" : "More Filters",
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
 									"id" : "obj-2",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
@@ -256,7 +287,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 678.522982656955719, 159.859969139099121, 101.555956602096558, 23.277978301048279 ],
+									"patching_rect" : [ 586.522982656955719, 123.213591873645782, 101.555956602096558, 23.277978301048279 ],
 									"viewvisibility" : 1
 								}
 
@@ -284,49 +315,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-11",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-27",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 592.300960958003998, 100.213591873645782, 274.0, 35.0 ],
-									"text" : ";\rmax launchbrowser http://austinfranklinmusic.com"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-36",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 621.291252672672272, 50.0, 280.019416570663452, 20.0 ],
-									"text" : "Click here to visit http://austinfranklinmusic.com"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-33",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 355.077669024467468, 404.85436749458313, 150.0, 47.0 ],
-									"text" : "1. Low frequency (Hz)\n2. High frequency (Hz)\n3. Window size (optional)"
+									"patching_rect" : [ 355.077669024467468, 404.85436749458313, 181.0, 33.0 ],
+									"text" : "1. Low frequency (Hz)\n2. High frequency (Hz)"
 								}
 
 							}
@@ -367,12 +362,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-26",
-									"linecount" : 5,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 123.213591873645782, 517.0, 74.0 ],
-									"text" : "aaf.binpass~ is a filter that utilizes an fft to remove frequencies from an input signal outside of a designated low and high frequency range. Since it can only remove entire bins in the frequency domain, it calculates which bins contain the entire low and high frequency range. This means that the output signal will sometimes contain additional frequencies outside of this range, but only the frequencies that lie in the same bin as either the low or high frequency arguments."
+									"patching_rect" : [ 48.543688654899597, 123.213591873645782, 513.126209080219269, 87.0 ],
+									"text" : "pnp.binpass~ is a filter that utilizes an FFT to remove frequencies from an input signal outside of a designated low and high frequency range. Since it can only remove entire bins in the frequency domain, it calculates which bins contain the entire low and high frequency range. This means that the output signal will sometimes contain additional frequencies outside of this range, but only the frequencies that lie in the same bin as either the low or high frequency arguments."
 								}
 
 							}
@@ -398,7 +393,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 26.213591873645782, 513.126209080219269, 60.0 ],
-									"text" : "aaf.binpass~"
+									"text" : "pnp.binpass~"
 								}
 
 							}
@@ -472,7 +467,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 171.679611504077911, 456.779876798391342, 174.0, 22.0 ],
-									"text" : "1981.054688 2519.384766"
+									"text" : "0. 172.265625"
 								}
 
 							}
@@ -529,7 +524,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "" ],
 									"patching_rect" : [ 132.679611504077911, 404.85436749458313, 213.0, 22.0 ],
-									"text" : "pnp.binpass~ 2000 2500"
+									"text" : "pnp.binpass~"
 								}
 
 							}
@@ -565,13 +560,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-8", 1 ],
 									"source" : [ "obj-1", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
-									"source" : [ "obj-11", 0 ]
 								}
 
 							}
@@ -673,15 +661,15 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "pnp.binpass~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/pnp.maxtools/patchers/filters",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/filters",
 				"patcherrelativepath" : "../patchers/filters",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.binpassfft~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/pnp.maxtools/filters",
-				"patcherrelativepath" : "../filters",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/filters",
+				"patcherrelativepath" : "../patchers/filters",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -723,7 +711,14 @@
 			}
 , 			{
 				"name" : "filtersmenu.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/pnp.maxtools/patchers/bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "helpbuttons.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1

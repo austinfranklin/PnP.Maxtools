@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.binpass~">
+
+	<digest>
+		Filters an incoming signal using a fundamental frequency
+	</digest>
+	
+	<description>
+		pnp.pitchfilter~ is an FFT filter that takes a fundamental 
+		frequency as an argument and filters an incoming signal 
+		up to 7 octaves above the fundamenal. Each octave is 
+		given a separate outlet that can be combined with others 
+		or used independently.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Filter</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+		<inlet id="1" type="float">
+			<digest>Low Frequency</digest>
+		</inlet>
+		<inlet id="2" type="float">
+			<digest>High Frequency</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Audio signal output</digest>
+		</outlet>
+		<outlet id="1" type="list">
+			<digest>Real Range</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Fundamental frequency" optional="1" type="float">
+			<digest>Sets the fundamental frequency for the FFT filter (Hz)</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="int" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="float">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="float" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Converted to <m>int</m>. Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist />
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural signal.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="biquad~"/>
+		<seealso name="buffir~"/>
+		<seealso name="cascade~"/>
+		<seealso name="comb~"/>
+		<seealso name="cross~"/>
+		<seealso name="filtergraph~"/>
+		<seealso name="buffir~"/>
+		<seealso name="lores~"/>
+		<seealso name="onepole~"/>
+		<seealso name="reson~"/>
+		<seealso name="svf~"/>
+		<seealso name="teeth~"/>
+	</seealsolist>
+	
+</c74object>

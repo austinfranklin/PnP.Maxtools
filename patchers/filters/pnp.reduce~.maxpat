@@ -59,7 +59,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 73.0, 174.0, 162.0, 22.0 ],
-					"text" : "pfft~ pnp.reducefft~ 2048 4"
+					"text" : "pfft~ pnp.reducefft~ 512 4"
 				}
 
 			}

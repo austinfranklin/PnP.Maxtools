@@ -273,9 +273,9 @@
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 182.0, 354.0, 84.0, 22.0 ],
 									"text" : "aaf.ang~",
 									"varname" : "aaf.amp~"
@@ -350,7 +350,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-									"text" : "aaf.ang~"
+									"text" : "pnp.freeze~"
 								}
 
 							}
@@ -453,13 +453,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "aaf.ang~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/effects",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "demosound.maxpat",
 				"bootpath" : "C74:/help/msp",
 				"type" : "JSON",
@@ -494,10 +487,6 @@
 				"bootpath" : "C74:/interfaces",
 				"type" : "TEXT",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "sigmund~.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,

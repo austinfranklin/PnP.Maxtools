@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 921.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 997.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -215,6 +215,56 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-35",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "helpbuttons.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 696.927794098854065, 84.752943873405457, 205.319583296775818, 59.95876669883728 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 582.522982656955719, 84.752943873405457, 102.0, 20.0 ],
+									"text" : "More Filters",
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-2",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "filtersmenu.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 582.522982656955719, 106.752943873405457, 101.555956602096558, 23.277978301048279 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"args" : [ "@module", 3 ],
 									"bgmode" : 0,
 									"border" : 0,
@@ -237,12 +287,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-33",
-									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 292.077669024467468, 404.85436749458313, 150.0, 47.0 ],
-									"text" : "1. Low frequency (Hz)\n2. High frequency (Hz)\n3. Window size (optional)"
+									"patching_rect" : [ 291.077669024467468, 404.85436749458313, 286.0, 20.0 ],
+									"text" : "1. Amplitude Threshold (default is 0.25)"
 								}
 
 							}
@@ -253,7 +302,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 292.077669024467468, 382.85436749458313, 142.252427756786346, 20.0 ],
+									"patching_rect" : [ 291.077669024467468, 382.85436749458313, 97.0, 20.0 ],
 									"text" : "Arguments:"
 								}
 
@@ -287,7 +336,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 208.80582469701767, 332.378639578819275, 91.747573614120483, 20.0 ],
-									"text" : "Amplitude (0-1)",
+									"text" : "Amplitude",
 									"textjustification" : 1
 								}
 
@@ -356,7 +405,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 132.679611504077911, 404.85436749458313, 116.0, 22.0 ],
 									"text" : "pnp.reduce~"
 								}
@@ -364,47 +413,14 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-2",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 592.300960958003998, 48.0, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-27",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 592.300960958003998, 100.213591873645782, 274.0, 35.0 ],
-									"text" : ";\rmax launchbrowser http://austinfranklinmusic.com"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-36",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 621.291252672672272, 50.0, 280.019416570663452, 20.0 ],
-									"text" : "Click here to visit http://austinfranklinmusic.com"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-26",
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 20.0 ]
+									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 516.0, 47.0 ],
+									"presentation_linecount" : 3,
+									"text" : "pnp.reduce~ performers an FFT analysis on an incoming signal and filters out bins that are quieter than a specified amplitude threshold. This objects can be used to reduce ambient and room noise from signals."
 								}
 
 							}
@@ -429,7 +445,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-									"text" : "aaf.reduce~"
+									"text" : "pnp.reduce~"
 								}
 
 							}
@@ -472,13 +488,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-13", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
-									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -561,8 +570,15 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "pnp.reduce~.maxpat",
-				"bootpath" : "~/Desktop/Patches/Max/Externals/Dissertation Abstractions/aaf.maxtools/filters",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/filters",
+				"patcherrelativepath" : "../patchers/filters",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pnp.reducefft~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/filters",
+				"patcherrelativepath" : "../patchers/filters",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -600,6 +616,20 @@
 				"name" : "interfacecolor.js",
 				"bootpath" : "C74:/interfaces",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "filtersmenu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "helpbuttons.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],

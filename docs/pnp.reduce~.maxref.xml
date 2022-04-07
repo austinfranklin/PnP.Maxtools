@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.reduce~">
+
+	<digest>
+		An FFT filter that reduces the noise content of an incoming audio signal
+	</digest>
+	
+	<description>
+		pnp.reduce~ performers an FFT analysis on an 
+		incoming signal and filters out bins that are 
+		quieter than a specified amplitude threshold. 
+		This objects can be used to reduce ambient and 
+		room noise from signals.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Filter</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+		<inlet id="1" type="float">
+			<digest>Amplitude Threshold</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Audio signal output</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Amplitude Threshold" optional="1" type="float">
+			<digest>Sets the amplitude threshold for the FFT (0-1)</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="float">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="float" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist />
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural signal.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="biquad~"/>
+		<seealso name="buffir~"/>
+		<seealso name="cascade~"/>
+		<seealso name="comb~"/>
+		<seealso name="cross~"/>
+		<seealso name="filtergraph~"/>
+		<seealso name="buffir~"/>
+		<seealso name="lores~"/>
+		<seealso name="onepole~"/>
+		<seealso name="reson~"/>
+		<seealso name="svf~"/>
+		<seealso name="teeth~"/>
+	</seealsolist>
+	
+</c74object>
