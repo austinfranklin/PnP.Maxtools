@@ -117,7 +117,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 427.0, 571.0, 150.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 335.296514928340912, 480.0, 150.0, 22.0 ],
+					"presentation_rect" : [ 335.296514928340912, 479.0, 150.0, 22.0 ],
 					"text" : "finish: flatness, multi"
 				}
 
@@ -632,7 +632,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 498.418303668498993, 66.409243762493134, 286.0, 38.0 ],
-					"text" : "Filters an incoming signal using a fundamental frequency"
+					"text" : "Calculates the spectral warmth of an incoming audio signal"
 				}
 
 			}
@@ -1082,8 +1082,8 @@
 , 			{
 				"name" : "Test1",
 				"default" : 				{
-					"accentcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 					"locked_bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"accentcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 					"editing_bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 ,
