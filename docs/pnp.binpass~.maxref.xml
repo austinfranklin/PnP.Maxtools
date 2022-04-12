@@ -8,7 +8,7 @@
 	</digest>
 	
 	<description>
-		pnp.binpass~ is a filter that utilizes an FFT to 
+		<m>pnp.binpass~</m> is a filter that utilizes an FFT to 
 		remove frequencies from an input signal outside of 
 		a designated low and high frequency range. Since it 
 		can only remove entire bins in the frequency domain, 
@@ -93,7 +93,7 @@
 				Function depends on inlet
 			</digest>
 			<description>
-				In left inlet: Monoaural signal.
+				In left inlet: Monoaural <m>signal</m>.
 			</description>
 		</method>
 	</methodlist>

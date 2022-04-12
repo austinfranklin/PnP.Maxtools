@@ -419,7 +419,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 516.0, 47.0 ],
-									"presentation_linecount" : 3,
 									"text" : "pnp.reduce~ performers an FFT analysis on an incoming signal and filters out bins that are quieter than a specified amplitude threshold. This objects can be used to reduce ambient and room noise from signals."
 								}
 

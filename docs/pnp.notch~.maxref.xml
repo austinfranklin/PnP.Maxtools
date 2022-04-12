@@ -8,7 +8,7 @@
 	</digest>
 	
 	<description>
-		pnp.notch~ is a filter that utilizes an FFT 
+		<m>pnp.notch~</m> is a filter that utilizes an FFT 
 		to remove frequencies from an input signal inside 
 		of a designated low and high frequency range. Since 
 		it can only remove entire bins in the frequency 
@@ -94,7 +94,7 @@
 				Function depends on inlet
 			</digest>
 			<description>
-				In left inlet: Monoaural signal.
+				In left inlet: Monoaural <m>signal</m>.
 			</description>
 		</method>
 	</methodlist>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.autoregi~">
+
+	<digest>
+		Pitch detector that tracks the position of a frequency between an automatically adjusting low and high frequency
+	</digest>
+	
+	<description>
+		<m>pnp.autoregi~</m> returns a normalized floating 
+		point number that indicates where the detected pitch 
+		is located between detected low and high frequency 
+		arguments. The object sets the low and high frequency 
+		arguments automatically using pitch detection. The 
+		smoothness argument can be used to output a more 
+		gradual change in output.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Descriptor</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+
+		<inlet id="0" type="float">
+			<digest>Smoothness (0-1)</digest>
+		</inlet>
+
+		<inlet id="0" type="int">
+			<digest>Set Trough Frequency (Hz)</digest>
+		</inlet>
+
+		<inlet id="0" type="int">
+			<digest>Set Peak Frequency (Hz)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="float">
+			<digest>Pitch Position (0-1)</digest>
+		</outlet>
+
+		<outlet id="0" type="float">
+			<digest>Detected Frequency Range</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Smoothness" optional="1" type="float">
+			<digest>Sets the smoothness level for output values. This object 
+			uses the <m>pnp.smoothness</m> object to smooth values.
+			</digest>
+		</objarg>
+
+		<objarg name="Set Trough Frequency" optional="1" type="int">
+			<digest>Sets the peak amplitude level for output value. All incoming amplitude 
+			values will be scaled to this value.
+			</digest>
+		</objarg>
+
+		<objarg name="Set Peak Frequency" optional="1" type="int">
+			<digest>Sets the peak amplitude level for output value. All incoming amplitude 
+			values will be scaled to this value.
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="float">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="int">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="int"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="bang">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="bang"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Bangs are used to reset the peak amplitude value to 0.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="fzero~"/>
+		<seealso name="retune~"/>
+	</seealsolist>
+	
+</c74object>

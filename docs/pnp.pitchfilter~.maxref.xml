@@ -8,7 +8,7 @@
 	</digest>
 	
 	<description>
-		pnp.pitchfilter~ is an FFT filter that takes a fundamental 
+		<m>pnp.pitchfilter~</m> is an FFT filter that takes a fundamental 
 		frequency as an argument and filters an incoming signal 
 		up to 7 octaves above the fundamenal. Each octave is 
 		given a separate outlet that can be combined with others 
@@ -86,7 +86,7 @@
 				Function depends on inlet
 			</digest>
 			<description>
-				In left inlet: Monoaural signal.
+				In left inlet: Monoaural <m>signal</m>.
 			</description>
 		</method>
 	</methodlist>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.autoamp~">
+
+	<digest>
+		Track the amplitude of an incoming audio signal using the loudest part of the signal as the upper threshold
+	</digest>
+	
+	<description>
+		<m>pnp.autoamp~</m> outputs the amplitude of an incoming signal 
+		in the range of 0-1 like <m>pnp.amplitude~</m>, except the output 
+		is first scaled using the loudest measured part of the signal 
+		as the upper threshold. An additional smoothness argument may 
+		be specified that smoothes the output values as well as 
+		manually sets the peak amplitude. This can sometimes be used 
+		to get a more accurate or cleaner representation of the 
+		amplitude signal.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Descriptor</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+
+		<inlet id="0" type="float">
+			<digest>Smoothness (0-1)</digest>
+		</inlet>
+
+		<inlet id="0" type="float">
+			<digest>Set Peak Amplitude (0-1)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="float">
+			<digest>Scaled Amplitude</digest>
+		</outlet>
+
+		<outlet id="0" type="float">
+			<digest>Report Peak Amplitude</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Smoothness" optional="1" type="float">
+			<digest>Sets the smoothness level for output values. This object 
+			uses the <m>pnp.smoothness</m> object to smooth values.
+			</digest>
+		</objarg>
+
+		<objarg name="Set Peak Amplitude" optional="1" type="float">
+			<digest>Sets the peak amplitude level for output value. All incoming amplitude 
+			values will be scaled to this value.
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="float">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="bang">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="bang"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Bangs are used to reset the peak amplitude value.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="meter~"/>
+		<seealso name="average~"/>
+		<seealso name="average~"/>
+		<seealso name="atodb~"/>
+		<seealso name="atodb"/>
+	</seealsolist>
+	
+</c74object>

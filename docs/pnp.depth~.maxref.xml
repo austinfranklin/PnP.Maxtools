@@ -8,10 +8,10 @@
 	</digest>
 	
 	<description>
-		Calculates the apparent deepness of an incoming 
+		<m>pnp.depth~</m> calculates the apparent deepness of an incoming 
 		audio signal by calculating the lower spectral 
-		centroid between 30-200 Hz and the ratio of energy 
-		between this range and 0-20,050 Hz.
+		centroid between 30-200Hz and the ratio of energy 
+		between this range and 0 and the Nyquist Frequency.
 	</description>
 	
 	<!--METADATA-->
@@ -44,12 +44,14 @@
 	<!--MESSAGES-->
 	<methodlist>
 		<method name="signal">
-			<arglist />
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
 			<digest>
 				Function depends on inlet
 			</digest>
 			<description>
-				In left inlet: Monoaural signal.
+				In left inlet: Monoaural <m>signal</m>.
 			</description>
 		</method>
 	</methodlist>

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1886.0, -160.0, 1852.0, 967.0 ],
+		"rect" : [ 34.0, 79.0, 888.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,31 +40,85 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-46",
-					"linecount" : 3,
+					"id" : "obj-32",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 367.0, 568.0, 150.0, 53.0 ],
+					"patching_rect" : [ 531.0, 503.0, 150.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 335.296514928340912, 520.0, 150.0, 53.0 ],
-					"text" : "boominess and sharpness aren't totally accurate... because of bark"
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 208.0, 370.0, 168.0, 38.0 ],
+					"text" : "finish reference: pnp.autoregi~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 732.061119318008423, 519.847364187240601, 150.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 720.154169529676437, 469.648852586746216, 150.0, 22.0 ],
+					"text" : "many need finishing..."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 547.81187430024147, 321.0, 150.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 545.837573528289795, 321.0, 150.0, 22.0 ],
+					"text" : "Made efficient"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 538.349964082241058, 340.305333852767944, 150.0, 38.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 545.837573528289795, 345.0, 150.0, 38.0 ],
+					"text" : "finish: mmmr, and pnp.nonumb"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 367.0, 568.0, 150.0, 69.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 335.296514928340912, 520.0, 150.0, 69.0 ],
+					"text" : "Fix weighting curves on Sharpness and Boominess... Otherwise they work!"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-41",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 427.0, 571.0, 150.0, 38.0 ],
+					"patching_rect" : [ 427.0, 571.0, 150.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 335.296514928340912, 480.0, 150.0, 38.0 ],
-					"text" : "finish: hardness, flatness, multi"
+					"presentation_rect" : [ 335.296514928340912, 480.0, 150.0, 22.0 ],
+					"text" : "finish: flatness, multi"
 				}
 
 			}
@@ -105,7 +159,7 @@
 					"patching_rect" : [ 628.0, 646.0, 154.0, 69.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 312.0, 658.0, 154.0, 69.0 ],
+					"presentation_rect" : [ 875.899075329303741, 564.870222568511963, 154.0, 69.0 ],
 					"text" : "make efficient by cleaning up and removing all number boxes and other stuff"
 				}
 
@@ -133,7 +187,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 716.513738244771957, 568.0, 150.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 716.154169529676437, 480.0, 150.0, 22.0 ],
+					"presentation_rect" : [ 720.154169529676437, 445.648852586746216, 150.0, 22.0 ],
 					"text" : "range messages"
 				}
 
@@ -161,7 +215,7 @@
 					"patching_rect" : [ 335.0, 632.0, 150.0, 38.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 76.193522602319717, 684.0, 150.0, 38.0 ],
+					"presentation_rect" : [ 640.092597931623459, 590.870222568511963, 150.0, 38.0 ],
 					"text" : "what messages should objects have?"
 				}
 
@@ -570,13 +624,15 @@
 				"box" : 				{
 					"fontname" : "Futura Medium",
 					"id" : "obj-6",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 286.0, 22.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 286.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 498.418303668498993, 66.409243762493134, 286.0, 22.0 ],
-					"text" : "Filters out zero values from incoming data streams"
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 498.418303668498993, 66.409243762493134, 286.0, 38.0 ],
+					"text" : "Filters an incoming signal using a fundamental frequency"
 				}
 
 			}
@@ -774,6 +830,7 @@
 					"patching_rect" : [ 239.371976852416992, 174.826366543769836, 315.975803434848785, 248.102262020111084 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 305.513738244771957, 248.660142004489899, 209.565553367137909, 222.461237907409668 ],
+					"tabcolor" : [ 0.227450980392157, 0.227450980392157, 0.235294117647059, 1.0 ],
 					"tabs" : [ "pnp.amplitude~", "pnp.autoamp~", "pnp.autoregi~", "pnp.beat~", "pnp.boominess~", "pnp.bpm~", "pnp.brightness~", "pnp.centroid~", "pnp.depth~", "pnp.descriptor~", "pnp.energy~", "pnp.flatness~", "pnp.hardness~", "pnp.metallic~", "pnp.multi~", "pnp.register~", "pnp.roughness~", "pnp.sharpness~", "pnp.spread~", "pnp.warmth~" ]
 				}
 

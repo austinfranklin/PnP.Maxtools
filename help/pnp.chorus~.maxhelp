@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1653.0, -37.0, 921.0, 787.0 ],
+		"rect" : [ -1580.0, -36.0, 921.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -90,7 +90,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 207.398047924041748, 197.262129187583923, 82.0, 22.0 ],
+					"patching_rect" : [ 206.398047924041748, 191.262129187583923, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -152,7 +152,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 184.398047924041748, 163.262129187583923, 82.0, 22.0 ],
+					"patching_rect" : [ 183.398047924041748, 157.262129187583923, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -181,7 +181,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1653.0, -11.0, 921.0, 761.0 ],
+						"rect" : [ -1580.0, -10.0, 921.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -217,7 +217,7 @@
 									"clickthrough" : 0,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
-									"id" : "obj-2",
+									"id" : "obj-4",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "effectsmenu.maxpat",
@@ -250,7 +250,7 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-5",
+									"id" : "obj-2",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -264,11 +264,10 @@
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 256.0, 309.0, 67.0, 22.0 ],
-									"text" : "pnp.pluck~",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"patching_rect" : [ 182.0, 325.0, 75.0, 22.0 ],
+									"text" : "pnp.chorus~",
 									"varname" : "aaf.amp~"
 								}
 
@@ -279,7 +278,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 516.126209080219269, 20.0 ]
+									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 516.0, 20.0 ],
+									"text" : "aaf.amp~ "
 								}
 
 							}
@@ -291,7 +291,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 88.213591873645782, 516.126209080219269, 20.0 ],
-									"text" : "An implementation of the famous Karplus-Strong plucked string algorithm"
+									"text" : "Track the amplitude of an incoming audio signal"
 								}
 
 							}
@@ -304,7 +304,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-									"text" : "aaf.pluck~"
+									"text" : "pnp.chorus~"
 								}
 
 							}
@@ -5211,11 +5211,6 @@
 									"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 								}
 ,
-								"function" : 								{
-									"bgcolor" : [ 0.893824, 0.868845, 0.836105, 1.0 ],
-									"color" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
-								}
-,
 								"spectroscope~" : 								{
 									"bgcolor" : [ 0.893824, 0.868845, 0.836105, 1.0 ],
 									"elementcolor" : [ 0.681193, 0.750541, 0.758255, 1.0 ],
@@ -5227,6 +5222,11 @@
 									"accentcolor" : [ 0.522397, 0.541645, 0.600966, 1.0 ],
 									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"color" : [ 0.720698, 0.16723, 0.080014, 1.0 ]
+								}
+,
+								"function" : 								{
+									"bgcolor" : [ 0.893824, 0.868845, 0.836105, 1.0 ],
+									"color" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 								}
 ,
 								"rslider" : 								{
@@ -5258,14 +5258,14 @@
 									"color" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
 								}
 ,
-								"number" : 								{
+								"number~" : 								{
 									"bgcolor" : [ 0.893824, 0.868845, 0.836105, 1.0 ],
-									"accentcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
-								"number~" : 								{
+								"number" : 								{
 									"bgcolor" : [ 0.893824, 0.868845, 0.836105, 1.0 ],
+									"accentcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
@@ -5297,7 +5297,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 161.300960958003998, 129.262129187583923, 49.0, 22.0 ],
+					"patching_rect" : [ 160.300960958003998, 123.262129187583923, 49.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5318,21 +5318,14 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-					"text" : "aaf.pluck~"
+					"text" : "aaf.grain~"
 				}
 
 			}
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "pnp.pluck~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
-				"patcherrelativepath" : "../patchers/effects",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pnp.delay~.maxpat",
+				"name" : "pnp.chorus~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
 				"patcherrelativepath" : "../patchers/effects",
 				"type" : "JSON",

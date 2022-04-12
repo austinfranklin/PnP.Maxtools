@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1655.0, 28.0, 669.0, 787.0 ],
+		"rect" : [ -1559.0, -35.0, 669.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -94,7 +94,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 96.0, 245.0, 194.0, 22.0 ],
-					"text" : "if $f1 == 0. then bang else out2 $f1"
+					"text" : "if $f1 == 1. then bang else out2 $f1"
 				}
 
 			}

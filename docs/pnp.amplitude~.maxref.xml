@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="pnp.reduce~">
+<c74object name="pnp.amplitude~">
 
 	<digest>
-		An FFT filter that reduces the noise content of an incoming audio signal
+		Tracks the amplitude of an incoming audio signal
 	</digest>
 	
 	<description>
-		<m>pnp.reduce~</m> performers an FFT analysis on an 
-		incoming signal and filters out bins that are 
-		quieter than a specified amplitude threshold. 
-		This objects can be used to reduce ambient and 
-		room noise from signals.
+		<m>pnp.amplitude~</m> outputs the amplitude of an incoming 
+		signal in the range of 0-1. An additional smoothness 
+		argument may be specified that smoothes the output 
+		values. This can sometimes be used to get a more 
+		accurate or cleaner representation of the amplitude signal.
 	</description>
 	
 	<!--METADATA-->
@@ -20,7 +20,7 @@
 		<metadata name="author">Austin Franklin</metadata>
 		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
 		<metadata name="tag">Audio</metadata>
-		<metadata name="tag">Filter</metadata>
+		<metadata name="tag">Descriptor</metadata>
 		<metadata name="tag">FFT</metadata>
 	</metadatalist>
 	
@@ -29,22 +29,21 @@
 		<inlet id="0" type="signal">
 			<digest>Audio Signal Input</digest>
 		</inlet>
-		<inlet id="1" type="float">
-			<digest>Amplitude Threshold</digest>
-		</inlet>
 	</inletlist>
 
 	<!--OUTLETS-->
 	<outletlist>
-		<outlet id="0" type="signal">
-			<digest>Audio signal output</digest>
+		<outlet id="0" type="float">
+			<digest>Smoothness (0-1)</digest>
 		</outlet>
 	</outletlist>
 	
 	<!--ARGUMENTS-->
 	<objarglist>
-		<objarg name="Amplitude Threshold" optional="1" type="float">
-			<digest>Sets the amplitude threshold for the FFT (0-1)</digest>
+		<objarg name="Smoothness" optional="1" type="float">
+			<digest>Sets the smoothness level for output values. This object 
+			uses the <m>pnp.smoothness</m> object to smooth values.
+			</digest>
 		</objarg>
 	</objarglist>
 	
@@ -52,7 +51,7 @@
 	<methodlist>
 		<method name="float">
 			<arglist>
-				<arg name="parameter-settings" optional="0" type="float" />
+				<arg name="parameter-settings" optional="0" type="float"/>
 			</arglist>
 			<digest>
 				Function depends on inlet
@@ -63,7 +62,9 @@
 		</method>
 
 		<method name="signal">
-			<arglist />
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
 			<digest>
 				Function depends on inlet
 			</digest>
@@ -75,18 +76,11 @@
 	
 	<!--SEEALSO-->
 	<seealsolist>
-		<seealso name="biquad~"/>
-		<seealso name="buffir~"/>
-		<seealso name="cascade~"/>
-		<seealso name="comb~"/>
-		<seealso name="cross~"/>
-		<seealso name="filtergraph~"/>
-		<seealso name="buffir~"/>
-		<seealso name="lores~"/>
-		<seealso name="onepole~"/>
-		<seealso name="reson~"/>
-		<seealso name="svf~"/>
-		<seealso name="teeth~"/>
+		<seealso name="meter~"/>
+		<seealso name="average~"/>
+		<seealso name="average~"/>
+		<seealso name="atodb~"/>
+		<seealso name="atodb"/>
 	</seealsolist>
 	
 </c74object>

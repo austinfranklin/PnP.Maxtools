@@ -6108,8 +6108,8 @@
 									"numinlets" : 4,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 138.0, 452.0, 253.000000000000057, 22.0 ],
-									"text" : "pnp.grain~",
+									"patching_rect" : [ 138.0, 452.0, 253.0, 22.0 ],
+									"text" : "pnp.distort~",
 									"varname" : "aaf.amp~"
 								}
 
@@ -6121,7 +6121,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 518.0, 33.0 ],
+									"patching_rect" : [ 48.543688654899597, 110.213591873645782, 516.0, 33.0 ],
 									"text" : "aaf.grain~ takes an incoming audio signal and performs real-time granular synthesis, using parameters such as grain rate, duration, and pitch to vary the grains."
 								}
 
@@ -6147,7 +6147,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 26.213591873645782, 516.126209080219269, 60.0 ],
-									"text" : "pnp.grain~"
+									"text" : "pnp.distort~"
 								}
 
 							}
@@ -11254,7 +11254,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "pnp.grain~.maxpat",
+				"name" : "pnp.distort~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
 				"patcherrelativepath" : "../patchers/effects",
 				"type" : "JSON",

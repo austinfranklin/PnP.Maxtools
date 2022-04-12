@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 714.0, 79.0, 638.0, 651.0 ],
+		"rect" : [ -945.0, 15.0, 638.0, 651.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 237.5, 203.5, 123.0, 33.0 ],
+					"patching_rect" : [ 174.5, 234.5, 123.0, 33.0 ],
 					"style" : "helpfile_label",
 					"text" : "right inlet (float) is  transposition factor"
 				}
@@ -74,21 +74,6 @@
 					"patching_rect" : [ 187.5, 288.0, 241.0, 33.0 ],
 					"style" : "helpfile_label",
 					"text" : "gizmo~ works in the frequency domain, thus typically inside pfft~."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"format" : 6,
-					"id" : "obj-1",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 184.0, 211.0, 52.0, 23.0 ]
 				}
 
 			}
@@ -129,6 +114,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 184.0, 75.0, 29.0, 23.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 2"
 				}
 
@@ -164,30 +153,22 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 2 ],
-					"midpoints" : [ 193.5, 248.0, 146.0, 248.0 ],
-					"source" : [ "obj-1", 0 ]
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-2", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-5", 2 ],
 					"source" : [ "obj-2", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-5", 2 ],
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-2", 2 ]
 				}
 
 			}
