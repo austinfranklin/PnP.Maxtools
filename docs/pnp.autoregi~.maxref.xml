@@ -111,7 +111,7 @@
 				Function depends on inlet
 			</digest>
 			<description>
-				Bangs are used to reset the peak amplitude value to 0.
+				<m>bangs</m> are used to reset the peak amplitude value to 0.
 			</description>
 		</method>
 

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="pnp.depth~">
+<c74object name="pnp.brightness~">
 
 	<digest>
-		Calculates the spectral depth of an incoming audio signal
+		Calculates the spectral brightness of an incoming audio signal
 	</digest>
 	
 	<description>
-		<m>pnp.depth~</m> calculates the apparent deepness of an incoming 
-		audio signal by calculating the lower spectral 
-		centroid between 30-200Hz and the ratio of energy 
-		between this range and 0 and the Nyquist Frequency.
+		<m>pnp.brightness~</m> calculates the apparent brightness of an incoming audio signal by calculating the upper spectral centroid between 3000-20,050Hz and the ratio of energy between this range and 0-20,050Hz.
 	</description>
 	
 	<!--METADATA-->
@@ -33,7 +30,7 @@
 	<!--OUTLETS-->
 	<outletlist>
 		<outlet id="0" type="float">
-			<digest>Depth</digest>
+			<digest>Brightness</digest>
 		</outlet>
 	</outletlist>
 	
@@ -56,7 +53,7 @@
 	<!--SEEALSO-->
 	<seealsolist>
 		<seealso name="pnp.boominess~"/>
-		<seealso name="pnp.brightness~"/>
+		<seealso name="pnp.depth~"/>
 		<seealso name="pnp.descriptor~"/>
 		<seealso name="pnp.flatness~"/>
 		<seealso name="pnp.hardness~"/>

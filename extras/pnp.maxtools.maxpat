@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 888.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 658.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,11 +45,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 531.0, 503.0, 150.0, 38.0 ],
+					"patching_rect" : [ 572.0, 518.0, 150.0, 38.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 208.0, 370.0, 168.0, 38.0 ],
-					"text" : "finish reference: pnp.autoregi~"
+					"presentation_rect" : [ 545.837573528289795, 399.0, 150.0, 38.0 ],
+					"text" : "left off with multi reference"
 				}
 
 			}
@@ -632,7 +632,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 498.418303668498993, 66.409243762493134, 286.0, 38.0 ],
-					"text" : "Calculates the spectral warmth of an incoming audio signal"
+					"text" : "Tracks the spectral centroid of an incoming audio signal"
 				}
 
 			}
