@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 997.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 994.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 0.0, 26.0, 994.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -86,7 +86,6 @@
 						"subpatcher_template" : "",
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [  ],
 						"lines" : [  ]
 					}
@@ -120,7 +119,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 518.0, 112.0, 336.0, 677.0 ],
+						"rect" : [ 0.0, 26.0, 994.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -149,7 +148,6 @@
 						"subpatcher_template" : "",
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [  ],
 						"lines" : [  ],
 						"styles" : [ 							{
@@ -202,7 +200,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 34.0, 105.0, 994.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -231,7 +229,6 @@
 						"subpatcher_template" : "",
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgmode" : 0,
@@ -368,7 +365,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 111.257070362567902, 520.0, 47.0 ],
-									"text" : "pnp.pitchfilter~ is an FFT filter that takes a fundamental frequency as an argument and filters an incoming signal up to 7 octaves above the fundamenal. Each octave is given a separate outlet that can be combined with others or used independently."
+									"text" : "pnp.overtone~ is an FFT filter that takes a fundamental frequency as an argument and filters an incoming signal using integer multiples up to 8 * fundamental. Each multiple is given a separate outlet that can be combined with others or used independently."
 								}
 
 							}
@@ -380,7 +377,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 88.213591873645782, 513.126209080219269, 20.0 ],
-									"text" : "Filters an incoming signal using a fundamental frequency"
+									"text" : "Filters an incoming signal using integer multiples of a fundamental frequency"
 								}
 
 							}
@@ -393,7 +390,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 26.213591873645782, 513.126209080219269, 60.0 ],
-									"text" : "pnp.pitchfilter~"
+									"text" : "pnp.overtone~"
 								}
 
 							}
@@ -462,7 +459,7 @@
 									"numoutlets" : 8,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
 									"patching_rect" : [ 95.679611504077911, 422.85436749458313, 157.758243799209595, 22.0 ],
-									"text" : "pnp.pitchfilter~"
+									"text" : "pnp.overtone~ 440"
 								}
 
 							}
@@ -774,14 +771,14 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "pnp.pitchfilter~.maxpat",
+				"name" : "pnp.overtone~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/filters",
 				"patcherrelativepath" : "../patchers/filters",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pnp.pitchfilterfft~.maxpat",
+				"name" : "pnp.overtonefft~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/filters",
 				"patcherrelativepath" : "../patchers/filters",
 				"type" : "JSON",

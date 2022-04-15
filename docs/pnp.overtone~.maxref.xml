@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="pnp.binpass~">
+<c74object name="pnp.overtone~">
 
 	<digest>
-		Filters an incoming signal using a fundamental frequency
+		Filters an incoming signal using integer multiples of a fundamental frequency
 	</digest>
 	
 	<description>
-		<m>pnp.pitchfilter~</m> is an FFT filter that takes a fundamental 
+		<m>pnp.overtone~</m> is an FFT filter that takes a fundamental 
 		frequency as an argument and filters an incoming signal 
-		up to 7 octaves above the fundamenal. Each octave is 
+		using integer multiples up to 8 * fundamental. Each multiple is 
 		given a separate outlet that can be combined with others 
 		or used independently.
 	</description>
@@ -29,21 +29,43 @@
 		<inlet id="0" type="signal">
 			<digest>Audio Signal Input</digest>
 		</inlet>
-		<inlet id="1" type="float">
-			<digest>Low Frequency</digest>
-		</inlet>
 		<inlet id="2" type="float">
-			<digest>High Frequency</digest>
+			<digest>Fundamental Frequency</digest>
 		</inlet>
 	</inletlist>
 
 	<!--OUTLETS-->
 	<outletlist>
-		<outlet id="0" type="signal">
-			<digest>Audio signal output</digest>
-		</outlet>
 		<outlet id="1" type="list">
-			<digest>Real Range</digest>
+			<digest>Fundamental Frequency</digest>
+		</outlet>
+
+		<outlet id="1" type="list">
+			<digest>2 * Fundamental</digest>
+		</outlet>
+
+		<outlet id="1" type="list">
+			<digest>3 * Fundamental</digest>
+		</outlet>
+
+		<outlet id="1" type="list">
+			<digest>4 * Fundamental</digest>
+		</outlet>
+
+		<outlet id="1" type="list">
+			<digest>5 * Fundamental</digest>
+		</outlet>
+
+		<outlet id="1" type="list">
+			<digest>6 * Fundamental</digest>
+		</outlet>
+
+		<outlet id="1" type="list">
+			<digest>7 * Fundamental</digest>
+		</outlet>
+
+		<outlet id="1" type="list">
+			<digest>8 * Fundamental</digest>
 		</outlet>
 	</outletlist>
 	
