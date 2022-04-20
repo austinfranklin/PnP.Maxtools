@@ -9,7 +9,7 @@
 	
 	<description>
 		<m>pnp.metallic~</m> calculates the probability that the source of the 
-		incoming sound is produced by a metallic object by measure the roughness, 
+		incoming sound is produced by a metallic object by measuring the roughness, 
 		the spectral spread, and the normalized decay time of the signal.
 	</description>
 	

@@ -10,7 +10,7 @@
 	<description>
 		<m>pnp.flatness~</m> calculates the degree to which the frequencies in the 
 		freqeuncy spectrum of the signal are evenly distributed (noise-like). 
-		Larger values indicate a noisier signal and smaller values indicate purer tones.
+		Smaller values indicate a noisier signal and larger values indicate purer tones.
 	</description>
 	
 	<!--METADATA-->
