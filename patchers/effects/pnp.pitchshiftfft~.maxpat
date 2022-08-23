@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -945.0, 15.0, 638.0, 651.0 ],
+		"rect" : [ 34.0, 100.0, 638.0, 651.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -71,7 +71,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 187.5, 288.0, 241.0, 33.0 ],
+					"patching_rect" : [ 174.5, 288.0, 241.0, 33.0 ],
 					"style" : "helpfile_label",
 					"text" : "gizmo~ works in the frequency domain, thus typically inside pfft~."
 				}
@@ -114,10 +114,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 184.0, 75.0, 29.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 2"
 				}
 

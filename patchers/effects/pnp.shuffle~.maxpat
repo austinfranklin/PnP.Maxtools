@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1337.0, -91.0, 802.0, 787.0 ],
+		"rect" : [ 34.0, 100.0, 802.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 56.0, 170.0, 73.0, 22.0 ],
-					"text" : "clip 50 3450"
+					"text" : "clip 50 3000"
 				}
 
 			}
@@ -708,7 +708,8 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Input (0-1)",
+					"comment" : "Shuffle Speed (0-1)",
+					"cool" : 1,
 					"id" : "obj-35",
 					"index" : 2,
 					"maxclass" : "inlet",
@@ -726,8 +727,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 56.0, 136.0, 123.0, 22.0 ],
-					"text" : "scale 0. 0.85 3450 50"
+					"patching_rect" : [ 56.0, 136.0, 110.0, 22.0 ],
+					"text" : "scale 0. 1. 3000 50"
 				}
 
 			}
@@ -967,7 +968,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 203.5, 88.0, 25.0, 25.0 ]
 				}
 

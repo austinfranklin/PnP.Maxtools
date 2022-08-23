@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 701.0, 79.0, 705.0, 564.0 ],
+		"rect" : [ 701.0, 100.0, 705.0, 564.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -89,6 +89,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "Fade Time (ms)",
+					"cool" : 1,
 					"id" : "obj-7",
 					"index" : 3,
 					"maxclass" : "inlet",
@@ -178,6 +179,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "Position (0 = Left, 1 = Right)",
+					"cool" : 1,
 					"id" : "obj-4",
 					"index" : 2,
 					"maxclass" : "inlet",
