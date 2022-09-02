@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 181.0, 233.0, 1014.0, 514.0 ],
+		"rect" : [ 637.0, 331.0, 887.0, 572.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 653.0, 205.0, 130.0, 22.0 ],
-					"text" : "jit.peek~ frameyboi 1 1"
+					"patching_rect" : [ 653.0, 205.0, 132.0, 22.0 ],
+					"text" : "jit.peek~ #0frame 1 1"
 				}
 
 			}
@@ -92,8 +92,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 614.0, 126.0, 130.0, 22.0 ],
-					"text" : "jit.peek~ frameyboi 1 0"
+					"patching_rect" : [ 614.0, 126.0, 132.0, 22.0 ],
+					"text" : "jit.peek~ #0frame 1 0"
 				}
 
 			}
@@ -104,7 +104,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 156.25, 242.0, 75.0, 22.0 ],
+					"patching_rect" : [ 156.25, 253.0, 75.0, 22.0 ],
 					"text" : "prepend dim"
 				}
 
@@ -128,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "int", "int", "int" ],
-					"patching_rect" : [ 165.25, 163.0, 50.5, 22.0 ],
+					"patching_rect" : [ 165.25, 171.0, 50.5, 22.0 ],
 					"text" : "fftinfo~"
 				}
 
@@ -140,8 +140,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 377.0, 306.0, 189.0, 22.0 ],
-					"text" : "jit.matrix frameyboi 2 float32 2048"
+					"patching_rect" : [ 377.0, 306.0, 191.0, 22.0 ],
+					"text" : "jit.matrix #0frame 2 float32 2048"
 				}
 
 			}
