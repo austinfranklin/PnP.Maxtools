@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -866,13 +866,13 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Input (0-1)",
+					"comment" : "Input Signal",
 					"id" : "obj-18",
 					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 203.5, 88.0, 25.0, 25.0 ]
 				}
 
