@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 572.0, 725.0 ],
+		"rect" : [ 34.0, 100.0, 572.0, 725.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -113,6 +113,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "Smoothness (0-1)",
+					"cool" : 1,
 					"id" : "obj-10",
 					"index" : 2,
 					"maxclass" : "inlet",
@@ -246,6 +247,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "Set Trough Frequency (Hz)",
+					"cool" : 1,
 					"id" : "obj-8",
 					"index" : 3,
 					"maxclass" : "inlet",
@@ -306,6 +308,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ],
 					"id" : "obj-32",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -343,6 +346,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "Set Peak Frequency (Hz)",
+					"cool" : 1,
 					"id" : "obj-4",
 					"index" : 4,
 					"maxclass" : "inlet",
@@ -671,7 +675,9 @@
 				}
 
 			}
- ]
+ ],
+		"bgcolor" : [ 0.501960784313725, 0.588235294117647, 0.584313725490196, 1.0 ],
+		"editing_bgcolor" : [ 0.501960784313725, 0.588235294117647, 0.584313725490196, 1.0 ]
 	}
 
 }

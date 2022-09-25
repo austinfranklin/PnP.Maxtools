@@ -9,7 +9,7 @@ var p = this.patcher;
 // object arrays for each category... array
 var filterArray = ['pnp.binpass~ 500 1000', 'pnp.notch~ 500 1000', 'pnp.overtone~ 440', 'pnp.pitchclass~ 440', 'pnp.reduce~ 0.1'];
 var descriptorArray = ['pnp.amplitude~', 'pnp.autoamp~', 'pnp.autoregi~', 'pnp.beat~', 'pnp.boominess~', 'pnp.bpm~', 'pnp.brightness~', 'pnp.centroid~', 'pnp.depth~', 'pnp.descriptor~ 500 1000', 'pnp.energy~', 'pnp.flatness~', 'pnp.hardness~', 'pnp.metallic~', 'pnp.multi~', 'pnp.register~', 'pnp.roughness~', 'pnp.sharpness~', 'pnp.spread~', 'pnp.warmth~'];
-var controlArray = ['pnp.autoscale~', 'pnp.bangs 10 50', 'pnp.noone', 'pnp.nozero', 'pnp.smoother 0.75'];
+var controlArray = ['pnp.noone', 'pnp.nozero', 'pnp.smoother 0.75'];
 var effectArray = ['pnp.convolve~ 0.5', 'pnp.delay~ 1500', 'pnp.distort~ 0.5 0.75', 'pnp.flange~ 5 0.5 0.85', 'pnp.freeze~', 'pnp.grain~ 1. 0.25 0.9', 'pnp.panner~ 0.1', 'pnp.pitchshift~ 7', 'pnp.pluck~ 25 0.65', 'pnp.reverb~ 0.5 0.5', 'pnp.shuffle~ 0.9', 'pnp.split~ 0.25', 'pnp.wonky~ 0.75 0.9'];
 
 // arrays for created object... to delete
@@ -128,8 +128,21 @@ function descriptor() {
     descriptorObjects();
 
     // connect object
-    p.connect(createdFilter[0], 0, createdDescriptor[0], 0);
-    p.connect(createdDescriptor[0], 0, createdControl[0], 0);
+    if (filObj-1 == 2 || filObj-1 == 3) {
+        p.connect(createdFilter[0], 0, createdDescriptor[0], 0);
+        p.connect(createdFilter[0], 0, createdDescriptor[0], 0);
+        p.connect(createdFilter[0], 1, createdDescriptor[0], 0);
+        p.connect(createdFilter[0], 2, createdDescriptor[0], 0);
+        p.connect(createdFilter[0], 3, createdDescriptor[0], 0);
+        p.connect(createdFilter[0], 4, createdDescriptor[0], 0);
+        p.connect(createdFilter[0], 5, createdDescriptor[0], 0);
+        p.connect(createdFilter[0], 6, createdDescriptor[0], 0);
+        p.connect(createdFilter[0], 7, createdDescriptor[0], 0);
+        p.connect(createdDescriptor[0], 0, createdControl[0], 0);
+    } else {
+        p.connect(createdFilter[0], 0, createdDescriptor[0], 0);
+        p.connect(createdDescriptor[0], 0, createdControl[0], 0);
+    }
 }
 
 function control() {
@@ -142,7 +155,7 @@ function control() {
 
     if(effObj-1 == 4 || effObj-1 == 7) {
 
-    } else if (effObj-1 == 0 || effObj-1 == 6 || effObj-1 == 9 || effObj == 0) {
+    } else if (effObj-1 == 6 || effObj-1 == 9 || effObj == 0) {
         p.connect(createdControl[0], 0, createdEffect[0], 1);
         p.connect(createdControl[0], 0, createdEffect[0], 2);
     } else if (effObj-1 == 2 || effObj-1 == 8) {
@@ -154,6 +167,8 @@ function control() {
         p.connect(createdControl[0], 0, createdEffect[0], 3);
     } else if (effObj-1 == 10 || effObj-1 == 11) {
         p.connect(createdControl[0], 0, createdEffect[0], 1);
+    } else if (effObj-1 == 0) {
+        p.connect(createdControl[0], 0, createdEffect[0], 2);
     }
 }
 
@@ -169,12 +184,26 @@ function effect() {
     effectObjects();
     
     if(effObj-1 == 4) {
-        bang = p.newdefault(100, 375, 'button')
+        // create bang for pnp.freeze~
+        bang = p.newdefault(100, 375, 'button');
         createdBang.push(bang);
         p.connect(createdBang[0], 0, createdEffect[0], 0);
-    } else if (effObj-1 == 7) {
-        
-    } else if (effObj-1 == 0 || effObj-1 == 6 || effObj-1 == 9 || effObj == 0) {
+        // delete, create, and connect descriptor and control
+        deleteObjects(createdControl[0]);
+        createdControl.splice(0);
+        var obj = p.newdefault(240, 375, controlArray[conObj-1]);
+        createdControl.push(obj);
+        //connect to descriptor too
+        p.connect(createdDescriptor[0], 0, createdControl[0], 0);
+    } else if (effObj-1 == 1 || effObj-1 == 7) {
+        // delete, create, and connect descriptor and control
+        deleteObjects(createdControl[0]);
+        createdControl.splice(0);
+        var obj = p.newdefault(240, 375, controlArray[conObj-1]);
+        createdControl.push(obj);
+        //connect to descriptor too
+        p.connect(createdDescriptor[0], 0, createdControl[0], 0);
+    } else if (effObj-1 == 6 || effObj-1 == 9 || effObj == 0) {
         p.connect(createdControl[0], 0, createdEffect[0], 1);
         p.connect(createdControl[0], 0, createdEffect[0], 2);
     } else if (effObj-1 == 2 || effObj-1 == 8) {
@@ -189,6 +218,8 @@ function effect() {
         p.connect(createdControl[0], 0, createdEffect[0], 3);
     } else if (effObj-1 == 10 || effObj-1 == 11) {
         p.connect(createdControl[0], 0, createdEffect[0], 1);
+    } else if (effObj-1 == 0) {
+        p.connect(createdControl[0], 0, createdEffect[0], 2);
     }
 
     // connect object

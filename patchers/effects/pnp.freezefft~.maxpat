@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 653.0, 205.0, 132.0, 22.0 ],
+					"patching_rect" : [ 653.0, 205.0, 134.0, 22.0 ],
 					"text" : "jit.peek~ #0frame 1 1"
 				}
 
@@ -92,7 +92,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 614.0, 126.0, 132.0, 22.0 ],
+					"patching_rect" : [ 614.0, 126.0, 134.0, 22.0 ],
 					"text" : "jit.peek~ #0frame 1 0"
 				}
 
@@ -140,7 +140,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 377.0, 306.0, 191.0, 22.0 ],
+					"patching_rect" : [ 377.0, 306.0, 193.0, 22.0 ],
 					"text" : "jit.matrix #0frame 2 float32 2048"
 				}
 
@@ -213,10 +213,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 318.0, 68.0, 28.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 
@@ -359,7 +355,9 @@
 				}
 
 			}
- ]
+ ],
+		"bgcolor" : [ 0.501960784313725, 0.588235294117647, 0.584313725490196, 1.0 ],
+		"editing_bgcolor" : [ 0.501960784313725, 0.588235294117647, 0.584313725490196, 1.0 ]
 	}
 
 }

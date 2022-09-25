@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.roughness~">
+
+	<digest>
+		Calculates the spectral roughness of an incoming audio signal
+	</digest>
+	
+	<description>
+		A rough sound is one that has an uneven or irregular sonic texture. <m>pnp.roughness~</m> calculates the apparent roughness of an incoming signal by measuring how "rough" the spectral content of the sound is.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Descriptor</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="1" type="list">
+			<digest>Roughness</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="signal">
+			<arglist />
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="pnp.boominess~"/>
+		<seealso name="pnp.brightness~"/>
+		<seealso name="pnp.depth~"/>
+		<seealso name="pnp.descriptor~"/>
+		<seealso name="pnp.flatness~"/>
+		<seealso name="pnp.hardness~"/>
+		<seealso name="pnp.metallic~"/>
+		<seealso name="pnp.sharpness~"/>
+		<seealso name="pnp.warmth~"/>
+	</seealsolist>
+	
+</c74object>

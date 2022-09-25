@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.pitchshift~">
+
+	<digest>
+		Pitchshifts an incoming audio signal
+	</digest>
+	
+	<description>
+		<m>pnp.pitchshift~</m> is a pitchshifter that uses an FFT to transpose an incoming signal using semi tones, where an increas by 1 is an transposition factor of 1 semitone. Setting negative values transposes the resulting pitch down. The object semitone argument defaults to 0 if unspecified.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Effect</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+
+		<inlet id="1" type="integer">
+			<digest>Semi-Tone Transposition where positive integers pitchshift higher and negative integers pitchshift lower</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Output Signal</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Transposition" optional="1" type="integer">
+			<digest>Sets the transposition amount in semi-tones
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="int" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Converted to <m>float</m>. Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="gizmo~"/>
+		<seealso name="retune~"/>
+	</seealsolist>
+	
+</c74object>

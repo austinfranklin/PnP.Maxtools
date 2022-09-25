@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.split~">
+
+	<digest>
+		Split and Audio Signal
+	</digest>
+	
+	<description>
+		<m>pnp.split~</m> splits an audio signal using an FFT at a specified frequency bin. The split position determines how much of each frame will come out of either the left or right outlets. It can be set with a floating point number between 0 and 1, but defulats to 0.125 if left unspecified.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Effect</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+
+		<inlet id="1" type="float">
+			<digest>Split Position (0-1)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Output Signal !</digest>
+		</outlet>
+
+		<outlet id="1" type="signal">
+			<digest>Output Signal R</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Position" optional="1" type="float">
+			<digest>Sets the split position for the incoming audio signal
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="float">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="pnp.convolve~"/>
+	</seealsolist>
+	
+</c74object>

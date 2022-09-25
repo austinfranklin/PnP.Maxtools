@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.panner~">
+
+	<digest>
+		Pans an incoming audio signal in the stereo field
+	</digest>
+	
+	<description>
+		<m>pnp.panner~</m> pans an incoming signal between the left and right channels depending on the position argument set. The fade speed can also be set that determines the rate of transition between changes to the position.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Effect</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+
+		<inlet id="1" type="float">
+			<digest>Position (0-1)</digest>
+		</inlet>
+
+		<inlet id="1" type="integer">
+			<digest>Fade Speed (ms)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Output Signal</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Position" optional="1" type="float">
+			<digest>Sets the position of the sound in the stereo field
+			</digest>
+		</objarg>
+
+		<objarg name="Fade" optional="1" type="float">
+			<digest>Sets the speed of transition between changes to the position
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="int" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Converted to <m>float</m>. Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="float">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+	</seealsolist>
+	
+</c74object>

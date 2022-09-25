@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.reverb~">
+
+	<digest>
+		Apply reverberation to an incoming audio signal
+	</digest>
+	
+	<description>
+		<m>pnp.reverb~</m> is a stereo plate reverb effect where the room size and decay time can be specified using a floating point number between 0 and 1. A wet/dry mix parameter can also be set using a floating point number between 0 and 1.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Effect</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+
+		<inlet id="1" type="float">
+			<digest>Size (0-1)</digest>
+		</inlet>
+
+		<inlet id="1" type="float">
+			<digest>Decay (0-1)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Output Signal</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="size" optional="1" type="float">
+			<digest>Sets the room size
+			</digest>
+		</objarg>
+
+		<objarg name="Feedback amount" optional="1" type="float">
+			<digest>Sets the decay time
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+
+		<method name="float">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="allpass~"/>
+	</seealsolist>
+	
+</c74object>

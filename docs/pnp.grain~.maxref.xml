@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.grain~">
+
+	<digest>
+		A real-time granulator
+	</digest>
+	
+	<description>
+		<m>pnp.grain~</m> takes an incoming audio signal and performs real-time granular synthesis, using parameters such as grain rate, duration, and pitch to vary the grains. These parameters can be set using a floating point number between 0 and 1, but default to 0 if unspecified.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Effect</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+
+		<inlet id="1" type="float">
+			<digest>Grain Rate (0-1)</digest>
+		</inlet>
+
+		<inlet id="1" type="float">
+			<digest>Grain Duration (0-1)</digest>
+		</inlet>
+
+		<inlet id="1" type="float">
+			<digest>Grain Pitch (0-1)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Output Signal</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Rate" optional="1" type="float">
+			<digest>Sets the rate range of each grain
+			</digest>
+		</objarg>
+
+		<objarg name="Duration" optional="1" type="float">
+			<digest>Sets the duration range of each grain
+			</digest>
+		</objarg>
+
+		<objarg name="Pitch" optional="1" type="float">
+			<digest>Sets the pitch range of each grain
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="bang">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="buffer~"/>
+	</seealsolist>
+	
+</c74object>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.register~">
+
+	<digest>
+		Pitch detector that tracks the position of a frequency between a low and high frequency
+	</digest>
+	
+	<description>
+		<m>pnp.register~</m> returns a normalized floating point number that indicates where the detected pitch is located between low and high frequency arguments. The smoothness argument can be used to output a more gradual change in output.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Descriptor</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+
+		<inlet id="1" type="float">
+			<digest>Low Frequency</digest>
+		</inlet>
+
+		<inlet id="2" type="float">
+			<digest>high Frequency</digest>
+		</inlet>
+
+		<inlet id="3" type="float">
+			<digest>Smoothness</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="float">
+			<digest>Output (0-1)</digest>
+		</outlet>
+
+		<outlet id="0" type="float">
+			<digest>Detected Pitch (Hz)</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="pnp.autoregi~"/>
+		<seealso name="fzero~"/>
+		<seealso name="retune~"/>
+	</seealsolist>
+	
+</c74object>

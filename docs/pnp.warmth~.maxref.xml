@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.warmth~">
+
+	<digest>
+		Calculates the spectral warmth of an incoming audio signal
+	</digest>
+	
+	<description>
+		A warm sound is one that promotes a sensation analogous to that caused by a physical increase in temperature. pnp.warmth~ calculates the apparent warmth of an incoming audio signal by using a fundamental frequency estimator to calculate the mean warmth region. The spectral centroid in this range is calculated along with the ratio of energy between this range and 0-20,050 Hz.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Descriptor</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="1" type="float">
+			<digest>Warmth</digest>
+		</outlet>
+
+		<outlet id="1" type="list">
+			<digest>Mean Warmth Region (Hz)</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="signal">
+			<arglist />
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="pnp.boominess~"/>
+		<seealso name="pnp.brightness~"/>
+		<seealso name="pnp.depth~"/>
+		<seealso name="pnp.descriptor~"/>
+		<seealso name="pnp.flatness~"/>
+		<seealso name="pnp.hardness~"/>
+		<seealso name="pnp.metallic~"/>
+		<seealso name="pnp.roughness~"/>
+		<seealso name="pnp.sharpness~"/>
+	</seealsolist>
+	
+</c74object>

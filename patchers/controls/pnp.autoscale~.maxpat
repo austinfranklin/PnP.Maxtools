@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 979.0, 390.0, 563.0, 514.0 ],
+		"rect" : [ 748.0, 394.0, 563.0, 514.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,27 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 149.0, 433.0, 82.0, 22.0 ],
-					"text" : "rampsmooth~"
+					"id" : "obj-17",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 183.0, 375.0, 315.0, 60.0 ],
+					"text" : "Mikhail Malt, Emmanuel Jourdan, “Real-Time Ises of Low Level Sound Descriptors as Event Detection Functions Using the Max/MSP Zsa.Descriptors Library”, in SBCM 2009, Recife, Brazil, 2009.",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 183.0, 340.0, 314.0, 33.0 ],
+					"text" : "Modified version of the Adaptive Signal Level Scaling object proposed by Mikahil Malt and Emmanuel Jordan.",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -71,18 +85,6 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 98.0, 55.0, 106.0, 22.0 ],
 					"text" : "average~ 440 rms"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 173.0, 399.0, 34.0, 22.0 ],
-					"text" : "line~"
 				}
 
 			}
@@ -148,7 +150,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Trigger Level",
 					"cool" : 1,
 					"id" : "obj-15",
 					"index" : 3,
@@ -167,7 +169,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 56.0, 415.0, 30.0, 22.0 ],
+					"patching_rect" : [ 56.0, 417.0, 30.0, 22.0 ],
 					"text" : "*~ 1"
 				}
 
@@ -222,7 +224,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Amplitude Level",
 					"cool" : 1,
 					"id" : "obj-7",
 					"index" : 2,
@@ -260,7 +262,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Scaled Output",
 					"id" : "obj-2",
 					"index" : 1,
 					"maxclass" : "outlet",
@@ -272,7 +274,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Input Signal",
 					"id" : "obj-1",
 					"index" : 1,
 					"maxclass" : "inlet",
@@ -437,7 +439,9 @@
 				}
 
 			}
- ]
+ ],
+		"bgcolor" : [ 0.501960784313725, 0.588235294117647, 0.584313725490196, 1.0 ],
+		"editing_bgcolor" : [ 0.501960784313725, 0.588235294117647, 0.584313725490196, 1.0 ]
 	}
 
 }

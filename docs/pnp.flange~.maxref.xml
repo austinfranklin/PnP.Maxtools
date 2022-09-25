@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.dstort~">
+
+	<digest>
+		Apply a flange effect to an incoming audio signal
+	</digest>
+	
+	<description>
+		<m>pnp.flange~</m> is a flanger built in gen~ that uses speed (Hz), width, and feedback parameters to create the effect. Width and feedback can be set using a floating point number between 0 and 1, but default to 0 (no flange effect) if unspecified.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Effect</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+
+		<inlet id="1" type="float">
+			<digest>Speed (Hz)</digest>
+		</inlet>
+
+		<inlet id="2" type="float">
+			<digest>Width (0-1)</digest>
+		</inlet>
+
+		<inlet id="3" type="float">
+			<digest>Feedback (0-1)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Output Signal L</digest>
+		</outlet>
+
+		<outlet id="1" type="signal">
+			<digest>Output Signal R</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Speed" optional="1" type="float">
+			<digest>Sets the speed parameter
+			</digest>
+		</objarg>
+
+		<objarg name="Width" optional="1" type="float">
+			<digest>Sets the amplitude, or width, of the oscillator
+			</digest>
+		</objarg>
+
+		<objarg name="Feedback" optional="1" type="float">
+			<digest>Sets the feedback amount
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="float">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="comb~"/>
+		<seealso name="delay~"/>
+		<seealso name="tapin~"/>
+		<seealso name="tapout~"/>
+		<seealso name="teeth~"/>
+	</seealsolist>
+	
+</c74object>
