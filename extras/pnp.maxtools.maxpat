@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 66.0, 750.0, 750.0 ],
+		"rect" : [ 54.0, 66.0, 750.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,29 +40,14 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-49",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 104.0, 569.0, 150.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 77.851971030235291, 569.0, 150.0, 22.0 ],
-					"text" : "wet/dry object?"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-48",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 28.0, 329.0, 38.0 ],
+					"patching_rect" : [ 32.0, 28.0, 329.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 379.896840572357178, 98.141482770442963, 353.0, 38.0 ],
-					"text" : "- finish Demo\n- live input/file playback options"
+					"presentation_rect" : [ 379.896840572357178, 117.141482770442963, 353.0, 22.0 ],
+					"text" : "- finish Demo"
 				}
 
 			}
@@ -938,15 +923,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 294.0, 33.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 294.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 262.0, 33.0 ],
-					"text" : "See a demonstration and try out various combinations of objects",
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 262.0, 47.0 ],
+					"text" : "An FFT filter modeled after a ‘notch’ filter that removes frequencies within a select frequency bin range",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 

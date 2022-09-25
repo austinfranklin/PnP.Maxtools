@@ -90,6 +90,27 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-1",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "audiomenu.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 101.150480479001999, 251.461535453796387, 127.0, 69.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontface" : 1,
 									"fontname" : "Arial",
 									"id" : "obj-26",
@@ -225,7 +246,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 101.150480479001999, 415.461535453796387, 70.0, 22.0 ],
+									"patching_rect" : [ 101.150480479001999, 424.461535453796387, 70.0, 22.0 ],
 									"text" : "pnp.depth~"
 								}
 
@@ -255,7 +276,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 101.150480479001999, 485.230767726898193, 47.0, 22.0 ]
+									"patching_rect" : [ 101.150480479001999, 494.230767726898193, 47.0, 22.0 ]
 								}
 
 							}
@@ -267,23 +288,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 150.150480479001999, 486.230767726898193, 42.0, 20.0 ],
+									"patching_rect" : [ 150.150480479001999, 495.230767726898193, 42.0, 20.0 ],
 									"text" : "Depth",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"id" : "obj-16",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 101.150480479001999, 263.461535453796387, 44.0, 22.0 ],
-									"text" : "noise~"
 								}
 
 							}
@@ -303,7 +310,7 @@
 									"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 316.400480479001999, 308.461535453796387, 360.0, 155.0 ],
-									"setfilter" : [ 0, 3, 1, 0, 0, 376.089263916015625, 0.607863128185272, 2.842894554138184, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+									"setfilter" : [ 0, 9, 1, 0, 0, 376.089263916015625, 0.607863128185272, 2.842894554138184, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 									"style" : "PnP.Maxtools Palette",
 									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 								}
@@ -472,37 +479,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bubble" : 1,
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"fontsize" : 13.0,
-									"id" : "obj-24",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 163.150480479001999, 305.961535453796387, 118.0, 40.0 ],
-									"text" : "clear biquad~ if filter blows up"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"fontsize" : 13.0,
-									"id" : "obj-63",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 120.150480479001999, 314.461535453796387, 41.0, 23.0 ],
-									"text" : "clear"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
@@ -511,7 +487,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 101.150480479001999, 360.461535453796387, 72.0, 23.0 ],
+									"patching_rect" : [ 101.150480479001999, 374.461535453796387, 72.0, 23.0 ],
 									"text" : "biquad~"
 								}
 
@@ -537,6 +513,13 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-72", 0 ],
 									"hidden" : 1,
@@ -576,13 +559,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
-									"source" : [ "obj-16", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
 									"hidden" : 1,
 									"source" : [ "obj-4", 3 ]
@@ -608,15 +584,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"midpoints" : [ 325.900480479001999, 465.0, 87.0, 465.0, 87.0, 354.0, 110.650480479001999, 354.0 ],
+									"midpoints" : [ 325.900480479001999, 465.0, 87.0, 465.0, 87.0, 364.0, 110.650480479001999, 364.0 ],
 									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
-									"source" : [ "obj-63", 0 ]
 								}
 
 							}
@@ -5720,6 +5689,13 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
+				"name" : "audiomenu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "descriptorsmenu.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",

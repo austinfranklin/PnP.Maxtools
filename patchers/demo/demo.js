@@ -35,6 +35,7 @@ var bang = 0;
 // create objects
 function filterObjects() {
     var obj = p.newdefault(140, 275, filterArray[filObj]);
+    obj.setattr("bgcolor", 0.298, 0.408, 0.459, 1.000);
     createdFilter.push(obj);
 
     var adcObj = p.newdefault(140, 200, 'ezadc~');
@@ -49,6 +50,7 @@ function filterObjects() {
 
 function descriptorObjects() {
     var obj = p.newdefault(240, 325, descriptorArray[desObj]);
+    obj.setattr("color", 0.298, 0.408, 0.459, 1.000);
     createdDescriptor.push(obj);
 
     desObj++;
@@ -60,6 +62,7 @@ function descriptorObjects() {
 
 function controlObjects() {
     var obj = p.newdefault(240, 375, controlArray[conObj]);
+    obj.setattr("color", 0.298, 0.408, 0.459, 1.000);
     createdControl.push(obj);
 
     conObj++;
@@ -71,6 +74,7 @@ function controlObjects() {
 
 function effectObjects() {
     var obj = p.newdefault(140, 425, effectArray[effObj]);
+    obj.setattr("color", 0.298, 0.408, 0.459, 1.000);
     createdEffect.push(obj);
 
     var gainObj = p.newdefault(140, 490, 'live.gain~');

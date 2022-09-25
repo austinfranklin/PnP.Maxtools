@@ -192,7 +192,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 246.0, 484.0, 132.0, 20.0 ],
+									"patching_rect" : [ 246.0, 496.0, 132.0, 20.0 ],
 									"text" : "Estimated BPM",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -205,7 +205,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 246.0, 362.0, 81.0, 14.0 ]
+									"patching_rect" : [ 200.0, 382.0, 87.0, 24.0 ]
 								}
 
 							}
@@ -219,7 +219,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 180.0, 484.0, 58.0, 22.0 ]
+									"patching_rect" : [ 180.0, 496.0, 58.0, 22.0 ]
 								}
 
 							}
@@ -233,7 +233,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 215.0, 269.0, 46.0, 22.0 ]
+									"patching_rect" : [ 215.0, 259.0, 46.0, 22.0 ]
 								}
 
 							}
@@ -245,7 +245,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 180.0, 232.0, 24.0, 24.0 ]
+									"patching_rect" : [ 180.0, 222.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -258,7 +258,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 180.0, 357.0, 43.0, 22.0 ],
+									"patching_rect" : [ 180.0, 347.0, 43.0, 22.0 ],
 									"text" : "click~"
 								}
 
@@ -272,7 +272,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 180.0, 306.0, 54.0, 22.0 ],
+									"patching_rect" : [ 180.0, 296.0, 54.0, 22.0 ],
 									"text" : "metro"
 								}
 
@@ -287,7 +287,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 180.0, 432.0, 64.0, 22.0 ],
+									"patching_rect" : [ 180.0, 444.0, 64.0, 22.0 ],
 									"text" : "pnp.bpm~",
 									"varname" : "aaf.amp~"
 								}
