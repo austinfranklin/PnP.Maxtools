@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 54.0, 66.0, 750.0, 750.0 ],
+		"rect" : [ 591.0, 164.0, 750.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -554,7 +554,7 @@
 					"patching_rect" : [ 498.245609283447266, 673.6842041015625, 129.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 312.103073507547379, 104.641482770442963, 53.0, 20.0 ],
-					"text" : "v0.0.5",
+					"text" : "0.0.5",
 					"textcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ],
 					"textjustification" : 1
 				}
@@ -917,7 +917,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 262.0, 33.0 ],
-					"text" : "An effect that freezes an incoming audio signal",
+					"text" : "Track the amplitude of an incoming audio signal",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 

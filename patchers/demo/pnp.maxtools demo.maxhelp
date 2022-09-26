@@ -41,18 +41,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-305",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 415.0, 338.0, 237.0, 47.0 ],
-					"text" : "color?\ninlet for convolve\ndeleting those objects from the demo"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -78,17 +66,6 @@
 					"patching_rect" : [ 294.690557062625885, 522.286408126354218, 67.0, 20.0 ],
 					"text" : "Descriptor",
 					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-482",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 605.520659327507019, 546.286408126354218, 150.0, 20.0 ],
-					"text" : "remove these objects"
 				}
 
 			}
@@ -209,7 +186,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 345.475104212760925, 243.045454561710358, 348.975803434848785, 26.090909123420715 ],
+					"patching_rect" : [ 345.475104212760925, 244.045454561710358, 348.975803434848785, 26.090909123420715 ],
 					"tabcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ],
 					"tabs" : [ "filter", "descriptor", "control", "effect" ],
 					"textcolor" : [ 0.231372549019608, 0.223529411764706, 0.254901960784314, 1.0 ]
@@ -222,8 +199,7 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 0,
 					"patching_rect" : [ 520.690557062625885, 246.045454561710358, 63.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "demo.js",
@@ -950,8 +926,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 311.5, 416.598320245742798, 29.5, 20.0 ],
-									"text" : "*~"
+									"patching_rect" : [ 311.5, 416.598320245742798, 40.0, 20.0 ],
+									"text" : "*~ 0.5"
 								}
 
 							}
@@ -1261,13 +1237,6 @@
 									"destination" : [ "obj-16", 0 ],
 									"midpoints" : [ 140.995141744613647, 411.0, 321.0, 411.0 ],
 									"source" : [ "obj-17", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-16", 1 ],
-									"source" : [ "obj-18", 1 ]
 								}
 
 							}
