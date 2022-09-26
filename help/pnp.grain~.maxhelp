@@ -5547,15 +5547,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pnp.smoother.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/controls",
-				"patcherrelativepath" : "../patchers/controls",
+				"name" : "pnp.polygrain~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
+				"patcherrelativepath" : "../patchers/effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "polygrain~.maxpat",
-				"bootpath" : "C74:/docs/tutorial-patchers/msp-tut",
+				"name" : "pnp.smoother.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/controls",
+				"patcherrelativepath" : "../patchers/controls",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -41,6 +41,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-305",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 415.0, 338.0, 237.0, 47.0 ],
+					"text" : "color?\ninlet for convolve\ndeleting those objects from the demo"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -558,7 +570,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 347.669897735118866, 554.0, 409.0, 60.0 ],
+									"patching_rect" : [ 347.669897735118866, 554.0, 418.0, 60.0 ],
 									"text" : "The audio effects are an assortment of various signal processing techniques and algorithms. Most objects in this category are designed to be controlled with a number between 0-1. These objects implement well-known algorithms for achieving these effects.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -574,7 +586,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 347.669897735118866, 456.0, 409.0, 74.0 ],
+									"patching_rect" : [ 347.669897735118866, 456.0, 413.0, 74.0 ],
 									"text" : "The additional controls provide a wide range of functionality. Most objects in this category output a number between 0-1 that provides users with more control in terms of parameter automation or mapping. In general, these objects are designed to be used in between descriptors and effects to manipulate control data further to achieving a desired interaction.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -6683,7 +6695,6 @@
 				"multi" : 0
 			}
  ],
-		"patchlinecolor" : [ 0.701961, 0.701961, 0.701961, 1.0 ],
 		"editing_bgcolor" : [ 0.501960784313725, 0.588235294117647, 0.584313725490196, 1.0 ]
 	}
 

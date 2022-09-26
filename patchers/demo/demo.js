@@ -159,7 +159,7 @@ function control() {
 
     if(effObj-1 == 4 || effObj-1 == 7) {
 
-    } else if (effObj-1 == 6 || effObj-1 == 9 || effObj == 0) {
+    } else if (effObj-1 == 6 || effObj-1 == 9) {
         p.connect(createdControl[0], 0, createdEffect[0], 1);
         p.connect(createdControl[0], 0, createdEffect[0], 2);
     } else if (effObj-1 == 2 || effObj-1 == 8) {
@@ -172,6 +172,8 @@ function control() {
     } else if (effObj-1 == 10 || effObj-1 == 11) {
         p.connect(createdControl[0], 0, createdEffect[0], 1);
     } else if (effObj-1 == 0) {
+        p.connect(createdControl[0], 0, createdEffect[0], 2);
+    } else if (effObj-1 == 1) {
         p.connect(createdControl[0], 0, createdEffect[0], 2);
     }
 }
