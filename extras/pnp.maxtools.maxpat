@@ -40,19 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-48",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 28.0, 329.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 379.896840572357178, 117.141482770442963, 353.0, 22.0 ],
-					"text" : "- finish Demo"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-43",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -923,15 +910,14 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 294.0, 47.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 294.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 262.0, 47.0 ],
-					"text" : "An FFT filter modeled after a ‘notch’ filter that removes frequencies within a select frequency bin range",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 262.0, 33.0 ],
+					"text" : "Track the amplitude of an incoming audio signal",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 
