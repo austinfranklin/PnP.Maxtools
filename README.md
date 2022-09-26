@@ -1,4 +1,4 @@
-# PnP.Maxtools
+# PnP.Maxtools v0.0.5
 
 The PnP.Maxtools package is a set of open source objects designed for the real-time automation of control parameters within Max/MSP. The package is a set of filters, signal analysis and sound description tools, audio effects, and other objects that utilize several music information retrieval algorithms and are designed to be used together to compose music or improvise without the use of external controllers or hardware. The PnP.Maxtools package is designed to take incoming audio from a microphone, analyze it, and use the analysis to control an audio effect on the incoming signal in real-time. The filters and additional controls can be used to aid with analysis or control audio effects. In this way, the audio content has a real musical relationship with the resulting musical transformations while the control parameters become more multifaceted and better able to serve the needs of artists.
 
