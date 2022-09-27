@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 591.0, 164.0, 750.0, 750.0 ],
+		"rect" : [ 174.0, 183.0, 750.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -910,14 +910,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 294.0, 20.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 294.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 262.0, 33.0 ],
-					"text" : "Track the amplitude of an incoming audio signal",
+					"text" : "See a demonstration and try out various combinations of objects",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 

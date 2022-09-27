@@ -45,7 +45,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 327.966675000000009, 36.0, 26.0 ],
+					"patching_rect" : [ 129.0, 327.966675000000009, 36.0, 26.0 ],
 					"text" : "r buff"
 				}
 
@@ -57,7 +57,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 529.0, 165.0, 86.0, 20.0 ],
-					"text" : "pitch to period"
+					"text" : "pitch to period",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -830,7 +831,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 77.468688999999998, 397.977782999999988, 92.0, 33.0 ],
-					"text" : "generate playback ramp."
+					"text" : "generate playback ramp.",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -844,7 +846,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 331.0, 397.977782999999988, 117.0, 33.0 ],
-					"text" : "generate amplitude\n curve (with slope)."
+					"text" : "generate amplitude\n curve (with slope).",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -858,7 +861,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 574.25, 118.022262999999995, 74.0, 33.0 ],
-					"text" : "how loud is this grain?"
+					"text" : "how loud is this grain?",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -872,7 +876,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 514.269408999999996, 205.300003000000004, 135.0, 33.0 ],
-					"text" : "how long is this grain including pitch shift?"
+					"text" : "how long is this grain including pitch shift?",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -886,7 +891,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 365.5, 205.300003000000004, 91.0, 33.0 ],
-					"text" : "where does this grain end?"
+					"text" : "where does this grain end?",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -900,7 +906,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 412.903503000000001, 118.022262999999995, 96.0, 33.0 ],
-					"text" : "what pitch is this grain?"
+					"text" : "what pitch is this grain?",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -914,7 +921,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 256.982452000000023, 118.022262999999995, 78.0, 33.0 ],
-					"text" : "how long is this grain?"
+					"text" : "how long is this grain?",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -983,7 +991,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 815.842101999999954, 119.066665999999998, 105.0, 20.0 ],
-					"text" : "unmute the voice."
+					"text" : "unmute the voice.",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -996,7 +1005,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 767.140319999999974, 459.411133000000007, 92.0, 20.0 ],
-					"text" : "mute the voice."
+					"text" : "mute the voice.",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -1010,7 +1020,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 850.79199200000005, 59.811110999999997, 117.0, 33.0 ],
-					"text" : "< unmute, then get random parameters."
+					"text" : "< unmute, then get random parameters.",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -1023,7 +1034,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 212.796997000000005, 23.0, 121.0, 20.0 ],
-					"text" : "< bang triggers grain"
+					"text" : "< bang triggers grain",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -1144,6 +1156,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 173.720551, 549.944458000000054, 44.0, 26.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -1336,6 +1352,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 174.0, 24.077777999999999, 30.0, 26.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
