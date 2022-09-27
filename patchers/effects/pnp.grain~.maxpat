@@ -141,8 +141,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 989.900846421718597, 240.711003661155701, 169.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0 else out2 $i1"
+					"patching_rect" : [ 989.900846421718597, 240.711003661155701, 179.0, 22.0 ],
+					"text" : "if $i1 == 0 then 0.5 else out2 $i1"
 				}
 
 			}
