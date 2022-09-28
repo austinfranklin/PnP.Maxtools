@@ -43,7 +43,7 @@
 					"color" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ],
 					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 161.775249123573303, 281.0, 149.0, 22.0 ],
@@ -71,7 +71,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 161.775249123573303, 100.0, 30.0, 30.0 ]
 				}
 

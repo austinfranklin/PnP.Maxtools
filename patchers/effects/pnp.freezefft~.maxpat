@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 56.0, 366.0, 887.0, 572.0 ],
+		"rect" : [ 73.0, 504.0, 887.0, 572.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 271.0, 414.0, 362.0, 22.0 ],
+					"patching_rect" : [ 272.0, 470.0, 362.0, 22.0 ],
 					"text" : "A modified version of freeze-frame by Jean-francois Charles.",
 					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
@@ -59,7 +59,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 653.0, 205.0, 134.0, 22.0 ],
+					"patching_rect" : [ 690.0, 284.0, 134.0, 22.0 ],
 					"text" : "jit.peek~ #0frame 1 1"
 				}
 
@@ -71,7 +71,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 653.0, 239.0, 82.0, 22.0 ],
+					"patching_rect" : [ 690.0, 318.0, 82.0, 22.0 ],
 					"text" : "frameaccum~"
 				}
 
@@ -82,7 +82,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 614.0, 334.0, 58.0, 22.0 ],
+					"patching_rect" : [ 651.0, 413.0, 58.0, 22.0 ],
 					"text" : "fftout~ 1"
 				}
 
@@ -94,7 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 614.0, 295.0, 58.0, 22.0 ],
+					"patching_rect" : [ 651.0, 374.0, 58.0, 22.0 ],
 					"text" : "poltocar~"
 				}
 
@@ -106,7 +106,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 614.0, 126.0, 134.0, 22.0 ],
+					"patching_rect" : [ 651.0, 205.0, 134.0, 22.0 ],
 					"text" : "jit.peek~ #0frame 1 0"
 				}
 
@@ -227,10 +227,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 318.0, 68.0, 28.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 
