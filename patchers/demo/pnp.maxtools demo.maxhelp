@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 359.0, 212.0, 800.0, 750.0 ],
+		"rect" : [ 100.0, 100.0, 800.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1357,6 +1357,27 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bgcolor" : [ 0.501960784313725, 0.588235294117647, 0.584313725490196, 0.0 ],
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 10.0,
+									"id" : "obj-1",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 553.912716533456887, 399.110916137695312, 88.0, 29.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 612.792532767568446, 307.110916137695312, 69.0, 29.0 ],
+									"text" : "Concentrated\nFrequencies",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ],
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-56",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -2132,7 +2153,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 1489.632905721664429, 735.504528284072876, 150.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 550.058046724115229, 307.110916137695312, 62.0, 20.0 ],
+									"presentation_rect" : [ 551.058046724115229, 307.110916137695312, 62.0, 20.0 ],
 									"text" : "________",
 									"textcolor" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ]
 								}

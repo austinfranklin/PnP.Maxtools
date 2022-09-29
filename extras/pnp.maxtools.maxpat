@@ -918,7 +918,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 262.0, 33.0 ],
-					"text" : "Smoothes and applies exponential curves to incoming data",
+					"text" : "Randomly delay and feedback an incoming audio signal",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 
