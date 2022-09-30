@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 100.0, 800.0, 750.0 ],
+		"rect" : [ 100.0, 100.0, 800.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -323,7 +323,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -458,7 +458,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -495,6 +495,20 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"autofit" : 1,
+									"forceaspect" : 1,
+									"id" : "obj-1",
+									"maxclass" : "fpic",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "jit_matrix" ],
+									"patching_rect" : [ 113.0, 212.0, 167.105551969012254, 401.001549186676925 ],
+									"pic" : "signal_Flow_Diagram.jpeg"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -503,7 +517,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 347.669897735118866, 554.0, 418.0, 60.0 ],
+									"patching_rect" : [ 324.669897735118866, 554.0, 409.0, 60.0 ],
 									"text" : "The audio effects are an assortment of various signal processing techniques and algorithms. Most objects in this category are designed to be controlled with a number between 0-1. These objects implement well-known algorithms for achieving these effects.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -519,7 +533,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 347.669897735118866, 456.0, 413.0, 74.0 ],
+									"patching_rect" : [ 324.669897735118866, 456.0, 409.0, 74.0 ],
 									"text" : "The additional controls provide a wide range of functionality. Most objects in this category output a number between 0-1 that provides users with more control in terms of parameter automation or mapping. In general, these objects are designed to be used in between descriptors and effects to manipulate control data further to achieving a desired interaction.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -535,7 +549,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 347.669897735118866, 318.0, 409.0, 114.0 ],
+									"patching_rect" : [ 324.669897735118866, 318.0, 409.0, 114.0 ],
 									"text" : "Many of the sound descriptors were implemented based on models described in AudioCommons \"Release of timbral characterization tools for semantically annotating non-musical content,\" among other sources. This release describes models that analyze perceptual characteristics of sounds. In Max, these descriptors operate in real time on audio signals. The output value from these objects are normalized (0-1), where 1 is equal to the perceptual characteristic being perceptually very present in the sound. Many of these descriptors are built using the pfft~ and gen~ objects.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -551,7 +565,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 347.669897735118866, 234.0, 409.0, 60.0 ],
+									"patching_rect" : [ 324.669897735118866, 234.0, 409.0, 60.0 ],
 									"text" : "The filter objects contain various ways to limit or change the range of input  signal frequencies. They can be used to remove unwanted sounds for effects processing or to limit the frequency range to yield a more accurate descriptor output value.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -565,7 +579,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 347.669897735118866, 532.0, 409.0, 20.0 ],
+									"patching_rect" : [ 324.669897735118866, 532.0, 409.0, 20.0 ],
 									"text" : "Effects:",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -579,7 +593,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 347.669897735118866, 434.0, 409.0, 20.0 ],
+									"patching_rect" : [ 324.669897735118866, 434.0, 409.0, 20.0 ],
 									"text" : "Controls:",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -593,7 +607,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 347.669897735118866, 296.0, 409.0, 20.0 ],
+									"patching_rect" : [ 324.669897735118866, 296.0, 409.0, 20.0 ],
 									"text" : "Descriptors:",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -607,22 +621,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 347.669897735118866, 212.0, 409.0, 20.0 ],
+									"patching_rect" : [ 324.669897735118866, 212.0, 409.0, 20.0 ],
 									"text" : "Filters:",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"autofit" : 1,
-									"id" : "obj-3",
-									"maxclass" : "fpic",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 61.669897735118866, 212.0, 263.0, 437.0 ],
-									"pic" : "sig_diagram.jpeg"
 								}
 
 							}
@@ -715,7 +716,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1320,7 +1321,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1388,7 +1389,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2486,7 +2487,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2562,7 +2563,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 3,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2700,7 +2701,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 3,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -4087,7 +4088,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sig_diagram.jpeg",
+				"name" : "signal_Flow_Diagram.jpeg",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/demo",
 				"patcherrelativepath" : ".",
 				"type" : "JPEG",
