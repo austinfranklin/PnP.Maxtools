@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -131,8 +131,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 243.491111278533936, 123.0, 40.0, 22.0 ],
-					"text" : "*~ 4.5"
+					"patching_rect" : [ 243.491111278533936, 123.0, 34.0, 22.0 ],
+					"text" : "*~ 4."
 				}
 
 			}
