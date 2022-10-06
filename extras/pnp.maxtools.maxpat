@@ -554,7 +554,7 @@
 					"patching_rect" : [ 498.245609283447266, 673.6842041015625, 129.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 312.103073507547379, 104.641482770442963, 53.0, 20.0 ],
-					"text" : "0.1.6",
+					"text" : "0.1.7",
 					"textcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ],
 					"textjustification" : 1
 				}
@@ -910,13 +910,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 294.0, 20.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 294.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 262.0, 20.0 ],
-					"text" : "Convolve two signals together",
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 262.0, 47.0 ],
+					"text" : "Track the amplitude of an incoming audio signal using the loudest part of the signal as the upper threshold",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 
