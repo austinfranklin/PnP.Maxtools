@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -47,7 +47,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 294.5, 190.0, 35.0, 22.0 ],
+					"patching_rect" : [ 294.5, 159.0, 35.0, 22.0 ],
 					"text" : "+~ 1"
 				}
 
@@ -74,7 +74,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 217.0, 190.0, 51.0, 22.0 ],
+					"patching_rect" : [ 217.0, 255.0, 51.0, 22.0 ],
 					"text" : "gate~ 2"
 				}
 
@@ -88,7 +88,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 171.5, 253.0, 51.0, 22.0 ],
+					"patching_rect" : [ 171.5, 215.0, 51.0, 22.0 ],
 					"text" : "gate~ 2"
 				}
 
@@ -102,7 +102,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 294.5, 153.0, 38.0, 22.0 ],
+					"patching_rect" : [ 294.5, 122.0, 38.0, 22.0 ],
 					"text" : ">~ 0."
 				}
 
@@ -172,11 +172,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 313.5, 111.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 313.5, 84.0, 30.0, 22.0 ],
 					"text" : "in 2"
 				}
 
@@ -203,7 +199,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 203.5, 70.0, 110.0, 22.0 ],
+					"patching_rect" : [ 203.5, 47.0, 110.0, 22.0 ],
 					"text" : "fftin~ 1"
 				}
 
@@ -276,6 +272,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"midpoints" : [ 304.0, 241.0, 226.5, 241.0 ],
 					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
@@ -284,7 +281,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 304.0, 240.0, 181.0, 240.0 ],
+					"midpoints" : [ 304.0, 201.0, 181.0, 201.0 ],
 					"order" : 1,
 					"source" : [ "obj-5", 0 ]
 				}

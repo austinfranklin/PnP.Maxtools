@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -95,7 +95,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -368,12 +368,13 @@
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"id" : "obj-8",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 182.679611504077911, 408.85436749458313, 149.0, 22.0 ],
-									"text" : "0. 43.066406"
+									"patching_rect" : [ 182.679611504077911, 408.85436749458313, 149.0, 35.0 ],
+									"text" : "3660.644531 8139.550781"
 								}
 
 							}
