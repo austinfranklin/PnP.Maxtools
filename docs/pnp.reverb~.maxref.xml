@@ -49,7 +49,7 @@
 			</digest>
 		</objarg>
 
-		<objarg name="Feedback amount" optional="1" type="float">
+		<objarg name="decay" optional="1" type="float">
 			<digest>Sets the decay time
 			</digest>
 		</objarg>
