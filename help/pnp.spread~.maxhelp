@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -88,6 +88,50 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-16",
+									"maxclass" : "number~",
+									"mode" : 2,
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "float" ],
+									"patching_rect" : [ 233.179611504077911, 375.0, 73.0, 22.0 ],
+									"sig" : 0.0
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 233.179611504077911, 333.5, 74.0, 22.0 ],
+									"text" : "zsa.spread~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-6",
+									"maxclass" : "number~",
+									"mode" : 2,
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "float" ],
+									"patching_rect" : [ 80.179611504077911, 527.0, 73.0, 22.0 ],
+									"sig" : 0.0
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-34",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -98,7 +142,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -174,7 +218,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 3,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -312,7 +356,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 3,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -681,8 +725,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 80.179611504077911, 527.0, 122.0, 20.0 ],
-									"text" : "Spectral Spread (Hz)",
+									"patching_rect" : [ 80.179611504077911, 554.0, 192.0, 20.0 ],
+									"text" : "Spectral Standard Deviation (Hz)",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
@@ -781,7 +825,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
-									"patching_rect" : [ 80.179611504077911, 501.0, 73.0, 22.0 ],
+									"patching_rect" : [ 80.179611504077911, 483.0, 73.0, 22.0 ],
 									"sig" : 0.0
 								}
 
@@ -793,9 +837,9 @@
 									"id" : "obj-5",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 80.179611504077911, 444.0, 83.0, 22.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "signal" ],
+									"patching_rect" : [ 80.179611504077911, 444.0, 92.0, 22.0 ],
 									"text" : "pnp.spread~",
 									"varname" : "aaf.amp~[1]"
 								}
@@ -1048,8 +1092,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 127.213591873645782, 428.0, 33.0 ],
-									"text" : "pnp.spread~ calculates the spread, or the spectral centroid variance of an incoming audio signal.",
+									"patching_rect" : [ 48.543688654899597, 127.213591873645782, 684.0, 33.0 ],
+									"text" : "pnp.spread~ calculates the spread, or the spectral centroid variance of an incoming audio signal. Additionally, the spectral standard deviation may be calculated using the right outlet from the object.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
@@ -1133,15 +1177,16 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
+									"order" : 1,
 									"source" : [ "obj-2", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-34", 0 ],
-									"midpoints" : [ 143.679611504077911, 525.0, 153.0, 525.0, 153.0, 525.0, 204.0, 525.0, 204.0, 477.0, 363.0, 477.0, 363.0, 435.0, 387.75, 435.0 ],
-									"source" : [ "obj-3", 1 ]
+									"destination" : [ "obj-8", 0 ],
+									"order" : 0,
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -1207,6 +1252,22 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"midpoints" : [ 162.679611504077911, 519.0, 89.679611504077911, 519.0 ],
+									"source" : [ "obj-5", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"midpoints" : [ 143.679611504077911, 550.0, 363.0, 550.0, 363.0, 477.0, 363.0, 477.0, 363.0, 435.0, 387.75, 435.0 ],
+									"source" : [ "obj-6", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"midpoints" : [ 89.679611504077911, 429.324324369430542, 227.679611504077911, 429.324324369430542 ],
 									"order" : 1,
@@ -1252,6 +1313,13 @@
 									"destination" : [ "obj-4", 5 ],
 									"hidden" : 1,
 									"source" : [ "obj-75", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -6370,6 +6438,10 @@
 				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "zsa.spread~.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,

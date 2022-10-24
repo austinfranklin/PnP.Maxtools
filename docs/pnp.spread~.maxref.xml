@@ -32,6 +32,10 @@
 		<outlet id="0" type="signal">
 			<digest>Spectral Spread (Hz)</digest>
 		</outlet>
+
+		<outlet id="1" type="signal">
+			<digest>Spectral Standard Deviation (Hz)</digest>
+		</outlet>
 	</outletlist>
 	
 	<!--ARGUMENTS-->

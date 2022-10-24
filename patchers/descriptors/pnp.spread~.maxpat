@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-4",
+					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 73.0, 293.0, 36.0, 22.0 ],
+					"patching_rect" : [ 195.0, 320.0, 36.0, 22.0 ],
 					"text" : "sqrt~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "Standard Deviation",
+					"id" : "obj-5",
+					"index" : 2,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 195.0, 426.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -98,15 +110,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-4", 0 ]
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
