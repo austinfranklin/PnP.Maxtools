@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 414.0, 186.0, 750.0, 750.0 ],
+		"rect" : [ 66.0, 66.0, 750.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,18 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 732.327580690383911, 769.0, 62.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-43",
 					"linecount" : 2,
@@ -922,15 +910,14 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 33.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 263.0, 33.0 ],
-					"text" : "See a demonstration and try out various combinations of objects",
+					"text" : "Track the amplitude of an incoming audio signal",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 
@@ -1398,13 +1385,6 @@
 					"destination" : [ "obj-47", 0 ],
 					"order" : 1,
 					"source" : [ "obj-29", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-30", 0 ]
 				}
 
 			}
