@@ -1,4 +1,4 @@
-# PnP.Maxtools 0.1.8
+# PnP.Maxtools 0.1.9
 
 Latest update: fixed pnp.spread~ and added spectral standard deviation outlet to this object.
 
