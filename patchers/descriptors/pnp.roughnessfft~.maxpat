@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 850.0, 787.0 ],
+		"rect" : [ 278.0, 149.0, 850.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -62,13 +62,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 61.0, 100.0, 902.0, 787.0 ],
+						"rect" : [ 531.0, 100.0, 902.0, 787.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -115,7 +115,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 134.285717487335205, 2135.714336633682251, 150.0, 20.0 ],
-									"text" : "Sample and hold"
+									"text" : "Sample and hold",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -187,7 +188,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 198.471286058425903, 1801.20639181137085, 150.0, 60.0 ],
-									"text" : "I also took the average roughness per frame and scaled that to get a better output value"
+									"text" : "I also took the average roughness per frame and scaled that to get a better output value",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -258,7 +260,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 727.152855277061462, 1610.999265432357788, 150.0, 20.0 ],
-									"text" : "Calculates Z"
+									"text" : "Calculates Z",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -341,7 +344,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 841.636195063591003, 1543.158483386039734, 150.0, 20.0 ],
-									"text" : "e = 2.71828"
+									"text" : "e = 2.71828",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -364,7 +368,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 853.55944836139679, 1116.249893546104431, 88.750005841255188, 20.0 ],
-									"text" : "Calculates s"
+									"text" : "Calculates s",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -590,7 +595,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 860.152855277061462, 821.067331433296204, 155.194805145263672, 33.0 ],
-									"text" : "Finds lower frequency of the two"
+									"text" : "Finds lower frequency of the two",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -650,7 +656,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 88.894870042800903, 161.093017101287842, 150.0, 33.0 ],
-									"text" : "Sets threshold for magnitude"
+									"text" : "Sets threshold for magnitude",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -829,7 +836,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 436.764886975288391, 1073.768520474433899, 155.194805145263672, 20.0 ],
-									"text" : "Finds lower peak of the two"
+									"text" : "Finds lower peak of the two",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -841,7 +849,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 436.764886975288391, 1205.421603202819824, 143.0, 47.0 ],
-									"text" : "Calculates Y (2*peak min/(min + max peak magnitudes))"
+									"text" : "Calculates Y (2*peak min/(min + max peak magnitudes))",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -937,7 +946,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 135.63559091091156, 926.506735801696777, 143.0, 33.0 ],
-									"text" : "Calculates X (min * max  peak magnitudes)"
+									"text" : "Calculates X (min * max  peak magnitudes)",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -949,7 +959,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 619.715770483016968, 348.5, 69.354835152626038, 47.0 ],
-									"text" : "Calculates frequency of peaks"
+									"text" : "Calculates frequency of peaks",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -961,7 +972,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 84.5, 523.0, 237.0, 60.0 ],
-									"text" : "Finds peaks above 0.01 where magnitude on either side of peak is less than the magnitude of the peak. This also filters out numbers that are not peaks."
+									"text" : "Finds peaks above 0.01 where magnitude on either side of peak is less than the magnitude of the peak. This also filters out numbers that are not peaks.",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
 							}
@@ -2013,7 +2025,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 318.75, 413.032709360122681, 150.0, 20.0 ],
-					"text" : "bin size in Hz"
+					"text" : "bin size in Hz",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -2049,7 +2062,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 56.458751440048218, 266.096097469329834, 75.555552005767822, 33.0 ],
-					"text" : "not normalized"
+					"text" : "not normalized",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -2072,7 +2086,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.486527442932129, 226.540541172027588, 46.0, 20.0 ],
-					"text" : "energy"
+					"text" : "energy",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -87,7 +87,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 633.14862048625946, 338.0625, 109.375, 20.0 ],
-					"text" : "normalized decay"
+					"text" : "normalized decay",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -188,7 +189,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 395.769722104072571, 397.083874702453613, 60.0, 22.0 ],
+					"patching_rect" : [ 452.769722104072571, 396.083874702453613, 60.0, 22.0 ],
 					"text" : "*~ 0.0005"
 				}
 
@@ -273,7 +274,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 428.121779322624207, 1303.417564392089844, 150.0, 33.0 ],
-					"text" : "Calculates probability of sound being metallic"
+					"text" : "Calculates probability of sound being metallic",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -284,7 +286,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 439.269722104072571, 1254.126980423927307, 79.6875, 20.0 ],
-					"text" : "e^y + 1"
+					"text" : "e^y + 1",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -329,7 +332,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 427.488227844238281, 1141.538328170776367, 79.6875, 20.0 ],
-					"text" : "e^y"
+					"text" : "e^y",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -364,7 +368,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 408.769722104072571, 1061.992439866065979, 79.6875, 20.0 ],
-					"text" : "Calculates Y"
+					"text" : "Calculates Y",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -375,7 +380,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 295.741936326026917, 337.9375, 90.625, 20.0 ],
-					"text" : "roughness"
+					"text" : "roughness",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -386,7 +392,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 470.546908617019653, 338.0625, 91.0, 20.0 ],
-					"text" : "spectral spread"
+					"text" : "spectral spread",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -397,7 +404,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 489.3852618932724, 1090.639594674110413, 79.6875, 20.0 ],
-					"text" : "e = 2.71828"
+					"text" : "e = 2.71828",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -409,7 +417,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 663.245018243789673, 444.692050218582153, 150.0, 33.0 ],
-					"text" : "2nd order butterworth w/ cutoff at 50 Hz"
+					"text" : "2nd order butterworth w/ cutoff at 50 Hz",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -420,7 +429,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 633.14862048625946, 758.659711480140686, 150.0, 20.0 ],
-					"text" : "Envelope"
+					"text" : "Envelope",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -592,8 +602,8 @@
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 395.769722104072571, 338.0625, 76.0, 22.0 ],
 					"text" : "pnp.spread~"
 				}
@@ -711,13 +721,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
-					"source" : [ "obj-4", 0 ]
+					"source" : [ "obj-4", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-89", 1 ],
+					"midpoints" : [ 462.269722104072571, 963.0, 405.269722104072571, 963.0 ],
 					"source" : [ "obj-41", 0 ]
 				}
 

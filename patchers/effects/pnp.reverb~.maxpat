@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 590.0, 56.212565958499908, 169.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0 else out2 $i1"
+					"patching_rect" : [ 590.0, 56.212565958499908, 171.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0 else out2 $f1"
 				}
 
 			}
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 589.935833871364594, 21.0, 77.0, 22.0 ],
+					"patching_rect" : [ 590.0, 20.787434041500092, 80.0, 22.0 ],
 					"text" : "loadmess #2"
 				}
 
@@ -69,8 +69,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 417.0, 56.0, 169.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0 else out2 $i1"
+					"patching_rect" : [ 417.0, 56.0, 171.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0 else out2 $f1"
 				}
 
 			}
@@ -81,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 416.935833871364594, 20.787434041500092, 80.0, 22.0 ],
+					"patching_rect" : [ 416.935833871364594, 20.787434041500092, 87.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -237,7 +237,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -883,7 +883,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}

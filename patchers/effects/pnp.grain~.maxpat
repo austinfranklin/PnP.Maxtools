@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 381.0, 100.0, 1255.0, 883.0 ],
+		"rect" : [ -1790.0, 156.0, 1255.0, 883.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -93,8 +93,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 571.183376371860504, 238.277788043022156, 169.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0 else out2 $i1"
+					"patching_rect" : [ 571.183376371860504, 238.277788043022156, 171.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0 else out2 $f1"
 				}
 
 			}
@@ -105,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 571.183376371860504, 203.065222084522247, 77.0, 22.0 ],
+					"patching_rect" : [ 571.183376371860504, 203.065222084522247, 80.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -117,8 +117,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 831.247542500495911, 418.277788043022156, 169.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0 else out2 $i1"
+					"patching_rect" : [ 831.247542500495911, 418.277788043022156, 171.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0 else out2 $f1"
 				}
 
 			}
@@ -129,7 +129,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 831.247542500495911, 383.065222084522247, 77.0, 22.0 ],
+					"patching_rect" : [ 831.247542500495911, 383.065222084522247, 80.0, 22.0 ],
 					"text" : "loadmess #2"
 				}
 
@@ -141,8 +141,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 989.900846421718597, 240.711003661155701, 179.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0.5 else out2 $i1"
+					"patching_rect" : [ 989.900846421718597, 240.711003661155701, 181.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0.5 else out2 $f1"
 				}
 
 			}
@@ -153,7 +153,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 989.900846421718597, 205.498437702655792, 77.0, 22.0 ],
+					"patching_rect" : [ 989.900846421718597, 205.498437702655792, 80.0, 22.0 ],
 					"text" : "loadmess #3"
 				}
 
@@ -783,7 +783,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 108.965772151947021, 173.953068554401398, 129.0, 22.0 ],
+					"patching_rect" : [ 108.965772151947021, 173.953068554401398, 143.0, 22.0 ],
 					"text" : "buffer~ #0buff 500 1"
 				}
 

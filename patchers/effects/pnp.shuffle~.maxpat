@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 37.010767817497253, 50.806465983390808, 179.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0.5 else out2 $i1"
+					"patching_rect" : [ 37.010767817497253, 50.806465983390808, 181.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0.5 else out2 $f1"
 				}
 
 			}
@@ -816,7 +816,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 203.5, 88.0, 25.0, 25.0 ]
 				}
 
