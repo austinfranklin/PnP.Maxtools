@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -99,7 +99,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 73.0, 269.5, 163.0, 22.0 ],
-					"text" : "pfft~ pnp.pitchshiftfft~ 512 4"
+					"text" : "pfft~ pnp.pitchshiftfft~ 2048 4"
 				}
 
 			}
