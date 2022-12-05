@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -50,8 +50,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -113,12 +113,12 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-26",
-									"linecount" : 3,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 137.213591873645782, 680.0, 47.0 ],
-									"text" : "pnp.autoregi~ returns a normalized floating point number that indicates where the detected pitch is located between detected low and high frequency arguments. The object sets the low and high frequency arguments automatically using pitch detection. The smoothness argument can be used to output a more gradual change in output.",
+									"patching_rect" : [ 48.543688654899597, 137.213591873645782, 684.153437256813049, 60.0 ],
+									"text" : "pnp.autoregi~ returns a normalized floating point number that indicates where the detected pitch is located between detected low and high frequency arguments. The object sets the low and high frequency arguments automatically using fundamental frequency detection. The smoothness argument can be used to output a more gradual change in output.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 

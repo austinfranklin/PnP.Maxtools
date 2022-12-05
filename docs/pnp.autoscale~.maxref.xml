@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.autoscale~">
+
+	<digest>
+		Automatically scale an incoming signal using a reference level
+	</digest>
+	
+	<description>
+		<m>pnp.autoscale~</m> automatically scales an incoming audio signal to a specified target amplitude level in the range of 0-1. The object takes two arguments: the amplitude level to maintain, and the minimum amplitude that triggers scaling. This object can be used before descriptors in a signal chain to prevent changes in amplitude from effecting the output.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Control</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+		<inlet id="1" type="signal">
+			<digest>Amplitude level to maintain</digest>
+		</inlet>
+		<inlet id="2" type="signal">
+			<digest>Minimum amplitude (trigger)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Scaled Signal</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Amplitude Level" optional="1" type="float">
+			<digest>Sets the target amplitude level.
+			</digest>
+		</objarg>
+		<objarg name="Trigger" optional="1" type="float">
+			<digest>Sets the amplitude level to trigger scaling.
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="float">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="meter~"/>
+		<seealso name="average~"/>
+		<seealso name="average~"/>
+		<seealso name="atodb~"/>
+		<seealso name="atodb"/>
+	</seealsolist>
+	
+</c74object>

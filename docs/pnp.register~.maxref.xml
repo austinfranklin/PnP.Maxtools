@@ -52,6 +52,16 @@
 	
 	<!--ARGUMENTS-->
 	<objarglist>
+		<objarg name="Low Frequency" optional="1" type="float">
+			<digest>Sets the low frequency threshold (Hz)</digest>
+		</objarg>
+		<objarg name="High Frequency" optional="1" type="float">
+			<digest>Sets the high frequency threshold (Hz)</digest>
+		</objarg>
+		<objarg name="Smoothness" optional="1" type="float">
+			<digest>Sets the smoothness</digest>
+		</objarg>
+		
 	</objarglist>
 	
 	<!--MESSAGES-->
