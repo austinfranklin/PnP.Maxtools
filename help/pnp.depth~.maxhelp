@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -50,8 +50,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -119,7 +119,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 121.378639578819275, 687.0, 47.0 ],
-									"text" : "A deep sound is one that conveys the sense of having been made far down below the surface of its source. pnp.depth~ calculates the apparent deepness of an incoming audio signal by calculating the lower spectral centroid between 30-200Hz and the ratio of energy between this range and 0 and the Nyquist Frequency.",
+									"text" : "A deep sound is one that conveys the sense of having been made far down below the surface of its source. pnp.depth~ calculates the apparent depth of an incoming audio signal by calculating the lower spectral centroid between 30-200Hz and the ratio of energy between this range and 0 and the Nyquist Frequency.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 

@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -94,8 +94,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -162,7 +162,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 137.213591873645782, 679.0, 47.0 ],
-									"text" : "pnp.pitchclass~ is an FFT filter that takes a fundamental frequency as an argument and filters an incoming signal up to 7 octaves above the fundamental (128 * fundamental). Each octave is given a separate outlet that can be combined with others or used independently.",
+									"text" : "pnp.pitchclass~ is an FFT filter that takes a fundamental frequency as an argument and filters an incoming signal up to 7 octaves above the fundamental (128*fundamental). Each octave is given a separate outlet that can be combined with others or used independently.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 

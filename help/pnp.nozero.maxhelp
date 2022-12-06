@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -50,8 +50,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -158,7 +158,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 127.213591873645782, 691.0, 47.0 ],
-									"text" : "pnp.nozero filters out every 0 value it receives, holding over the previous value until a new non 0 value is received. A bang is also sent out of the right outlet that can be used as a trigger for events. Additionally, a ramp time can be specified in the right inlet that will ramp between non 0 values.",
+									"text" : "pnp.nozero filters out every 0 value it receives, holding over the previous value until a new nonzero value is received. A bang is also sent out of the right outlet that can be used as a trigger for events. Additionally, a ramp time can be specified in the right inlet that will ramp between nonzero values.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 

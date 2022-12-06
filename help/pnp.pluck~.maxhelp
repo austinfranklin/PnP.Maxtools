@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -50,8 +50,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -304,7 +304,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 139.213591873645782, 684.153437256813049, 47.0 ],
-									"text" : "pnp.pluck~ is an implementation of the famous Karplus-Strong plucked string algorithm where live input is substituted for a burst of noise. The delay time and feedback can be adjusted with a number between 0-1. The filter cutoff can be specified as an additional argument, but it defaults to 8 kHz.",
+									"text" : "pnp.pluck~ is an implementation of the famous Karplus-Strong plucked string algorithm where live input is substituted for a burst of noise. The delay time and feedback can be adjusted with a number between 0-1. The filter cutoff can be specified as an additional argument, but it defaults to 8kHz.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
