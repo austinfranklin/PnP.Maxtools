@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -50,8 +50,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -90,7 +90,6 @@
 								"box" : 								{
 									"bgcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ],
 									"elementcolor" : [ 0.231372549019608, 0.223529411764706, 0.254901960784314, 1.0 ],
-									"floatoutput" : 1,
 									"id" : "obj-14",
 									"knobcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ],
 									"maxclass" : "slider",
@@ -99,7 +98,7 @@
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 315.0, 244.0, 20.0, 140.0 ],
-									"size" : 1.0
+									"size" : 1000.0
 								}
 
 							}
@@ -129,8 +128,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 273.0, 212.638298153877258, 104.0, 20.0 ],
-									"text" : "Smoothness (0-1)",
-									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
+									"text" : "Ramp Time (ms)",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ],
+									"textjustification" : 1
 								}
 
 							}

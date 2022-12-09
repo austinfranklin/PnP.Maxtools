@@ -526,30 +526,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-79",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 100.486527442932129, 404.6875, 31.25, 20.0 ],
-					"text" : "z",
-					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-74",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 100.486527442932129, 341.625, 31.25, 20.0 ],
-					"text" : "gz",
-					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-67",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -617,41 +593,6 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 705.56788036823275, 288.287379622459412, 130.0, 22.0 ],
 					"text" : "scale~ 0 2048 102.4 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-76",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1441.989924669265747, 1361.691791296005249, 150.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-70",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 761.520907378196512, 312.287379622459412, 139.0, 20.0 ],
-					"text" : "z = straight line",
-					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-53",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 597.717880368232727, 34.602269172668457, 296.0, 47.0 ],
-					"text" : "numpy.arange([start, ]stop, [step, ]dtype=None, *,\n\nz = np.arange(0.1, n/10.0+0.1, 0.1)",
-					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}

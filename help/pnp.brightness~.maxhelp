@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -50,8 +50,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -109,36 +109,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"format" : 6,
-									"id" : "obj-30",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 48.543688654899597, 570.378639578819275, 128.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"color" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ],
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"id" : "obj-27",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 48.543688654899597, 532.0, 92.0, 22.0 ],
-									"text" : "pnp.nozero 500"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"fontface" : 1,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -190,8 +160,8 @@
 							}
 , 							{
 								"box" : 								{
-									"color" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ],
 									"id" : "obj-6",
+									"local" : 1,
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
@@ -551,15 +521,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
-									"order" : 0,
-									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
-									"order" : 1,
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -583,13 +544,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-16", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
-									"source" : [ "obj-27", 0 ]
 								}
 
 							}
@@ -5775,13 +5729,6 @@
 				"name" : "pnp.brightness~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
 				"patcherrelativepath" : "../patchers/descriptors",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pnp.nozero.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/controls",
-				"patcherrelativepath" : "../patchers/controls",
 				"type" : "JSON",
 				"implicit" : 1
 			}

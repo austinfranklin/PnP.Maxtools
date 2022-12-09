@@ -131,7 +131,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 940.0, 176.0, 758.0, 240.0 ],
+										"rect" : [ 683.0, 353.0, 758.0, 240.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -1014,8 +1014,8 @@
 							}
 , 							{
 								"box" : 								{
-									"color" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ],
 									"id" : "obj-16",
+									"local" : 1,
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,

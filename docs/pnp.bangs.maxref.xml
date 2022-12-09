@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.bangs">
+
+	<digest>
+		Outputs many bangs separated by a variable delay time
+	</digest>
+	
+	<description>
+		<m>pnp.bangs</m> outputs an integer number of bangs separated by a specified delay time in milliseconds. The delay time can be fixed or it can change during a series of bangs. This object can be used as a substitute for a metro or counter object to trigger events. By setting the delay time to 0 ms it can also function as a uzi object.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Event</metadata>
+		<metadata name="tag">Control</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="bang">
+			<digest>Trigger Bangs</digest>
+		</inlet>
+	</inletlist>
+
+	<inletlist>
+		<inlet id="1" type="int">
+			<digest>Number of Bangs (defaults to 1)</digest>
+		</inlet>
+	</inletlist>
+
+	<inletlist>
+		<inlet id="2" type="int">
+			<digest>Delay between Bangs (defaults to 0)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="bangs">
+			<digest>Output Bangs</digest>
+		</outlet>
+	</outletlist>
+
+	<outletlist>
+		<outlet id="1" type="int">
+			<digest>Current Count</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Number of Bangs" optional="1" type="int">
+			<digest>Sets the number of bangs to be output.
+			</digest>
+		</objarg>
+	</objarglist>
+
+	<objarglist>
+		<objarg name="Delay Time" optional="1" type="int">
+			<digest>Sets the interval time between bangs.
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+				<arg name="parameter-settings" optional="1" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="counter"/>	
+	</seealsolist>
+	
+</c74object>

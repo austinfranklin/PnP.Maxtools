@@ -7,10 +7,10 @@ autowatch = 1;
 var p = this.patcher;
 
 // object arrays for each category... array
-var filterArray = ['pnp.binpass~ 500 1000', 'pnp.notch~ 500 1000', 'pnp.overtone~ 440', 'pnp.pitchclass~ 440', 'pnp.reduce~ 0.1'];
-var descriptorArray = ['pnp.amplitude~', 'pnp.autoamp~', 'pnp.autoregi~', 'pnp.beat~', 'pnp.boominess~', 'pnp.bpm~', 'pnp.brightness~', 'pnp.centroid~', 'pnp.depth~', 'pnp.descriptor~ 500 1000', 'pnp.energy~', 'pnp.flatness~', 'pnp.hardness~', 'pnp.metallic~', 'pnp.multi~', 'pnp.register~', 'pnp.roughness~', 'pnp.sharpness~', 'pnp.spread~', 'pnp.warmth~'];
+var filterArray = ['pnp.binpass~ 250 500', 'pnp.notch~ 500 1000', 'pnp.overtone~ 440', 'pnp.pitchclass~ 440', 'pnp.reduce~ 0.1'];
+var descriptorArray = ['pnp.amplitude~', 'pnp.autoamp~', 'pnp.autoregi~', 'pnp.boominess~', 'pnp.brightness~', 'pnp.depth~', 'pnp.descriptor~ 500 1000', 'pnp.energy~', 'pnp.hardness~', 'pnp.metallic~', 'pnp.multi~', 'pnp.register~ 55 880', 'pnp.roughness~', 'pnp.sharpness~', 'pnp.warmth~'];
 var controlArray = ['pnp.noone', 'pnp.nozero', 'pnp.smoother 0.75'];
-var effectArray = ['pnp.convolve~ 0.5', 'pnp.delay~ 1500', 'pnp.distort~ 0.5 0.75', 'pnp.flange~ 5 0.5 0.85', 'pnp.freeze~', 'pnp.grain~ 1. 0.25 0.9', 'pnp.panner~ 0.1', 'pnp.pitchshift~ 7', 'pnp.pluck~ 25 0.65', 'pnp.reverb~ 0.5 0.5', 'pnp.shuffle~ 0.9', 'pnp.split~ 0.25', 'pnp.wonky~ 0.75 0.9'];
+var effectArray = ['pnp.delay~ 500', 'pnp.distort~ 0.5 0.75', 'pnp.flange~ 5 0.5 0.85', 'pnp.freeze~', 'pnp.grain~ 1. 0.25 0.9', 'pnp.panner~ 0.1', 'pnp.pitchshift~ 7', 'pnp.pluck~ 25 0.65', 'pnp.reverb~ 0.5 0.5', 'pnp.shuffle~ 0.9', 'pnp.split~ 0.25', 'pnp.wonky~ 0.75 0.9'];
 
 // arrays for created object... to delete
 var createdFilter = [];
@@ -143,11 +143,16 @@ function descriptor() {
         p.connect(createdFilter[0], 6, createdDescriptor[0], 0);
         p.connect(createdFilter[0], 7, createdDescriptor[0], 0);
         p.connect(createdDescriptor[0], 0, createdControl[0], 0);
+    } else if (desObj == 10) {
+        p.connect(createdFilter[0], 0, createdDescriptor[0], 0);
+        p.connect(createdDescriptor[0], Math.floor((Math.random()*7)+1), createdControl[0], 0);
     } else {
         p.connect(createdFilter[0], 0, createdDescriptor[0], 0);
         p.connect(createdDescriptor[0], 0, createdControl[0], 0);
     }
 }
+
+
 
 function control() {
     deleteObjects(createdControl[0]);
@@ -189,7 +194,7 @@ function effect() {
 
     effectObjects();
     
-    if(effObj-1 == 4) {
+    if(effObj-1 == 3) {
         // create bang for pnp.freeze~
         bang = p.newdefault(100, 375, 'button');
         createdBang.push(bang);
@@ -215,7 +220,7 @@ function effect() {
     } else if (effObj-1 == 2 || effObj-1 == 8) {
         p.connect(createdControl[0], 0, createdEffect[0], 1);
         p.connect(createdControl[0], 0, createdEffect[0], 2);
-    } else if (effObj-1 == 3 || effObj-1 == 5) {
+    } else if (effObj-1 == 4 || effObj-1 == 5) {
         deleteObjects(createdBang[0]);
         createdBang.splice(0);
 

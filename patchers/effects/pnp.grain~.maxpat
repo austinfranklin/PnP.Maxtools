@@ -822,7 +822,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 36.965772151947021, 80.292733669281006, 30.0, 30.0 ]
 				}
 
