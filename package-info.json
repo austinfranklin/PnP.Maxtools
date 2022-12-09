@@ -1,0 +1,24 @@
+{
+    "author" : "Austin Franklin",
+    "description" : "A package for real-time music information retrieval in MaxMSP",
+    "homepatcher" : "pnp.maxtools.maxpat",
+    "max_version_min" : "7.1", "max_version_max" : "none",
+    "name" : "PnP.Maxtools",
+    "os" : {
+        "macintosh" : {
+            "platform" : [ "ia32", "x64" ],
+            "min_version" : "none"
+        },
+        "windows" : {
+            "platform" : [ "ia32", "x64" ],
+            "min_version" : "none"
+        }
+    },
+    "package_extra" : {
+        "reverse_domain" : "com.cycling74",
+        "copyright" : "Copyright (c) 2022 Austin Franklin"
+    },
+    "tags" : ["mir", "timbral descriptors", "reflexive automation"],
+    "version" : "1.3.1",
+    "website" : "austinfranklinmusic.com"
+}
