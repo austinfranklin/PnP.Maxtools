@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.smoother">
+
+	<digest>
+		Smoothes and applies exponential curves to incoming data
+	</digest>
+	
+	<description>
+		<m>pnp.smoother</m> smoothes and can apply exponential or logarithmic curves to incoming data in the range of 0-1. Out of the right outlet, the output values are inverted (0=1, 1=0).
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Event</metadata>
+		<metadata name="tag">Control</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="float">
+			<digest>Input (0-1)</digest>
+		</inlet>
+	</inletlist>
+
+	<inletlist>
+		<inlet id="1" type="float">
+			<digest>Smoothness (0-1)</digest>
+		</inlet>
+	</inletlist>
+
+	<inletlist>
+		<inlet id="1" type="float">
+			<digest>Exponential Base (0.125-8)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="float">
+			<digest>Output (0-1)</digest>
+		</outlet>
+	</outletlist>
+
+	<outletlist>
+		<outlet id="1" type="float">
+			<digest>Inverted Output (0-1)</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Smoothness (0-1)" optional="1" type="float">
+			<digest>Sets the smoothness factor.
+			</digest>
+		</objarg>
+	</objarglist>
+
+	<objarglist>
+		<objarg name="Exponential Base (0-1)" optional="1" type="float">
+			<digest>Sets the exponential base value.
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+				<arg name="parameter-settings" optional="1" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="counter"/>
+		<seealso name="line"/>
+		<seealso name="pnp.noone"/>
+		<seealso name="pnp.noozero"/>
+	</seealsolist>
+	
+</c74object>

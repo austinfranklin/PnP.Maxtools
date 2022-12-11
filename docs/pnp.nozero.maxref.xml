@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.nozero">
+
+	<digest>
+		Filters out zero values from incoming data streams
+	</digest>
+	
+	<description>
+		<m>pnp.nozero</m> filters out every 0 value it receives, holding over the previous value until a new nonzero value is received. A bang is also sent out of the right outlet that can be used as a trigger for events. Additionally, a ramp time can be specified in the right inlet that will ramp between nonzero values.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Event</metadata>
+		<metadata name="tag">Control</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="float">
+			<digest>Input (0-1)</digest>
+		</inlet>
+	</inletlist>
+
+	<inletlist>
+		<inlet id="1" type="int">
+			<digest>Ramp Time (ms)</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="float">
+			<digest>Output (0-1)</digest>
+		</outlet>
+	</outletlist>
+
+	<outletlist>
+		<outlet id="1" type="bang">
+			<digest>Bang Output</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Ramp Time (ms)" optional="1" type="int">
+			<digest>Sets ramp time in milliseconds.
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+				<arg name="parameter-settings" optional="1" type="float"/>
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used to control parameter values.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="counter"/>
+		<seealso name="line"/>
+		<seealso name="pnp.noone"/>
+		<seealso name="pnp.smoother"/>
+	</seealsolist>
+	
+</c74object>

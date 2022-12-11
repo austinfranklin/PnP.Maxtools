@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.maxtools demo~">
+
+	<digest>
+		
+	</digest>
+	
+	<description>
+		The <m>pnp.maxtools demo</m> contains an assortment of examples 
+		and patches to help understand the developed music infromation retrieval algorithms
+		and compositional methods, approaches, and tips that can be used to create
+		reflexive systems. Each tab introduces a new topic or approach as a starting point.
+		 The rest is up to you!
+
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Demo</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+</c74object>
