@@ -241,7 +241,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "float" ],
 									"patching_rect" : [ 134.639172196388245, 389.639177799224854, 81.0, 22.0 ],
 									"text" : "pnp.energy~",
 									"varname" : "aaf.amp~"

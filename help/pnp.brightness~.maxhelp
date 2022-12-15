@@ -215,7 +215,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "float" ],
 									"patching_rect" : [ 95.0, 426.461535453796387, 94.0, 22.0 ],
 									"text" : "pnp.brightness~"
 								}

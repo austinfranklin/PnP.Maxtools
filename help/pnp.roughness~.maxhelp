@@ -143,7 +143,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "float" ],
 									"patching_rect" : [ 174.543688654899597, 399.670331120491028, 102.0, 22.0 ],
 									"text" : "pnp.roughness~",
 									"varname" : "aaf.amp~[1]"

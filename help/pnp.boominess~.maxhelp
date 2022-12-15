@@ -452,7 +452,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "float" ],
 									"patching_rect" : [ 119.679611504077911, 429.670331120491028, 99.0, 22.0 ],
 									"text" : "pnp.boominess~",
 									"varname" : "aaf.amp~[1]"

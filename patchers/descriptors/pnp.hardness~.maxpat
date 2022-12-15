@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 846.0, 353.0, 848.0, 633.0 ],
+		"rect" : [ 621.0, 169.0, 848.0, 633.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 235.697821855545044, 850.0, 53.0, 22.0 ],
+					"text" : "clip 0. 1."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "comment",
@@ -69,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 292.393424987792059, 861.804895639419556, 537.0, 33.0 ],
+					"patching_rect" : [ 292.393424987792059, 891.804895639419556, 537.0, 33.0 ],
 					"text" : "Based on models described by Andy Pearce, Russell Mason, Tim Brookes. “First prototype of timbral characterisation tools for semantically annotating non-musical content,” 2017.",
 					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
@@ -162,19 +174,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ],
-					"id" : "obj-82",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 41.333334803581238, 455.29257071018219, 69.0, 22.0 ],
-					"text" : "pnp.nozero"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-81",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -216,7 +215,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 41.333334803581238, 420.086050748825073, 69.0, 22.0 ],
 					"text" : "pnp.depth~"
 				}
@@ -267,19 +266,6 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 360.0, 428.3125, 40.0, 22.0 ],
 					"text" : "*~ 0.5"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ],
-					"id" : "obj-31",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 397.0, 492.0, 69.0, 22.0 ],
-					"text" : "pnp.nozero"
 				}
 
 			}
@@ -564,7 +550,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 235.697821855545044, 861.804895639419556, 30.0, 30.0 ]
+					"patching_rect" : [ 235.697821855545044, 891.804895639419556, 30.0, 30.0 ]
 				}
 
 			}
@@ -708,7 +694,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
+					"destination" : [ "obj-79", 0 ],
+					"midpoints" : [ 406.5, 585.0, 67.5, 585.0 ],
 					"source" : [ "obj-28", 1 ]
 				}
 
@@ -749,13 +736,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-79", 0 ],
-					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-34", 0 ]
 				}
@@ -770,7 +750,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -786,6 +766,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-99", 0 ],
 					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -814,7 +801,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-82", 0 ],
+					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-76", 0 ]
 				}
 
@@ -849,14 +836,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-91", 0 ],
-					"source" : [ "obj-82", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-86", 0 ],
+					"midpoints" : [ 38.833334803581238, 765.0, 245.197821855545044, 765.0 ],
 					"source" : [ "obj-84", 0 ]
 				}
 
@@ -906,6 +887,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-87", 0 ],
+					"midpoints" : [ 803.776504993438721, 714.0, 245.197821855545044, 714.0 ],
 					"source" : [ "obj-99", 0 ]
 				}
 

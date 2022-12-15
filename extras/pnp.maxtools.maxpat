@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 471.0, 73.0, 750.0, 750.0 ],
+		"rect" : [ 637.0, 142.0, 750.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -912,15 +912,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 47.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 269.0, 47.0 ],
-					"text" : "An FFT filter modeled after a ‘bandpass’ filter that passes frequencies within a select frequency bin range",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 269.0, 33.0 ],
+					"text" : "Automatically scale an incoming signal using a reference level",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 

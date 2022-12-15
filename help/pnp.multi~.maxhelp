@@ -1323,7 +1323,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 8,
-									"outlettype" : [ "", "", "", "float", "float", "", "", "" ],
+									"outlettype" : [ "float", "float", "float", "", "float", "float", "float", "float" ],
 									"patching_rect" : [ 59.150480479001999, 393.461535453796387, 651.0, 22.0 ],
 									"text" : "pnp.multi~"
 								}
