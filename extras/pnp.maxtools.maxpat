@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 637.0, 142.0, 750.0, 750.0 ],
+		"rect" : [ 570.0, 176.0, 750.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -919,8 +919,8 @@
 					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 269.0, 33.0 ],
-					"text" : "Automatically scale an incoming signal using a reference level",
+					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 271.0, 33.0 ],
+					"text" : "Randomly delay and feedback an incoming audio signal",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 

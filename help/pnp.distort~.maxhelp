@@ -435,16 +435,14 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-11", 1 ],
-									"midpoints" : [ 129.179611504077911, 621.0, 155.179611504077911, 621.0 ],
-									"order" : 0,
-									"source" : [ "obj-3", 0 ]
+									"midpoints" : [ 136.429611504077911, 621.0, 155.179611504077911, 621.0 ],
+									"source" : [ "obj-3", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
-									"order" : 1,
 									"source" : [ "obj-3", 0 ]
 								}
 

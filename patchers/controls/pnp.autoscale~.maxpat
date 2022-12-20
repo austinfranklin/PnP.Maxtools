@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 351.010767817497253, 167.425131916999817, 173.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0. else out2 $i1"
+					"patching_rect" : [ 351.010767817497253, 167.425131916999817, 174.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0. else out2 $f1"
 				}
 
 			}
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.946601688861847, 132.212565958499908, 77.0, 22.0 ],
+					"patching_rect" : [ 350.946601688861847, 132.212565958499908, 80.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -155,8 +155,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 332.010767817497253, 80.425131916999817, 173.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0. else out2 $i1"
+					"patching_rect" : [ 332.010767817497253, 80.425131916999817, 174.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0. else out2 $f1"
 				}
 
 			}
@@ -167,7 +167,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 331.946601688861847, 45.212565958499908, 77.0, 22.0 ],
+					"patching_rect" : [ 331.946601688861847, 45.212565958499908, 80.0, 22.0 ],
 					"text" : "loadmess #2"
 				}
 
@@ -304,7 +304,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 56.0, 13.0, 30.0, 30.0 ]
 				}
 
@@ -371,7 +371,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"midpoints" : [ 495.510767817497253, 117.0, 297.0, 117.0, 297.0, 156.0, 266.5, 156.0 ],
+					"midpoints" : [ 496.510767817497253, 117.0, 297.0, 117.0, 297.0, 156.0, 266.5, 156.0 ],
 					"source" : [ "obj-16", 1 ]
 				}
 
@@ -417,7 +417,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"midpoints" : [ 514.510767817497253, 207.0, 170.5, 207.0 ],
+					"midpoints" : [ 515.510767817497253, 207.0, 170.5, 207.0 ],
 					"source" : [ "obj-3", 1 ]
 				}
 
