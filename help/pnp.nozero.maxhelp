@@ -271,7 +271,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 187.543688654899597, 407.0, 144.0, 22.0 ],
-									"text" : "pnp.nozero"
+									"text" : "pnp.nozero 250"
 								}
 
 							}

@@ -103,7 +103,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 119.679611504077911, 257.786408126354218, 127.0, 69.0 ],
+									"patching_rect" : [ 119.679611504077911, 222.286408126354218, 241.0, 110.5 ],
 									"viewvisibility" : 1
 								}
 
@@ -5515,6 +5515,8 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
+			"obj-41::obj-2::obj-4::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-41::obj-2::obj-4::obj-35" : [ "[5]", "Level", 0 ],
 			"obj-41::obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 
@@ -5527,6 +5529,12 @@
 				"name" : "audiomenu.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "demosound.maxpat",
+				"bootpath" : "C74:/help/msp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -5545,10 +5553,40 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "interfacecolor.js",
+				"bootpath" : "C74:/interfaces",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pnp.distort~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
 				"patcherrelativepath" : "../patchers/effects",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "random.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "saw.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sine.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
 				"implicit" : 1
 			}
  ],

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 117.0, 119.0, 949.0, 787.0 ],
+		"rect" : [ 228.0, 134.0, 949.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,9 +44,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 264.0, 360.853727102279663, 35.0, 22.0 ],
-					"text" : "del 1"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 264.0, 360.853727102279663, 41.0, 22.0 ],
+					"text" : "pipe 1"
 				}
 
 			}
@@ -89,7 +89,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-24",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,

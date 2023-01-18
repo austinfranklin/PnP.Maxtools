@@ -44,9 +44,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 264.0, 361.234523236751556, 35.0, 22.0 ],
-					"text" : "del 1"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 264.0, 361.234523236751556, 41.0, 22.0 ],
+					"text" : "pipe 1"
 				}
 
 			}
@@ -69,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 264.0, 333.234523236751556, 83.0, 22.0 ],
+					"patching_rect" : [ 264.0, 333.234523236751556, 90.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -89,7 +89,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-24",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,

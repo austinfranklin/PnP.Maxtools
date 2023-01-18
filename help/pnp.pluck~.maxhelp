@@ -88,6 +88,35 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"id" : "obj-33",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 247.679611504077911, 429.0, 167.0, 33.0 ],
+									"text" : "1. Delay Time (ms)\n2. Feedback Amount (0-1)",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 247.679611504077911, 407.0, 160.0, 20.0 ],
+									"text" : "Arguments:",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -102,7 +131,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 119.679611504077911, 270.269232273101807, 127.0, 69.0 ],
+									"patching_rect" : [ 119.679611504077911, 249.519232273101807, 241.0, 110.5 ],
 									"viewvisibility" : 1
 								}
 
@@ -288,8 +317,8 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 119.679611504077911, 406.0, 138.0, 22.0 ],
-									"text" : "pnp.pluck~",
+									"patching_rect" : [ 119.679611504077911, 406.0, 120.0, 22.0 ],
+									"text" : "pnp.pluck~ 0.25 0.85",
 									"varname" : "aaf.amp~"
 								}
 
@@ -374,7 +403,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 1 ],
-									"midpoints" : [ 426.512944837411226, 382.0, 188.679611504077911, 382.0 ],
+									"midpoints" : [ 426.512944837411226, 382.0, 179.679611504077911, 382.0 ],
 									"source" : [ "obj-50", 0 ]
 								}
 
@@ -382,7 +411,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 2 ],
-									"midpoints" : [ 514.863792578379275, 393.0, 248.179611504077911, 393.0 ],
+									"midpoints" : [ 514.863792578379275, 393.0, 230.179611504077911, 393.0 ],
 									"source" : [ "obj-8", 0 ]
 								}
 
@@ -5456,6 +5485,8 @@
 		"lines" : [  ],
 		"parameters" : 		{
 			"obj-41::obj-10" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-41::obj-3::obj-4::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-41::obj-3::obj-4::obj-35" : [ "[5]", "Level", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -5467,6 +5498,12 @@
 				"name" : "audiomenu.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "demosound.maxpat",
+				"bootpath" : "C74:/help/msp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -5485,6 +5522,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "interfacecolor.js",
+				"bootpath" : "C74:/interfaces",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pnp.delay~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
 				"patcherrelativepath" : "../patchers/effects",
@@ -5496,6 +5539,30 @@
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
 				"patcherrelativepath" : "../patchers/effects",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "random.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "saw.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sine.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
 				"implicit" : 1
 			}
  ],

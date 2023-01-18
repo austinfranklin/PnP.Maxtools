@@ -170,7 +170,7 @@ function effect() {
     createdEffect.push(obj);
 
     var gainObj = p.newdefault(140, 490, 'live.gain~');
-    var dacObj = p.newdefault(140, 650, 'ezdac~');
+    var dacObj = p.newdefault(140, 650, 'ezdac~ @local 1');
     createdGain.push(gainObj);
     createdDac.push(dacObj);
 
@@ -188,7 +188,7 @@ function effect() {
     }
 
     // connect object
-    if(filObj-1 == 2 || filObj-1 == 3) {
+    if(filObj == 2 || filObj == 3) {
         p.connect(createdFilter[0], 0, createdEffect[0], 0);
         p.connect(createdFilter[0], 1, createdEffect[0], 0);
         p.connect(createdFilter[0], 2, createdEffect[0], 0);

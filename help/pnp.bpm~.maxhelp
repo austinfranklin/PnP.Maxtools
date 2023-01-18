@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 800.0, 750.0 ],
+		"rect" : [ 34.0, 100.0, 800.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 126.0, 800.0, 724.0 ],
+						"rect" : [ 34.0, 126.0, 800.0, 724.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -88,15 +88,37 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-7",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "audiomenu.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 180.0, 236.75, 241.0, 110.5 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontface" : 1,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-26",
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 125.213591873645782, 420.0, 20.0 ],
-									"text" : "pnp.bpm~ estimates the BPM of the onsets of an incoming audio signal.",
+									"patching_rect" : [ 48.543688654899597, 125.213591873645782, 684.153437256813049, 47.0 ],
+									"text" : "pnp.bpm~ estimates the BPM of the onsets of an incoming audio signal. This object works best using tempi in the range of 80-150 BPM. Outside of this range, the output from the pnp.bom~ object will be doubled or halved. If analyzing audio with a frequently changing tempo, the object may be slow to output an estimated BPM.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
@@ -205,7 +227,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 200.0, 382.0, 87.0, 24.0 ]
+									"patching_rect" : [ 459.820388495922089, 379.0, 87.0, 24.0 ]
 								}
 
 							}
@@ -233,7 +255,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 215.0, 259.0, 46.0, 22.0 ]
+									"patching_rect" : [ 494.820388495922089, 244.0, 46.0, 22.0 ]
 								}
 
 							}
@@ -245,7 +267,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 180.0, 222.0, 24.0, 24.0 ]
+									"patching_rect" : [ 459.820388495922089, 207.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -258,7 +280,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 180.0, 347.0, 43.0, 22.0 ],
+									"patching_rect" : [ 459.820388495922089, 332.0, 43.0, 22.0 ],
 									"text" : "click~"
 								}
 
@@ -272,7 +294,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 180.0, 296.0, 54.0, 22.0 ],
+									"patching_rect" : [ 459.820388495922089, 281.0, 54.0, 22.0 ],
 									"text" : "metro"
 								}
 
@@ -340,6 +362,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
+									"midpoints" : [ 469.320388495922089, 366.0, 189.5, 366.0 ],
 									"order" : 1,
 									"source" : [ "obj-4", 0 ]
 								}
@@ -357,6 +380,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -5434,7 +5464,35 @@
 			}
  ],
 		"lines" : [  ],
+		"parameters" : 		{
+			"obj-41::obj-7::obj-4::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-41::obj-7::obj-4::obj-35" : [ "[5]", "Level", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
+				"name" : "audiomenu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "demosound.maxpat",
+				"bootpath" : "C74:/help/msp",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "descriptorsmenu.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
@@ -5449,6 +5507,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "interfacecolor.js",
+				"bootpath" : "C74:/interfaces",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pnp.beat~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
 				"patcherrelativepath" : "../patchers/descriptors",
@@ -5460,6 +5524,30 @@
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
 				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "random.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "saw.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sine.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
 				"implicit" : 1
 			}
  ],

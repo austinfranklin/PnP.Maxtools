@@ -102,7 +102,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 77.043478012084961, 222.378639578819275, 127.0, 69.0 ],
+									"patching_rect" : [ 77.043478012084961, 215.878639578819275, 241.0, 110.5 ],
 									"viewvisibility" : 1
 								}
 
@@ -343,7 +343,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
 									"patching_rect" : [ 77.043478012084961, 499.086956977844238, 231.826085567474365, 22.0 ],
-									"text" : "pnp.descriptor~",
+									"text" : "pnp.descriptor~ 500 1000",
 									"varname" : "aaf.amp~[2]"
 								}
 
@@ -5774,10 +5774,31 @@
 			}
  ],
 		"lines" : [  ],
+		"parameters" : 		{
+			"obj-41::obj-2::obj-4::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-41::obj-2::obj-4::obj-35" : [ "[5]", "Level", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "audiomenu.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "demosound.maxpat",
+				"bootpath" : "C74:/help/msp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -5796,6 +5817,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "interfacecolor.js",
+				"bootpath" : "C74:/interfaces",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pnp.descriptorfft~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
 				"patcherrelativepath" : "../patchers/descriptors",
@@ -5807,6 +5834,30 @@
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
 				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "random.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "saw.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sine.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
 				"implicit" : 1
 			}
  ],

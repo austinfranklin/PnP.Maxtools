@@ -93,7 +93,7 @@
 									"clickthrough" : 0,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
-									"id" : "obj-3",
+									"id" : "obj-1",
 									"lockeddragscroll" : 0,
 									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
@@ -102,7 +102,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 354.679611504077911, 235.0, 127.0, 69.0 ],
+									"patching_rect" : [ 354.679611504077911, 214.5, 241.0, 110.5 ],
 									"viewvisibility" : 1
 								}
 
@@ -114,7 +114,7 @@
 									"clickthrough" : 0,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
-									"id" : "obj-1",
+									"id" : "obj-3",
 									"lockeddragscroll" : 0,
 									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
@@ -123,7 +123,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 119.679611504077911, 235.0, 127.0, 69.0 ],
+									"patching_rect" : [ 95.679611504077911, 214.5, 241.0, 110.5 ],
 									"viewvisibility" : 1
 								}
 
@@ -406,7 +406,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
+									"destination" : [ "obj-12", 1 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -454,7 +454,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 1 ],
+									"destination" : [ "obj-12", 0 ],
+									"midpoints" : [ 105.179611504077911, 372.0, 129.179611504077911, 372.0 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -5537,7 +5538,22 @@
 		"lines" : [  ],
 		"parameters" : 		{
 			"obj-41::obj-10" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-41::obj-1::obj-4::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-41::obj-1::obj-4::obj-35" : [ "[5]", "Level", 0 ],
+			"obj-41::obj-3::obj-4::obj-21::obj-6" : [ "live.tab[1]", "live.tab[1]", 0 ],
+			"obj-41::obj-3::obj-4::obj-35" : [ "[1]", "Level", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-41::obj-3::obj-4::obj-21::obj-6" : 				{
+					"parameter_longname" : "live.tab[1]"
+				}
+,
+				"obj-41::obj-3::obj-4::obj-35" : 				{
+					"parameter_longname" : "[1]"
+				}
 
 			}
 ,
@@ -5548,6 +5564,12 @@
 				"name" : "audiomenu.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "demosound.maxpat",
+				"bootpath" : "C74:/help/msp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -5566,6 +5588,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "interfacecolor.js",
+				"bootpath" : "C74:/interfaces",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pnp.convolvefft~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
 				"patcherrelativepath" : "../patchers/effects",
@@ -5577,6 +5605,30 @@
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
 				"patcherrelativepath" : "../patchers/effects",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "random.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "saw.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sine.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
 				"implicit" : 1
 			}
  ],

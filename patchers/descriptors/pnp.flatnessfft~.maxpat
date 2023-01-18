@@ -150,7 +150,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 932.0, 109.0, 474.0, 626.0 ],
+						"rect" : [ 341.0, 273.0, 474.0, 626.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -280,8 +280,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 60.5, 165.0, 54.0, 22.0 ],
-									"text" : "history 1"
+									"patching_rect" : [ 60.5, 165.0, 44.0, 22.0 ],
+									"text" : "history"
 								}
 
 							}

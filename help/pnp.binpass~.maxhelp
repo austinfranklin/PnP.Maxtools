@@ -157,7 +157,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 119.679611504077911, 244.5, 127.0, 69.0 ],
+									"patching_rect" : [ 119.679611504077911, 208.5, 241.0, 110.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -373,7 +373,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 182.679611504077911, 408.85436749458313, 149.0, 22.0 ],
-									"text" : "0. 43.066406"
+									"text" : "215.332031 452.197266"
 								}
 
 							}
@@ -401,7 +401,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "" ],
 									"patching_rect" : [ 119.679611504077911, 368.85436749458313, 212.0, 22.0 ],
-									"text" : "pnp.binpass~"
+									"text" : "pnp.binpass~ 220 440"
 								}
 
 							}
@@ -5636,6 +5636,8 @@
  ],
 		"parameters" : 		{
 			"obj-41::obj-10" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-41::obj-4::obj-4::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-41::obj-4::obj-4::obj-35" : [ "[5]", "Level", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -5647,6 +5649,12 @@
 				"name" : "audiomenu.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "demosound.maxpat",
+				"bootpath" : "C74:/help/msp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -5665,6 +5673,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "interfacecolor.js",
+				"bootpath" : "C74:/interfaces",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pnp.binpassfft~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/filters",
 				"patcherrelativepath" : "../patchers/filters",
@@ -5676,6 +5690,30 @@
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/filters",
 				"patcherrelativepath" : "../patchers/filters",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "random.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "saw.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sine.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
 				"implicit" : 1
 			}
  ],
