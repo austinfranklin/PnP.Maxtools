@@ -1,4 +1,4 @@
-# PnP.Maxtools 1.0.0
+# PnP.Maxtools 1.0.1
 
 Latest update: fixed typos
 
