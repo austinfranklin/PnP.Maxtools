@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 203.393424987792059, 455.46574079990387, 537.0, 33.0 ],
+					"patching_rect" : [ 220.5, 455.46574079990387, 537.0, 33.0 ],
 					"text" : "Based on models described by Andy Pearce, Russell Mason, Tim Brookes. “First prototype of timbral characterisation tools for semantically annotating non-musical content,” 2017.",
 					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}

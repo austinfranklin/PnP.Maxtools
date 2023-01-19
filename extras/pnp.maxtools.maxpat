@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 78.0, 132.0, 750.0, 750.0 ],
+		"rect" : [ 129.0, 147.0, 750.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,35 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 139.0, 233.0, 433.0, 35.0 ],
+					"text" : ";\rmax launchbrowser https://austinfranklinmusic.com/pnp-maxtools-library/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hilite" : 0,
+					"id" : "obj-48",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 132.0, 186.0, 196.268655061721802, 22.46268630027771 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 40.103073507547379, 33.641482770442963, 325.0, 60.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-43",
 					"linecount" : 2,
@@ -139,7 +168,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 755.000016212463379, 538.845704436302299, 196.268655061721802, 22.46268630027771 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.851971030235291, 696.869756018509293, 195.044550039535579, 21.0 ]
+					"presentation_rect" : [ 48.851971030235291, 696.869756018509293, 180.66010782122612, 21.0 ]
 				}
 
 			}
@@ -186,7 +215,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 755.000016212463379, 434.740063983703635, 127.61194109916687, 22.051801800727844 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.851971030235291, 672.869756018509293, 132.544556, 21.0 ]
+					"presentation_rect" : [ 48.851971030235291, 672.869756018509293, 122.0, 21.0 ]
 				}
 
 			}
@@ -556,7 +585,7 @@
 					"patching_rect" : [ 498.245609283447266, 673.6842041015625, 129.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 312.103073507547379, 104.641482770442963, 53.0, 20.0 ],
-					"text" : "1.0.1",
+					"text" : "1.0.2",
 					"textcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ],
 					"textjustification" : 1
 				}
@@ -912,13 +941,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 20.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 271.0, 20.0 ],
-					"text" : "A real-time granular synthesis effect",
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 271.0, 47.0 ],
+					"text" : "An FFT filter modeled after a ‘bandpass’ filter that passes frequencies within a select frequency bin range",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 
@@ -1452,6 +1483,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-48", 1 ]
 				}
 
 			}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -5.0, 115.0, 799.0, 750.0 ],
+		"rect" : [ 296.0, 100.0, 799.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -260,7 +260,8 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 530.211216390132904, 246.045454561710358, 63.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "demo.js",
@@ -5061,6 +5062,49 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontname" : "Arial",
+									"id" : "obj-4",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 168.839805752038956, 641.310676097869873, 50.0, 33.0 ],
+									"text" : "Start Audio",
+									"textcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ],
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"local" : 1,
+									"maxclass" : "ezdac~",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 119.679611504077911, 635.155338048934937, 45.0, 45.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"angle" : 270.0,
+									"bgcolor" : [ 0.502, 0.588, 0.584, 1.0 ],
+									"border" : 5,
+									"bordercolor" : [ 0.494, 0.357, 0.235, 1.0 ],
+									"id" : "obj-16",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 108.679611504077911, 624.810676097869873, 123.0, 66.0 ],
+									"proportion" : 0.39,
+									"shadow" : 3
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -5111,7 +5155,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 504.5, 520.810676097869873, 268.0, 127.0 ],
+									"patching_rect" : [ 507.5, 520.810676097869873, 268.0, 127.0 ],
 									"text" : "In this example, a single roughness descriptor (right) is being used to measure the roughness of the incoming signal. pnp.roughness~ generally responds to higher frequencies. However, we can use a compound descriptor (left) to specifically measure the roughness and ratio of lower frequencies using pnp.depth~. You can see the difference when you analyze white noise!",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
@@ -5124,7 +5168,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 441.0, 426.911431789398193, 102.0, 22.0 ],
+									"patching_rect" : [ 441.0, 428.911431789398193, 102.0, 22.0 ],
 									"text" : "pnp.smoother 0.5"
 								}
 
@@ -5152,7 +5196,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 131.495141744613647, 514.310676097869873, 20.0, 140.0 ],
+									"patching_rect" : [ 352.495141744613647, 514.310676097869873, 20.0, 140.0 ],
 									"size" : 1.0
 								}
 
@@ -5164,7 +5208,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 131.495141744613647, 466.911431789398193, 29.5, 22.0 ],
+									"patching_rect" : [ 208.5, 470.911431789398193, 29.5, 22.0 ],
 									"text" : "+ 0."
 								}
 
@@ -5189,7 +5233,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 131.495141744613647, 426.911431789398193, 33.0, 22.0 ],
+									"patching_rect" : [ 131.495141744613647, 428.911431789398193, 33.0, 22.0 ],
 									"text" : "* 0.5"
 								}
 
@@ -5201,7 +5245,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 219.0, 426.911431789398193, 33.0, 22.0 ],
+									"patching_rect" : [ 219.0, 428.911431789398193, 33.0, 22.0 ],
 									"text" : "* 0.5"
 								}
 
@@ -5287,6 +5331,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-37", 0 ],
+									"midpoints" : [ 218.0, 501.0, 361.995141744613647, 501.0 ],
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -5341,6 +5386,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
+									"midpoints" : [ 140.995141744613647, 462.0, 218.0, 462.0 ],
 									"source" : [ "obj-7", 0 ]
 								}
 
