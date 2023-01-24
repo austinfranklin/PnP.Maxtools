@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 50.0, 120.0, 800.0, 750.0 ],
+						"rect" : [ 50.0, 126.0, 800.0, 724.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -86,7 +86,6 @@
 						"subpatcher_template" : "",
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgmode" : 0,
@@ -140,6 +139,8 @@
 							}
 , 							{
 								"box" : 								{
+									"bgcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ],
+									"color" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ],
 									"id" : "obj-11",
 									"local" : 1,
 									"maxclass" : "ezdac~",

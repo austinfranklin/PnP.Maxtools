@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 129.0, 147.0, 750.0, 750.0 ],
+		"rect" : [ 364.0, 226.0, 750.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -128,14 +128,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"id" : "obj-34",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 524.142884731292725, 760.887512838234102, 179.0, 20.0 ],
+					"patching_rect" : [ 524.142884731292725, 760.887512838234102, 165.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 474.896840572357178, 692.869756018509179, 153.0, 20.0 ],
+					"presentation_rect" : [ 486.896840572357178, 682.869756018509179, 141.0, 20.0 ],
 					"text" : "Distributed under license",
 					"textcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ]
 				}
@@ -143,14 +144,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 2,
 					"fontname" : "Arial",
 					"id" : "obj-31",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 755.000016212463379, 538.845704436302299, 180.0, 20.0 ],
+					"patching_rect" : [ 755.000016212463379, 538.845704436302299, 164.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.851971030235291, 696.869756018509293, 179.0, 20.0 ],
+					"presentation_rect" : [ 48.851971030235291, 686.869756018509293, 163.0, 20.0 ],
 					"text" : "Visit austinfranklinmusic.com",
 					"textcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ]
 				}
@@ -168,7 +170,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 755.000016212463379, 538.845704436302299, 196.268655061721802, 22.46268630027771 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.851971030235291, 696.869756018509293, 180.66010782122612, 21.0 ]
+					"presentation_rect" : [ 48.851971030235291, 686.869756018509293, 163.0, 21.0 ]
 				}
 
 			}
@@ -190,14 +192,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"id" : "obj-42",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 755.000016212463379, 434.791865784431479, 117.0, 20.0 ],
+					"patching_rect" : [ 755.000016212463379, 434.791865784431479, 110.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.851971030235291, 672.869756018509293, 122.0, 20.0 ],
+					"presentation_rect" : [ 48.851971030235291, 662.869756018509293, 115.0, 20.0 ],
 					"text" : "@ Austin Franklin",
 					"textcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ]
 				}
@@ -215,7 +218,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 755.000016212463379, 434.740063983703635, 127.61194109916687, 22.051801800727844 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.851971030235291, 672.869756018509293, 122.0, 21.0 ]
+					"presentation_rect" : [ 48.851971030235291, 662.869756018509293, 115.0, 21.0 ]
 				}
 
 			}
@@ -247,7 +250,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 755.000016212463379, 330.571428537368774, 87.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 629.896840572357178, 687.369756018509065, 87.0, 31.0 ]
+					"presentation_rect" : [ 629.896840572357178, 677.369756018509065, 87.0, 31.0 ]
 				}
 
 			}
@@ -280,7 +283,7 @@
 					"patching_rect" : [ 754.000016212463379, 331.571428537368774, 88.0, 31.0 ],
 					"pic" : "cclicense.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 629.896840572357178, 687.369756018509065, 87.0, 31.0 ]
+					"presentation_rect" : [ 629.896840572357178, 677.369756018509065, 87.0, 31.0 ]
 				}
 
 			}
@@ -941,15 +944,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 47.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 271.0, 47.0 ],
-					"text" : "An FFT filter modeled after a ‘bandpass’ filter that passes frequencies within a select frequency bin range",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 444.896840572357178, 49.141482770442963, 271.0, 33.0 ],
+					"text" : "Smoothes and applies exponential curves to incoming data",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 
