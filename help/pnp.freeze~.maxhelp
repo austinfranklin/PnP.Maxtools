@@ -311,11 +311,11 @@
 									"fontface" : 1,
 									"fontname" : "Arial",
 									"id" : "obj-26",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 125.213591873645782, 423.0, 47.0 ],
+									"patching_rect" : [ 48.543688654899597, 125.213591873645782, 684.153437256813049, 33.0 ],
 									"text" : "pnp.freeze~ is an object that captures and loops and FFT frame using a jitter matrix. This object has no arguments that can be specified. To freeze audio, send a bang message into the left inlet.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}

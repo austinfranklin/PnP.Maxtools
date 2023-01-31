@@ -155,7 +155,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 48.543688654899597, 125.213591873645782, 684.153437256813049, 47.0 ],
-									"text" : "pnp.bpm~ estimates the BPM of the onsets of an incoming audio signal. This object works best using tempi in the range of 80-150 BPM. Outside of this range, the output from the pnp.bom~ object will be doubled or halved. If analyzing audio with a frequently changing tempo, the object may be slow to output an estimated BPM.",
+									"text" : "pnp.bpm~ estimates the BPM of the onsets of an incoming audio signal. This object works best using tempi in the range of 80-150 BPM. Outside of this range, the output from the pnp.bpm~ object will be doubled or halved. If analyzing audio with a frequently changing tempo, the object may be slow to output an estimated BPM.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
@@ -338,7 +338,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 459.820388495922089, 281.0, 63.0, 22.0 ],
-									"text" : "metro 500"
+									"text" : "metro 450"
 								}
 
 							}

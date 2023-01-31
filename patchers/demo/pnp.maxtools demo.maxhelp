@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 436.0, 100.0, 799.0, 750.0 ],
+		"rect" : [ 389.0, 191.0, 799.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -537,6 +537,22 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"id" : "obj-3",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 61.669897735118866, 638.213591873645782, 695.0, 33.0 ],
+									"presentation_linecount" : 2,
+									"text" : "The help files for each object contain a breadth of information about each object, such as how the object functions, a technical description, the reasearch on which the object is based (where applicable), and many creative examples.",
+									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"autofit" : 1,
 									"forceaspect" : 1,
 									"id" : "obj-1",
@@ -576,7 +592,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 324.669897735118866, 456.0, 413.0, 74.0 ],
-									"text" : "The additional controls provide a wide range of functionality. Most objects in this category output a number between 0-1 that provides users with more control in terms of parameter automation or mapping. In general, these objects are designed to be used in between descriptors and effects to manipulate control data further to achieving a desired interaction.",
+									"text" : "The additional controls provide a wide range of functionality. Most objects in this category output a number between 0-1 that provides users with more control in terms of parameter automation or mapping. In general, these objects are designed to be used in between descriptors and effects to manipulate control data further to achieve desired interactions.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
@@ -592,7 +608,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 324.669897735118866, 318.0, 409.0, 114.0 ],
-									"text" : "Many of the sound descriptors were implemented based on models described in AudioCommons \"Release of timbral characterization tools for semantically annotating non-musical content,\" among other sources. This release describes models that analyze perceptual characteristics of sounds. In Max, these descriptors operate in real time on audio signals. The output value from these objects are normalized (0-1), where 1 is equal to the perceptual characteristic being perceptually very present in the sound. Many of these descriptors are built using the pfft~ and gen~ objects.",
+									"text" : "Many of the sound descriptors were implemented based on models described by Pearce et al. in \"Release of timbral characterization tools for semantically annotating non-musical content,\" among other sources. This release describes models that analyze perceptual characteristics of sounds. In Max, these descriptors operate in real time on audio signals. The output value from these objects are normalized (0-1), where 1 is equal to the perceptual characteristic being perceptually very present in the sound. Many of these descriptors are built using the pfft~ and gen~ objects.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
@@ -1166,8 +1182,8 @@
 									"numinlets" : 4,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 131.495141744613647, 389.598320245742798, 79.0, 20.0 ],
-									"text" : "pnp.grain~ 0."
+									"patching_rect" : [ 131.495141744613647, 389.598320245742798, 66.0, 20.0 ],
+									"text" : "pnp.grain~"
 								}
 
 							}
@@ -1246,7 +1262,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 3 ],
-									"midpoints" : [ 342.0, 381.0, 200.995141744613647, 381.0 ],
+									"midpoints" : [ 342.0, 381.0, 187.995141744613647, 381.0 ],
 									"order" : 1,
 									"source" : [ "obj-18", 1 ]
 								}
@@ -1255,7 +1271,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 2 ],
-									"midpoints" : [ 342.0, 381.0, 180.995141744613647, 381.0 ],
+									"midpoints" : [ 342.0, 381.0, 172.328475077946962, 381.0 ],
 									"order" : 2,
 									"source" : [ "obj-18", 1 ]
 								}
@@ -1264,7 +1280,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 1 ],
-									"midpoints" : [ 342.0, 381.0, 160.995141744613647, 381.0 ],
+									"midpoints" : [ 342.0, 381.0, 156.661808411280305, 381.0 ],
 									"order" : 3,
 									"source" : [ "obj-18", 1 ]
 								}

@@ -332,11 +332,11 @@
 									"fontface" : 1,
 									"fontname" : "Arial",
 									"id" : "obj-26",
-									"linecount" : 4,
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 124.213591873645782, 409.0, 60.0 ],
+									"patching_rect" : [ 48.543688654899597, 124.213591873645782, 684.153437256813049, 33.0 ],
 									"text" : "pnp.panner~ pans an incoming signal between the left and right channels depending on the position argument set. The fade speed can also be set that determines the rate of transition between changes to the position.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}

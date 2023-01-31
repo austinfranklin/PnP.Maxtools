@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 152.0, 222.0, 731.0, 681.0 ],
+		"rect" : [ 203.0, 109.0, 731.0, 681.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -301,7 +301,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 100.122073113918304, 114.224421560764313, 133.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 31.851971030235291, 108.141482770442963, 230.0, 20.0 ],
+					"presentation_rect" : [ 31.851971030235291, 99.141482770442963, 230.0, 20.0 ],
 					"text" : "A 'Plug and Play' package for Max",
 					"textcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ]
 				}
@@ -564,8 +564,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 498.245609283447266, 673.6842041015625, 129.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 303.851971030235291, 108.141482770442963, 53.0, 20.0 ],
-					"text" : "1.0.3",
+					"presentation_rect" : [ 303.851971030235291, 99.141482770442963, 53.0, 20.0 ],
+					"text" : "1.0.4",
 					"textcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ],
 					"textjustification" : 1
 				}
@@ -921,15 +921,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 47.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 427.896840572357178, 37.141482770442963, 271.0, 47.0 ],
-					"text" : "An FFT filter modeled after a ‘bandpass’ filter that passes frequencies within a select frequency bin range",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 427.896840572357178, 48.141482770442963, 271.0, 33.0 ],
+					"text" : "Smoothes and applies exponential curves to incoming data",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 
@@ -1179,6 +1179,22 @@
 					"tabcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ],
 					"tabs" : [ "pnp.autoscale~", "pnp.bangs", "pnp.noone", "pnp.nozero", "pnp.smoother" ],
 					"textcolor" : [ 0.231372549019608, 0.223529411764706, 0.254901960784314, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"alpha" : 0.25,
+					"autofit" : 1,
+					"id" : "obj-33",
+					"maxclass" : "fpic",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 445.0, 131.0, 100.0, 100.0 ],
+					"pic" : "icon-launcher.png",
+					"presentation" : 1,
+					"presentation_rect" : [ 31.851971030235291, 37.141482770442963, 667.044869542121887, 613.072946429252738 ]
 				}
 
 			}
@@ -1518,6 +1534,13 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "cclicense.png",
+				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/extras",
+				"patcherrelativepath" : ".",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "icon-launcher.png",
 				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/extras",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",

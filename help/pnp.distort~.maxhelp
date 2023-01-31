@@ -346,11 +346,11 @@
 									"fontface" : 1,
 									"fontname" : "Arial",
 									"id" : "obj-26",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 125.213591873645782, 414.0, 47.0 ],
+									"patching_rect" : [ 48.543688654899597, 125.213591873645782, 684.153437256813049, 33.0 ],
 									"text" : "pnp.distort~ applies distortion to an incoming signal using a drive and distortion parameter. Both of these can be set using a floating point number between 0 and 1, but default to 0 (no distortion) if unspecified.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
