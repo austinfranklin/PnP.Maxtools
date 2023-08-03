@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 30.0, 150.0, 65.0, 22.0 ],
+					"text" : "pnp.split~"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-27",
@@ -300,7 +313,7 @@
 					"bgfillcolor_type" : "color",
 					"fontname" : "Arial",
 					"id" : "obj-1",
-					"items" : [ "pnp.binpass~", ",", "pnp.overtone~", ",", "pnp.pitchclass~", ",", "pnp.notch~", ",", "pnp.reduce~" ],
+					"items" : [ "pnp.binpass~", ",", "pnp.notch~", ",", "pnp.pitchclass~", ",", "pnp.overtone~", ",", "pnp.reduce~" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -358,6 +371,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -432,6 +452,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"order" : 5,
 					"source" : [ "obj-3", 0 ]
 				}
 

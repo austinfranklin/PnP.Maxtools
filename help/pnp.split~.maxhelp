@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -87,6 +87,26 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-2",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "filtersmenu.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 556.919147610664368, 40.213591873645782, 175.555956602096558, 74.277978301048279 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"bgmode" : 0,
 									"border" : 0,
@@ -284,26 +304,6 @@
 									"patching_rect" : [ 48.543688654899597, 127.213591873645782, 687.0, 47.0 ],
 									"text" : "pnp.split~ splits an audio signal using an FFT at a specified frequency bin. The split position determines how much of each frame will come out of either the left or right outlets. It can be set with a floating point number between 0 and 1, but defulats to 0.125 if left unspecified.",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-2",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "effectsmenu.maxpat",
-									"numinlets" : 0,
-									"numoutlets" : 0,
-									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 556.697125911712646, 40.391958594322205, 176.0, 74.0 ],
-									"viewvisibility" : 1
 								}
 
 							}
@@ -5576,7 +5576,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "audiomenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -5588,15 +5588,15 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "effectsmenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"name" : "filtersmenu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "helpbuttons.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -5609,14 +5609,14 @@
 			}
 , 			{
 				"name" : "pnp.splitfft~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/effects",
 				"patcherrelativepath" : "../patchers/effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.split~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/effects",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/effects",
 				"patcherrelativepath" : "../patchers/effects",
 				"type" : "JSON",
 				"implicit" : 1
