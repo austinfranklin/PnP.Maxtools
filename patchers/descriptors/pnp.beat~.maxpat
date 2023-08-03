@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -163,7 +163,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 416.777792930603027, 508.257261727554351, 199.0, 20.0 ],
-					"text" : "Minimum time between each attack"
+					"text" : "Minimum time between each attack",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -176,7 +177,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 395.777792930603027, 442.822983741760254, 82.0, 20.0 ],
-					"text" : "scale velocity"
+					"text" : "scale velocity",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}

@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 800.0, 750.0 ],
+		"rect" : [ 471.0, 127.0, 800.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,13 +51,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 126.0, 800.0, 724.0 ],
+						"rect" : [ 471.0, 153.0, 800.0, 724.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -369,8 +369,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 396.543688654899597, 512.52631688117981, 77.0, 20.0 ],
-									"text" : "FFT Output",
+									"patching_rect" : [ 396.543688654899597, 512.52631688117981, 83.0, 20.0 ],
+									"text" : "Signal Output",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
@@ -528,7 +528,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 1 ],
-									"midpoints" : [ 483.500001430511475, 396.0, 323.500001430511475, 396.0 ],
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -5617,7 +5616,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "audiomenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -5630,14 +5629,14 @@
 			}
 , 			{
 				"name" : "descriptorsmenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "helpbuttons.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -5649,22 +5648,15 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pnp.amplitudefft~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
-				"patcherrelativepath" : "../patchers/descriptors",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "pnp.amplitude~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
 				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.smoother.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/controls",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/controls",
 				"patcherrelativepath" : "../patchers/controls",
 				"type" : "JSON",
 				"implicit" : 1

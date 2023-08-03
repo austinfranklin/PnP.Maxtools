@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -159,7 +159,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 249.0, 318.0, 56.0, 20.0 ],
-					"text" : "bin #"
+					"text" : "bin #",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -170,7 +171,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 262.0, 128.73077780008316, 64.0, 20.0 ],
-					"text" : "frequency"
+					"text" : "frequency",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -193,7 +195,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 572.143424987792059, 228.234523236751556, 78.0, 20.0 ],
-					"text" : "Window Size"
+					"text" : "Window Size",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -216,7 +219,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 372.0, 318.0, 56.0, 20.0 ],
-					"text" : "bin #"
+					"text" : "bin #",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -227,7 +231,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 381.5, 128.73077780008316, 64.0, 20.0 ],
-					"text" : "frequency"
+					"text" : "frequency",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -250,7 +255,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 548.301320314406439, 175.027167001548833, 87.0, 20.0 ],
-					"text" : "Sampling Rate"
+					"text" : "Sampling Rate",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -261,7 +267,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 562.143424987792059, 262.0, 68.0, 20.0 ],
-					"text" : "Hz per Bin"
+					"text" : "Hz per Bin",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}

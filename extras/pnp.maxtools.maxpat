@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 203.0, 109.0, 731.0, 681.0 ],
+		"rect" : [ 381.0, 129.0, 731.0, 681.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -319,7 +319,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -921,15 +921,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 33.0 ],
+					"patching_rect" : [ 733.743916869163513, 67.111113309860229, 296.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 427.896840572357178, 48.141482770442963, 271.0, 33.0 ],
-					"text" : "Smoothes and applies exponential curves to incoming data",
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 427.896840572357178, 48.141482770442963, 271.0, 47.0 ],
+					"text" : "An FFT filter modeled after a ‘bandpass’ filter that passes frequencies within a select frequency bin range",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 
@@ -1534,14 +1534,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "cclicense.png",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/extras",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "icon-launcher.png",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/extras",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1

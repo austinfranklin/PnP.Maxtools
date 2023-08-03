@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -85,7 +85,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 291.27625960111618, 126.986297130584717, 80.0, 22.0 ],
+					"patching_rect" : [ 291.27625960111618, 126.986297130584717, 83.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -109,7 +109,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 528.085106611251831, 126.986297130584717, 77.0, 22.0 ],
+					"patching_rect" : [ 528.085106611251831, 126.986297130584717, 90.0, 22.0 ],
 					"text" : "loadmess #2"
 				}
 
@@ -185,7 +185,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 822.143424987792059, 195.234523236751556, 78.0, 20.0 ],
-					"text" : "Window Size"
+					"text" : "Window Size",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -244,7 +245,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 796.143424987792059, 162.198863089084625, 87.0, 20.0 ],
-					"text" : "Sampling Rate"
+					"text" : "Sampling Rate",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}
@@ -255,7 +257,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 822.079596757887884, 237.936248362064362, 68.0, 20.0 ],
-					"text" : "Hz per Bin"
+					"text" : "Hz per Bin",
+					"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 				}
 
 			}

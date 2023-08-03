@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5510,7 +5510,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "audiomenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -5523,14 +5523,14 @@
 			}
 , 			{
 				"name" : "descriptorsmenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "helpbuttons.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -5543,35 +5543,35 @@
 			}
 , 			{
 				"name" : "pnp.amplitudefft~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
 				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.amplitude~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
 				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.sharpnessfft~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
 				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.sharpness~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/descriptors",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
 				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.smoother.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/pnp.maxtools/patchers/controls",
+				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/controls",
 				"patcherrelativepath" : "../patchers/controls",
 				"type" : "JSON",
 				"implicit" : 1
