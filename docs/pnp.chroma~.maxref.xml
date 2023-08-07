@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pnp.chroma~">
+
+	<digest>
+		Calculates the prominance of each pitch class in the audio signal
+	</digest>
+	
+	<description>
+		<m>pnp.chroma~</m> measures how much of each pitch 
+		class is present in the audio signal using an FFT and 
+		returns a list that corresponds to the prominence 
+		of each. The object generally outputs more reliable 
+		values in middle and higher register. It can be used 
+		for chord and key detection as well as triggering events 
+		based on pitch.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Austin Franklin</metadata>
+		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Descriptor</metadata>
+		<metadata name="tag">FFT</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio Signal Input</digest>
+		</inlet>
+	</inletlist>
+
+	<inletlist>
+		<inlet id="0" type="float">
+			<digest>Smoothness</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="float">
+			<digest>Strength of each pitch calss as a list</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Smoothness" optional="1" type="float">
+			<digest>Sets the smoothness level for output values. This object 
+			uses the <m>pnp.smoothness</m> object to smooth values.
+			</digest>
+		</objarg>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="signal">
+			<arglist>
+				<arg name="parameter-settings" optional="0" type="signal"/>
+			</arglist>
+			<description>
+				In left inlet: Monoaural <m>signal</m>.
+			</description>
+		</method>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="pnp.centroid~"/>
+		<seealso name="pnp.energy~"/>
+		<seealso name="pnp.flatness~"/>
+		<seealso name="pnp.spread~"/>
+	</seealsolist>
+	
+</c74object>

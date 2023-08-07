@@ -16,7 +16,7 @@
 		<metadata name="author">Austin Franklin</metadata>
 		<metadata name="tag"><PnP class="Maxtools"></PnP></metadata>
 		<metadata name="tag">Audio</metadata>
-		<metadata name="tag">Effect</metadata>
+		<metadata name="tag">Filter</metadata>
 		<metadata name="tag">FFT</metadata>
 	</metadatalist>
 	
@@ -79,7 +79,11 @@
 	
 	<!--SEEALSO-->
 	<seealsolist>
+		<seealso name="pnp.binpass~"/>
 		<seealso name="pnp.convolve~"/>
+		<seealso name="pnp.notch~"/>
+		<seealso name="pnp.overtone~"/>
+		<seealso name="pnp.pitchclass~"/>
 	</seealsolist>
 	
 </c74object>
