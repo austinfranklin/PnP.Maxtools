@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 738.0, 108.0, 637.0, 549.0 ],
+		"rect" : [ 499.0, 114.0, 637.0, 549.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -60,8 +60,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 32.529422760009766, 89.21329802274704, 36.0, 22.0 ],
-					"text" : "set 0"
+					"patching_rect" : [ 32.529422760009766, 89.21329802274704, 29.5, 22.0 ],
+					"text" : "0"
 				}
 
 			}
@@ -540,7 +540,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 353.091562807559967, 34.670893013477325, 263.0, 33.0 ],
-					"text" : "Calculates the prominance of each pitch class in the audio signal",
+					"text" : "Calculates the spectral sharpness of an incoming audio signal",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 

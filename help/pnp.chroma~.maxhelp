@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 198.0, 232.0, 800.0, 750.0 ],
+		"rect" : [ 128.0, 246.0, 800.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 198.0, 258.0, 800.0, 724.0 ],
+						"rect" : [ 128.0, 272.0, 800.0, 724.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -94,8 +94,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 126.543688654899597, 246.0, 73.0, 22.0 ],
-									"text" : "loadmess 1."
+									"patching_rect" : [ 126.543688654899597, 246.0, 87.0, 22.0 ],
+									"text" : "loadmess 0.25"
 								}
 
 							}
@@ -104,12 +104,11 @@
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"id" : "obj-64",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 95.043688654899597, 226.170331120491028, 113.0, 33.0 ],
-									"text" : "Scale the signal if the output is low!",
+									"patching_rect" : [ 95.043688654899597, 246.0, 113.0, 20.0 ],
+									"text" : "Scale the signal!",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ],
 									"textjustification" : 1
 								}
@@ -654,12 +653,12 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-26",
-									"linecount" : 3,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.543688654899597, 124.213591873645782, 687.0, 47.0 ],
-									"text" : "pnp.chroma~ measures how much of each pitch class is present in the audio signal using an FFT and returns a list that corresponds to the prominence of each. The object generally outputs more reliable values in middle and higher register. It can be used for chord and key detection as well as triggering events based on pitch.",
+									"patching_rect" : [ 48.543688654899597, 124.213591873645782, 687.0, 60.0 ],
+									"text" : "pnp.chroma~ measures how much of each pitch class is present in the audio signal using an FFT and returns a list that corresponds to the prominence of each. The object generally outputs more reliable values in middle and higher register. It can be used for chord and key detection as well as triggering events based on pitch. This object works better with frequencies above C3 (130.8Hz)",
 									"textcolor" : [ 0.843137254901961, 0.843137254901961, 0.843137254901961, 1.0 ]
 								}
 
