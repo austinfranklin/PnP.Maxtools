@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 591.0, 127.0, 637.0, 549.0 ],
+		"rect" : [ 738.0, 108.0, 637.0, 549.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -49,20 +49,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 348.007071375846863, 732.431253492832184, 33.0, 35.0 ],
-					"presentation_linecount" : 2,
 					"text" : ";\rmax"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 120.0, 36.0, 22.0 ],
-					"text" : "set 0"
 				}
 
 			}
@@ -73,8 +60,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 32.529422760009766, 89.21329802274704, 56.0, 22.0 ],
-					"text" : "button 0"
+					"patching_rect" : [ 32.529422760009766, 89.21329802274704, 36.0, 22.0 ],
+					"text" : "set 0"
 				}
 
 			}
@@ -545,13 +532,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-7",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1497.861574530601501, 152.111113309860229, 299.0, 20.0 ],
+					"patching_rect" : [ 1497.861574530601501, 152.111113309860229, 299.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 353.091562807559967, 34.670893013477325, 263.0, 20.0 ],
-					"text" : "Convolve two signals together",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 353.091562807559967, 34.670893013477325, 263.0, 33.0 ],
+					"text" : "Calculates the prominance of each pitch class in the audio signal",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 
@@ -560,6 +549,7 @@
 				"box" : 				{
 					"button" : 1,
 					"fontname" : "Arial",
+					"hidden" : 1,
 					"htabcolor" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ],
 					"id" : "obj-10",
 					"maxclass" : "tab",
@@ -581,7 +571,6 @@
 				"box" : 				{
 					"button" : 1,
 					"fontname" : "Arial",
-					"hidden" : 1,
 					"htabcolor" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ],
 					"id" : "obj-11",
 					"maxclass" : "tab",
@@ -1663,14 +1652,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"order" : 2,
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"order" : 1,
 					"source" : [ "obj-20", 0 ]
@@ -1681,13 +1662,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"source" : [ "obj-24", 0 ]
 				}
 
 			}

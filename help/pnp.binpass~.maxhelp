@@ -370,12 +370,13 @@
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"id" : "obj-8",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 182.679611504077911, 408.85436749458313, 149.0, 22.0 ],
-									"text" : "215.332031 452.197266"
+									"patching_rect" : [ 182.679611504077911, 408.85436749458313, 149.0, 35.0 ],
+									"text" : "2497.851562 5017.236328"
 								}
 
 							}
