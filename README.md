@@ -1,4 +1,4 @@
-# PnP.Maxtools 1.0.5
+# PnP.Maxtools 1.1.6
 
 Latest update: changed layout and added a new object, pnp.chroma~
 
