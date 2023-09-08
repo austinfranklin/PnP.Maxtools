@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 289.0, 416.806465983390808, 171.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0 else out2 $f1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 289.0, 382.0, 77.0, 22.0 ],
+					"text" : "loadmess #1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -66,7 +90,7 @@
 				"box" : 				{
 					"comment" : "(signal/bang) signal to follow, bang to output",
 					"id" : "obj-10",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -80,9 +104,9 @@
 					"color" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 171.0, 467.0, 82.0, 22.0 ],
 					"text" : "pnp.smoother"
 				}
@@ -176,11 +200,11 @@
 				"box" : 				{
 					"comment" : "(signal/bang) signal to follow, bang to output",
 					"id" : "obj-228",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 262.0, 129.180681943893433, 30.0, 30.0 ]
 				}
 
@@ -189,7 +213,7 @@
 				"box" : 				{
 					"comment" : "(signal) followed envelope",
 					"id" : "obj-231",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -201,7 +225,7 @@
 				"box" : 				{
 					"comment" : "(float) followed envelope",
 					"id" : "obj-232",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -213,7 +237,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
-					"midpoints" : [ 529.0, 453.0, 212.0, 453.0 ],
+					"midpoints" : [ 529.0, 453.0, 243.5, 453.0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -229,6 +253,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-205", 0 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"midpoints" : [ 450.5, 453.0, 243.5, 453.0 ],
+					"source" : [ "obj-15", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"midpoints" : [ 298.5, 453.0, 243.5, 453.0 ],
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -302,12 +342,21 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-232", 0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
