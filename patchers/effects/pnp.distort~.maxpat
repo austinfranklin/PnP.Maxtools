@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 691.0, 179.0, 974.0, 795.0 ],
+		"rect" : [ 433.0, 211.0, 974.0, 795.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 535.07493394613266, 196.212565958499908, 169.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0 else out2 $i1"
+					"patching_rect" : [ 535.07493394613266, 196.212565958499908, 171.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0 else out2 $f1"
 				}
 
 			}
@@ -69,8 +69,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 535.010767817497253, 119.842104196548462, 169.0, 22.0 ],
-					"text" : "if $i1 == 0 then 0 else out2 $i1"
+					"patching_rect" : [ 535.010767817497253, 119.842104196548462, 171.0, 22.0 ],
+					"text" : "if $f1 == 0 then 0 else out2 $f1"
 				}
 
 			}
@@ -93,8 +93,8 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 280.210538864135742, 161.0, 105.0, 22.0 ],
-					"text" : "zmap 0. 1. 0.5 10."
+					"patching_rect" : [ 280.210538864135742, 161.0, 98.0, 22.0 ],
+					"text" : "zmap 0. 1. 0.5 5."
 				}
 
 			}
@@ -106,7 +106,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 399.52632737159729, 161.0, 98.0, 22.0 ],
-					"text" : "zmap 0. 1. 1. 25."
+					"text" : "zmap 0. 1. 1. 10."
 				}
 
 			}
@@ -127,7 +127,7 @@
 					"comment" : "Distortion (0-1)",
 					"cool" : 1,
 					"id" : "obj-15",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -140,7 +140,7 @@
 				"box" : 				{
 					"comment" : "Output Signal R",
 					"id" : "obj-14",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -248,7 +248,7 @@
 				"box" : 				{
 					"comment" : "Output Signal L",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -273,7 +273,7 @@
 					"comment" : "Drive (0-1)",
 					"cool" : 1,
 					"id" : "obj-2",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -370,11 +370,11 @@
 				"box" : 				{
 					"comment" : "Input Signal",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 124.999998807907104, 111.842104196548462, 30.0, 30.0 ]
 				}
 
@@ -661,6 +661,8 @@
 
 			}
  ],
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
