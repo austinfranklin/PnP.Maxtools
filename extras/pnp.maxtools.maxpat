@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 499.0, 114.0, 637.0, 549.0 ],
+		"rect" : [ 367.0, 113.0, 637.0, 549.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -157,6 +157,7 @@
 				"box" : 				{
 					"button" : 1,
 					"fontname" : "Arial",
+					"hidden" : 1,
 					"htabcolor" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ],
 					"id" : "obj-14",
 					"maxclass" : "tab",
@@ -504,7 +505,7 @@
 					"patching_rect" : [ 1151.280393958091736, 131.5, 129.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 278.36690890789032, 69.670893013477325, 53.0, 20.0 ],
-					"text" : "1.1.6",
+					"text" : "1.1.7",
 					"textcolor" : [ 0.16078431372549, 0.152941176470588, 0.176470588235294, 1.0 ],
 					"textjustification" : 1
 				}
@@ -531,15 +532,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-7",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1497.861574530601501, 152.111113309860229, 299.0, 47.0 ],
+					"patching_rect" : [ 1497.861574530601501, 152.111113309860229, 299.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 353.091562807559967, 34.670893013477325, 263.0, 47.0 ],
-					"text" : "An FFT filter modeled after a ‘bandpass’ filter that passes frequencies within a select frequency bin range",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 353.091562807559967, 34.670893013477325, 263.0, 33.0 ],
+					"text" : "Calculates the prominance of each pitch class in the audio signal",
 					"textcolor" : [ 0.843, 0.843, 0.843, 0.0 ]
 				}
 
@@ -570,7 +571,6 @@
 				"box" : 				{
 					"button" : 1,
 					"fontname" : "Arial",
-					"hidden" : 1,
 					"htabcolor" : [ 0.298039215686275, 0.407843137254902, 0.458823529411765, 1.0 ],
 					"id" : "obj-11",
 					"maxclass" : "tab",
@@ -1882,14 +1882,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "cclicense.png",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/extras",
+				"bootpath" : "~/Desktop/PnP.Maxtools/extras",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "icon-launcher.png",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/extras",
+				"bootpath" : "~/Desktop/PnP.Maxtools/extras",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1

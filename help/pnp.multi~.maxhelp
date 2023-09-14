@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 535.0, 255.0, 800.0, 750.0 ],
+		"rect" : [ 100.0, 100.0, 800.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 535.0, 281.0, 800.0, 724.0 ],
+						"rect" : [ 100.0, 126.0, 800.0, 724.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -205,7 +205,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-1",
@@ -6655,8 +6654,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "audiomenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -6668,15 +6667,15 @@
 			}
 , 			{
 				"name" : "descriptorsmenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "helpbuttons.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/bpatchers",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -6688,57 +6687,57 @@
 			}
 , 			{
 				"name" : "pnp.amplitude~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/descriptors",
+				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.beat~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/descriptors",
+				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.multifft~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/descriptors",
+				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.multi~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/descriptors",
+				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.nozero.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/controls",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/controls",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/controls",
+				"patcherrelativepath" : "../patchers/controls",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.smoother.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/controls",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/controls",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/controls",
+				"patcherrelativepath" : "../patchers/controls",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.spreadfft~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/descriptors",
+				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pnp.spread~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/PnP.Maxtools/patchers/descriptors",
+				"bootpath" : "~/Desktop/PnP.Maxtools/patchers/descriptors",
+				"patcherrelativepath" : "../patchers/descriptors",
 				"type" : "JSON",
 				"implicit" : 1
 			}

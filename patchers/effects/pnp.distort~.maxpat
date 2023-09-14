@@ -105,8 +105,8 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 399.52632737159729, 161.0, 98.0, 22.0 ],
-					"text" : "zmap 0. 1. 1. 10."
+					"patching_rect" : [ 399.52632737159729, 161.0, 105.0, 22.0 ],
+					"text" : "zmap 0. 1. 1. 100."
 				}
 
 			}
@@ -127,7 +127,7 @@
 					"comment" : "Distortion (0-1)",
 					"cool" : 1,
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -140,7 +140,7 @@
 				"box" : 				{
 					"comment" : "Output Signal R",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -248,7 +248,7 @@
 				"box" : 				{
 					"comment" : "Output Signal L",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -273,7 +273,7 @@
 					"comment" : "Drive (0-1)",
 					"cool" : 1,
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -370,11 +370,11 @@
 				"box" : 				{
 					"comment" : "Input Signal",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 124.999998807907104, 111.842104196548462, 30.0, 30.0 ]
 				}
 
@@ -661,8 +661,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

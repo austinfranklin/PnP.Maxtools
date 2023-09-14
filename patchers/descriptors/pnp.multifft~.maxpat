@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 22.730429649353027, 650.574170589447021, 40.0, 22.0 ],
+					"text" : "*~ 0.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-120",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1408.159674882888794, 1389.0, 60.0, 22.0 ],
+					"patching_rect" : [ 1408.159674882888794, 1431.0, 60.0, 22.0 ],
 					"text" : "clip~ 0. 1."
 				}
 
@@ -95,18 +107,6 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 536.827994346618652, 617.0, 60.0, 22.0 ],
 					"text" : "clip~ 0. 1."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-109",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 22.730429649353027, 650.574170589447021, 40.0, 22.0 ],
-					"text" : "*~ 0.5"
 				}
 
 			}
@@ -3767,13 +3767,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-109", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
 					"midpoints" : [ 175.230429649353027, 230.3210289478302, 133.730429649353027, 230.3210289478302 ],
 					"source" : [ "obj-11", 0 ]
@@ -3782,7 +3775,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-109", 0 ],
+					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-110", 0 ]
 				}
 
@@ -4314,6 +4307,13 @@
 					"destination" : [ "obj-15", 1 ],
 					"midpoints" : [ 235.181652069091797, 414.0, 192.0, 414.0, 192.0, 415.0, 182.584087371826172, 415.0 ],
 					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-52", 0 ]
 				}
 
 			}
@@ -4944,8 +4944,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
